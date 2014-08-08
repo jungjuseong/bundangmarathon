@@ -1,0 +1,129 @@
+<?
+   include "index_head_PHP.txt";
+?>
+<?
+	include "main_top.txt";
+?>
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+    <tr>
+        <td width="950" valign="top">
+            <div align="left">
+                <table border="0" cellpadding="0" cellspacing="0" width="950" align="center">
+                    <tr>
+                        <td width="300" bgcolor="white"  valign="top" height="137">
+<?
+	include "menu_intro1.txt";
+?>
+                        </td>
+                        <td width="650" height="137" valign="top" background="img/main_bg.gif">
+                            <table border="0" cellpadding="0" width="650" align="center">
+                                <tr>
+                                    <td width="650" height="33">
+                                       <img src="/img/ne_title_04.gif" usemap="#home" border="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="650">
+<CENTER><img src="img/intro1_01.gif" width="600" height="100" border="0"></CENTER>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="650">
+                                        <p style="line-height:150%;" align="justify"><b>일시 - &nbsp;비가 오나 눈이 오나
+                                        &nbsp;일요일 아침(11월-3월=&gt;07:00,4월-10월=&gt;06:30)</b>
+                                        <br>(마라톤 대회 단체 참가시는 대회 참가로 대체합니다.)
+                                        <br><a href="intro3_01.htm"><b><font color=blue>코스 소개는 여기를 눌러 주세요.</font>
+                                        </b></a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="650">
+                                        <p style="line-height:150%;" align="justify">&nbsp;<br>
+<b>모임장소 - 아래 별표 위치 : 분당 중앙공원 안쪽 팔각정(A,B주차장에 주차) <br>
+                                    </td>
+                                </tr>
+<!--
+                                <tr>
+                                    <td width="660">
+                                        <p><a href='http://maps.naver.com/?x=32245000&y=53078000&title=분당천보도교아래-달리기원점' target=map><img src="img/map2.jpg" border="0"></a></p>
+                                    </td>
+                                </tr>
+-->
+                            </table>
+<script type="text/javascript" src="http://maps.naver.com/js/naverMap.naver?key=2046b34148336663260c4394733acbed">
+</script>
+                            <div id='mapDiv' style='margin-left=40px'> </div>
+
+<script type="text/javascript">
+ var naver_map = new NMap(document.getElementById('mapDiv'), 600, 500);
+
+ var point = new NLatLng(37.3748008,127.1249899);	//돌마각
+// var point = new NLatLng(37.3321331,127.1884499);	//오포사업장
+// var point = new NPoint(321198,529730);			// NHN
+ var iconurl = "http://static.asjs.net/map/spot_green.png";
+ var iconSize = new NSize(57,65);
+ var iconOffset = new NSize(30, 65);
+ var markerIcon = new NIcon(iconurl, iconSize, iconOffset);
+ var marker = new NMark(point, markerIcon);
+ 
+ naver_map.addOverlay(marker);
+
+ var zoomControl = new NZoomControl();
+ zoomControl.setAlign("left");
+ zoomControl.setValign("top");
+ naver_map.addControl(zoomControl);
+
+ var mapBtns = new NMapBtns()
+ mapBtns.setAlign("right");
+ mapBtns.setValign("top");
+ naver_map.addControl(mapBtns);
+
+ var infoWindow = new NInfoWindow();
+ infoWindow.setOpacity(0.5);
+// infoWindow.set(new NLatLng(37.3748016,127.1252384), "돌마각");
+ infoWindow.set(point, "<div style='margin-bottom=1px;margin-left=20px;border=4px;padding=1px'><b>돌마각</b></div>");
+ naver_map.addOverlay(infoWindow);
+
+ var infoWindowA = new NInfoWindow();
+ infoWindowA.setOpacity(0.5);
+ infoWindowA.set(new NLatLng(37.3745696,127.1231331), "<div><b>A주차장</b></div>");
+ naver_map.addOverlay(infoWindowA);
+
+ var infoWindowB = new NInfoWindow();
+ infoWindowB.setOpacity(0.5);
+ infoWindowB.set(new NLatLng(37.3760157,127.1215446), "<div><b>B주차장</b></div>");
+ naver_map.addOverlay(infoWindowB);
+
+ naver_map.setCenterAndZoom(point, 2);
+
+ infoWindow.showWindow();
+ infoWindowA.showWindow();
+ infoWindowB.showWindow();
+
+</script>
+
+                        </td>
+                        <td width="0" height="137" align="left" valign="top">
+<?
+	include "quickmenu.txt";
+?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="990" colspan="3" >
+<?
+	include "copyright.txt";
+?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
+<map name="home">
+<area shape="rect" coords="500, 50, 541, 66" href="/">
+</map>
