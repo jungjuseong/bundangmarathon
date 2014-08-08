@@ -1,0 +1,473 @@
+<?
+   include "index_head_PHP.txt";
+?>
+<?
+	include "main_top.txt";
+?>
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+    <tr>
+        <td width="950" valign="top">
+            <div align="left">
+                <table border="0" cellpadding="0" cellspacing="0" width="950" align="center">
+                    <tr>
+                        <td width="300" bgcolor="white"  valign="top" height="137">
+<?
+	include "menu_intro3.txt";
+?>
+                        </td>
+                        <td width="650" height="137" valign="top" >
+                            <table border="0" cellpadding="0" width="650" align="center">
+                                <tr>
+                                    <td width="650" colspan="2" height="33">
+                                        <p style="line-height:150%; margin-top:0; margin-bottom:0;" align="right">
+                                        현재위치 : <a href="index.htm"><font color=blue>HOME</font></a>
+                                        &gt; 기록계산</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" colspan="2">
+<CENTER><p><img src="img/intro3_01.gif" width="600" height="100" border="0"></p></CENTER>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" colspan="2">
+                                                            <p><a href="intro3_02.htm"><b>기록
+                                                            계산</b></a><b><br>&nbsp;</b></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" colspan="2">
+<p align="left"><font size="4"><b>페이스 계산<br>&nbsp;</b></font>                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">            <p align="left">&nbsp;                                    </td>
+                                    <td width="561">            <table border="0" width="100%">
+    <tr>
+        <td width="505" valign="top">
+<script language="JavaScript">
+<!-- hide from old browsers
+function pacecalc(form)
+{
+	if (form.hour.value==null||form.hour.value.length==0){
+		form.hour.value=0;
+	}
+	if (form.minute.value==null||form.minute.value.length==0){
+		form.minute.value=0;
+	}
+	if (form.second.value==null||form.second.value.length==0){
+		form.second.value=0;
+	}
+
+	var secs = 0 + 3600 * form.hour.value + 60 * form.minute.value + 1 * form.second.value;
+	var time;
+
+	if (secs != 0 && form.dist.value.length != 0){
+		var distance = form.dist.options[form.dist.selectedIndex].value
+		var secperkilo = secs/distance;
+		var time5k = Math.ceil(secperkilo * 5);
+		form.time5k.value= maketimestring(time5k);
+
+		var time1k = Math.ceil(secperkilo);
+		form.time1k.value= maketimestring(time1k);
+
+		var inttime = "";
+		for(var d = 5; d < distance; d += 5){
+			time5k = Math.ceil(secperkilo * d);
+			inttime += maketimestring(time5k) + " ";
+		}
+		time5k = Math.ceil(secperkilo * distance);
+		inttime += maketimestring(time5k);
+		form.intervaltimes.value= inttime;
+	}
+	return;
+}
+
+function maketimestring2(hour, min, sec)
+{
+	var time;
+	time = "" + hour + ":";
+	if(min < 10) time += "0";
+	time += min + ":";
+	if(sec < 10) time += "0";
+	time += sec;
+	return time;
+}
+
+function maketimestring(timesec)
+{
+	var timestr;
+	var min = timesec % 3600;
+	var hour = (timesec - min) / 3600;
+	var sec = Math.ceil(min % 60);
+	min = (min - sec) / 60
+
+	timestr = "" + hour + ":";
+	if(min < 10) timestr += "0";
+	timestr += min + ":";
+	if(sec < 10) timestr += "0";
+	timestr += sec;
+	return timestr;
+}
+function estcalc(form)
+{
+	if (form.hour.value==null||form.hour.value.length==0){
+		form.hour.value="0";
+	}
+	if (form.min.value==null||form.min.value.length==0){
+		form.min.value="0";
+	}
+	if (form.sec.value==null||form.sec.value.length==0){
+		form.sec.value="0";
+	}
+
+	var d1 = form.d1.options[form.d1.selectedIndex].value
+	var d2 = form.d2.options[form.d2.selectedIndex].value
+	var presecs = (form.hour.value*3600) + (form.min.value*60) + form.sec.value/1;
+
+	// T2 = T1 x (D2/D1)<sup>1.07</sup>
+	var postsecs = Math.floor(presecs * Math.pow(d2 / d1, 1.07));
+	if (postsecs != 0){
+		form.posttime.value = maketimestring(postsecs);
+	}
+	return;
+}
+
+function totalcalc(form)
+{
+	if (form.min.value==null||form.min.value.length==0){
+		form.min.value="0";
+	}
+	if (form.sec.value==null||form.sec.value.length==0){
+		form.sec.value="0";
+	}
+
+	var d2 = form.d2.options[form.d2.selectedIndex].value
+	var presecs = (form.min.value*60) + form.sec.value/1;
+
+	var postsecs = Math.round(presecs * d2 / 1000);
+	if (postsecs != 0){
+		form.totaltime.value = maketimestring(postsecs);
+	}
+	return;
+}
+
+var ghour,gmin,gsec;
+function timedivide(val)
+{
+	idx1 = val.indexOf(":");
+	if(idx1 < 0){
+		alert("시간 입력 오류(예: 1:02:03)");
+		return -1;
+	}
+	idx2 = val.indexOf(":", idx1+1);
+	if(idx2 < 0){
+		alert("시간 입력 오류(예: 1:02:03)");
+		return -1;
+	}
+	ghour=val.substring(0,idx1);
+	gmin=val.substring(idx1+1, idx2);
+	gsec=val.substring(idx2+1);
+}
+function lapcalc(form)
+{
+	if(timedivide(form.timeend.value) < 0){
+		form.timeexp.focus();
+		return;
+	}
+	var allsec =  3600 * ghour + 60 * gmin + gsec / 1;
+	if(timedivide(form.timebegin.value) < 0){
+		form.timebegin.focus();
+		return;
+	}
+	var allsec2 =  3600 * ghour + 60 * gmin + gsec / 1;
+
+	var diffsec = allsec - allsec2;
+	var minusstr = "";
+	if(diffsec < 0){
+		minusstr = "-";
+		diffsec = -diffsec;
+	}
+	form.laptime.value = minusstr + maketimestring(diffsec);
+	return;
+}
+
+function equalspeedcalc(form)
+{
+	var allsec,allsec2;
+
+	if(form.dist1.value == "" || form.dist1.value == "0"){
+		alert("미터 수 입력");
+		form.dist1.focus();
+		return;
+	}
+	if(form.time1.value == "" || form.time1.value == "0:0:0"){
+		alert("시간(예: 1:02:03) 입력");
+		form.time1.focus();
+		return;
+	}
+	if(timedivide(form.time1.value) < 0){
+		form.time1.focus();
+		return;
+	}
+	allsec =  3600 * ghour + 60 * gmin + gsec / 1;
+	if(!(form.dist2.value == "" || form.dist2.value == "0") && !(form.time2.value == "" || form.time2.value == "0"
+		|| form.time2.value == "0:0:0")){
+			form.time2.value = "";
+	}
+	if(form.dist2.value == "" || form.dist2.value == "0"){
+		if(timedivide(form.time2.value) < 0){
+			form.time2.focus();
+			return;
+		}
+		allsec2 =  3600 * ghour + 60 * gmin + gsec/1;
+		if(allsec2 == 0){
+			alert("시간(예: 1:02:03)이나 거리 입력");
+			form.dist2.focus();
+			return;
+		}
+		form.dist2.value = form.dist1.value * allsec2 / allsec;
+	}else if(form.time2.value == "" || form.time2.value == "0"
+		|| form.time2.value == "0:0:0"){
+		allsec2 =  Math.ceil(allsec * form.dist2.value / form.dist1.value);
+
+// alert("allsec="+allsec + " allsec2="+allsec2);
+		form.time2.value = maketimestring(allsec2);
+	}
+
+	return;
+}
+
+
+<!-- done hiding from old browsers -->
+</script>
+<div align="left">
+<form name="pace" method="post">
+<table border cellpadding="5" cellspacing="0" width="100%" bordercolor="#CCCCCC" bordercolordark="white" bordercolorlight="#CCCCCC">
+                <tr>
+                    <td align="center" bgcolor="#D8EDFF">                        <p><font size="2">목표</font></td>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2">거리(km)<br>
+                        <select name="dist">
+                        <option value="1">1000m (1k)</option>
+                        <option value="5">5000m (5k)</option>
+                        <option value="8">8000m (8k)</option>
+                        <option value="10">10,000m (10k)</option>
+                        <option value="12.195">12,195m</option>
+                        <option value="21.0975">하프 (21.0975k)</option>
+                        <option selected value="42.195">풀코스 (42.195k)</option></select>
+                        </font></td>
+                    <td align="center" bgcolor="#D8EDFF">
+		    <table>
+		    <tr>
+		    <td align="center" bgcolor="#D8EDFF"><p><font size="2">시간<br>
+                        <input type="text" name="hour" value=0 maxlength="1" size="4"></font></td>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2">분<br>
+                        <input type="text" name="minute" value=0 maxlength="2" size="4"></font></td>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2">초<br>
+                        <input type="text" name="second" value=0 maxlength="2" size="4"></font></td>
+		    </tr>
+		    </table>
+		    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="3" bgcolor="#D8EDFF"><p><font size="2"><input type="button" value="계산하기" onclick="pacecalc(this.form);"></font></td>
+                </tr>
+                <tr>
+                    <td align="center" rowspan="2" bgcolor="#D8EDFF"><p><font size="2">목표 페이스<br>
+                        (시:분:초)</font></td>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2">5km당</font></td>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2"><input type="text" name="time5k" size="9"></font></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2">1km당</font></td>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2"><input type="text" name="time1k" size="9"></font></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#D8EDFF"><p><font size="2">5Km구간별<br>
+                        소요시간</font></td>
+                    <td align="center" colspan="2" bgcolor="#D8EDFF"><p><font size="2"><input type="text" name="intervaltimes" size="50"></font></td>
+                </tr>
+            </table>
+</form>
+</div></td>
+    </tr>
+</table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="561">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" valign="top" colspan="2">
+<p align="left"><font size="4"><b>기존기록으로 예상기록 보기<br>&nbsp;</b></font>                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">            <p align="left">&nbsp;                                    </td>
+                                    <td width="561">
+<form name="est" method="post">
+<table border cellpadding="5" cellspacing="0" width="100%" bordercolor="#CCCCCC" bordercolordark="white" bordercolorlight="#CCCCCC">
+    <tr>
+        <td align="center" bgcolor="#D8EDFF">            <p><font size="2">기존 기록이 <select name="d1">
+            <option value="1500">1500m (1.5k)</option>
+            <option value="3000">3000m (3k)</option>
+            <option value="5000">5000m (5k)</option>
+            <option value="8000">8000m (8k)</option>
+            <option value="10000">10,000m (10k)</option>
+            <option selected value="21100">하프 (21.0975K)</option>
+            <option value="42200">풀코스 (42.195k)</option></select>에 &nbsp;<input type="text" name="hour" value="0" maxlength="1"
+             size="4">시간 <input type="text" name="min" value="0" maxlength="2"
+             size="4">분 <input type="text" name="sec" value="0" maxlength="2"
+             size="4">초일 때<br><br><select name="d2">
+            <option value="1500">1500m (1.5k)</option>
+            <option value="3000">3000m (3k)</option>
+            <option value="5000">5000m (5k)</option>
+            <option value="8000">8000m (8k)</option>
+            <option value="10000">10,000m (10k)</option>
+            <option value="21100">하프 (21.0975k)</option>
+            <option selected value="42200">풀코스 (42.195k)</option></select>
+            에 대한 &nbsp;<input type="button" value="예상기록을 계산하면"
+             onclick="estcalc(this.form)"><br><br>결과는 <input type="text" name="posttime" value="00:00:00"
+             maxlength="8" size="8"> </font></p>
+</td>
+    </tr>
+</form>
+</table>
+<br>
+<a href='/data/VDOT.htm' target=_new><font size="4" style='color:blue'><b>VDOT에 의한 대회 기록 예측 및 훈련 강도(Jack Daniels)</b></font></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="561">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" valign="top" colspan="2">
+<p align="left"><font size="4"><b>속도에 대한 예상기록 보기<br>&nbsp;</b></font>                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">            <p align="left">&nbsp;                                    </td>
+                                    <td width="561">
+<form name="total" method="post">
+<table border cellpadding="5" cellspacing="0" width="100%" bordercolor="#CCCCCC" bordercolordark="white" bordercolorlight="#CCCCCC">
+    <tr>
+        <td align="center" bgcolor="#D8EDFF">            <p><font size="2">1Km를 <input type="text" name="min" value="0" maxlength="2"
+             size="4">분 <input type="text" name="sec" value="0" maxlength="2"
+             size="4">초에 뛰는 속도로 <select name="d2">
+            <option value="5000">5000m (5k)</option>
+            <option value="10000">10,000m (10k)</option>
+            <option value="15000">15,000m (15k)</option>
+            <option value="20000">20,000m (20k)</option>
+            <option value="21097.5">하프 (21.0975k)</option>
+            <option value="25000">25,000m (25k)</option>
+            <option value="30000">30,000m (30k)</option>
+            <option value="35000">35,000m (35k)</option>
+            <option value="40000">40,000m (40k)</option>
+            <option selected value="42195">풀코스 (42.195k)</option></select>
+            를 뛰면 걸리는<br><br><input type="button" value="예상기록을 계산하면"
+             onclick="totalcalc(this.form)"> &nbsp;결과는 <input type="text" name="totaltime" value="00:00:00"
+             maxlength="8" size="8"> </font></p>
+</td>
+    </tr>
+</table>
+</form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="561">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" valign="top" colspan="2">
+<p align="left"><font size="4"><b>동일 속도에서의 거리/시간 계산<br>&nbsp;</b></font>                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">            <p align="left">&nbsp;                                    </td>
+                                    <td width="561">
+<form name="equalspeed" method="post">
+	<table border cellpadding="5" cellspacing="0" width="100%" bordercolor="#CCCCCC" bordercolordark="white" bordercolorlight="#CCCCCC">
+	<tr>
+	<td bgcolor="#D8EDFF">
+
+		<font size="2"><input type="text" name="dist1" value="0" maxlength="8" size=5>미터를
+		<input type="text" name="time1" value="0:0:0" maxlength="8" size=8>로 달리는 속도는
+아래 거리,시간 중 하나를 입력하고
+<br>
+            	<input type="button" value="여기를 누르면" onclick="equalspeedcalc(this.form)">
+
+		<input type="text" name="dist2" value="0" maxlength="8" size=5>미터를
+		<input type="text" name="time2" value="0:0:0" maxlength="8" size=8> 로 달리는 속도와 같다.</font>	</td>
+	</tr>
+	</table>
+</form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="561">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" colspan="2">
+<p align="left"><font size="4"><b>경과 시간 계산<br>&nbsp;</b></font>                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="33" valign="top">            <p align="left">&nbsp;                                    </td>
+                                    <td width="561">
+<form name="total" method="post">
+	<table border cellpadding="5" cellspacing="0" width="100%" bordercolor="#CCCCCC" bordercolordark="white" bordercolorlight="#CCCCCC">
+	<tr>
+	<td bgcolor="#D8EDFF">
+
+		<font size="2"><input type="text" name="timeend" value="0:0:0" maxlength="8" size=10> 에서
+		<input type="text" name="timebegin" value="0:0:0" maxlength="8" size=10> 를
+                                                                    	<input type="button" value="빼면" onclick="lapcalc(this.form)"> &nbsp;</font>		<input type="text" name="laptime" value="0" maxlength="8" size=10>
+			</td>
+	</tr>
+	</table>
+</form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="596" colspan="2">            <p align="center">&nbsp;                                    </td>
+                                </tr>
+                            </table>
+                            <div align="right">
+                                <p>&nbsp;</p>
+                            </div>
+                        </td>
+                        <td width="0" height="137" align="left" valign="top">
+<?
+	include "quickmenu.txt";
+?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="990" colspan="3" bgcolor="#E7E3E7">
+<?
+	include "copyright.txt";
+?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
