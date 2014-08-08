@@ -1,0 +1,378 @@
+<?
+   include "index_head_PHP.txt";
+?>
+<?
+	include "main_top.txt";
+?>
+<table border="0" cellpadding="0" cellspacing="0" width="950">
+    <tr>
+        <td width="950" valign="top">
+            <div align="left">
+                <table border="0" cellpadding="0" cellspacing="0" width="950" align="center">
+                    <tr>
+                        <td width="300" bgcolor="white"  valign="top" height="137">
+<?
+	include "menu_intro3.txt";
+?>
+                        </td>
+                        <td  height="650" valign="top" background="img/main_bg.gif">
+                            <table border="0" cellpadding="0" width="650" align="center">
+                                <tr>
+                                    <td width="650" height="33">
+                                        <p style="line-height:150%; margin-top:0; margin-bottom:0;" align="right">
+                                        현재위치 : <a href="index.htm"><font color=blue>HOME</font></a>
+                                        &gt; 훈련강도</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="650">            <p><CENTER><img src="img/intro3_01.gif" width="600" height="100" border="0"></CENTER></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="650">            <p align="left"><font size="4"><b>훈련 강도 계산</b></font>&nbsp;<br>&nbsp;                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="650">            <table border="0">
+    <tr>
+        <td width="650">
+<script language="JavaScript">
+<!-- hide from old browsers
+function training(form)
+{
+	if (form.minute.value<27 || form.minute.value>60 || form.minute.value==60 && form.second.value>0){
+		alert("27분 ~ 60분 사이 시간을 입력 바랍니다.");
+		return;
+	}
+	if (form.second.value==null||form.second.value.length==0){
+		form.second.value=0;
+	}
+
+	var mins = 0.0 + form.minute.value + form.second.value/60;
+	var secs = 0.0;
+	var time, seltype = "";
+
+	for(var i=0;i < form.type.length;i++){
+		if(form.type[i].checked == true){
+//alert(form.type[i].value);
+			seltype = form.type[i].value;
+		}
+	}
+
+	if(seltype.length == 0){
+		alert("훈련성격을 지정하십시오.");
+		return;
+	}
+
+	if (mins != 0){
+/*
+		var distance = form.dist.options[form.dist.selectedIndex].value
+		var secperkilo = secs/distance;
+		var time5k = Math.ceil(secperkilo * 5);
+		form.time5k.value= maketimestring(time5k);
+
+		var time1k = Math.ceil(secperkilo);
+		form.time1k.value= maketimestring(time1k);
+
+		var inttime = "";
+		for(var d = 5; d < distance; d += 5){
+			time5k = Math.ceil(secperkilo * d);
+			inttime += maketimestring(time5k) + " ";
+		}
+		time5k = Math.ceil(secperkilo * distance);
+		inttime += maketimestring(time5k);
+		form.intervaltimes.value= inttime;
+*/
+
+/* 수식 :
+최대산소섭취량 : 9.52+4.25*(분/10km)
+젓산역치 : 14.7+6.02*(분/10Km)
+러닝이코노미 : 24.5+7.31*(분/10Km)
+*/
+
+		var min = 0, sec = 0;
+		min = form.minute.value;
+		sec = form.second.value / 60;
+
+		if(seltype == "interval"){
+			secs = 9.52 + 4.25 * min + 4.25 * form.second.value / 60;
+			form.dist1600.value = makeminsecstring(Math.round(secs * 2));
+			form.dist800.value = makeminsecstring(Math.round(secs));
+			form.dist1000.value = makeminsecstring(Math.round(secs * 1.25));
+		}else if(seltype == "temporun"){
+			secs = 14.7 + 6.02 * min + 6.02 * form.second.value / 60;
+			form.dist1600.value = makeminsecstring(Math.round(secs * 1.6));
+			form.dist800.value = makeminsecstring(Math.round(secs * 0.8));
+			form.dist1000.value = makeminsecstring(Math.round(secs));
+		}else if(seltype == "lsd"){
+			secs = 24.5 + 7.31 * min + 7.31 * form.second.value / 60;
+			form.dist1600.value = makeminsecstring(Math.round(secs * 1.6));
+			form.dist800.value = makeminsecstring(Math.round(secs * 0.8));
+			form.dist1000.value = makeminsecstring(Math.round(secs));
+		}
+	}
+	return;
+}
+
+function makeminsecstring(timesec)
+{
+	var timestr;
+	var min = timesec % 3600;
+	var hour = (timesec - min) / 3600;
+	var sec = Math.ceil(min % 60);
+	min = (min - sec) / 60
+
+	timestr = "" + min + ":";
+	if(sec < 10) timestr += "0";
+	timestr += sec;
+	return timestr;
+}
+
+function maketimestring2(hour, min, sec)
+{
+	var time;
+	time = "" + hour + ":";
+	if(min < 10) time += "0";
+	time += min + ":";
+	if(sec < 10) time += "0";
+	time += sec;
+	return time;
+}
+
+function maketimestring(timesec)
+{
+	var timestr;
+	var min = timesec % 3600;
+	var hour = (timesec - min) / 3600;
+	var sec = Math.ceil(min % 60);
+	min = (min - sec) / 60
+
+	timestr = "" + hour + ":";
+	if(min < 10) timestr += "0";
+	timestr += min + ":";
+	if(sec < 10) timestr += "0";
+	timestr += sec;
+	return timestr;
+}
+function estcalc(form)
+{
+	if (form.hour.value==null||form.hour.value.length==0){
+		form.hour.value="0";
+	}
+	if (form.min.value==null||form.min.value.length==0){
+		form.min.value="0";
+	}
+	if (form.sec.value==null||form.sec.value.length==0){
+		form.sec.value="0";
+	}
+
+	var d1 = form.d1.options[form.d1.selectedIndex].value
+	var d2 = form.d2.options[form.d2.selectedIndex].value
+	var presecs = (form.hour.value*3600) + (form.min.value*60) + form.sec.value/1;
+
+	// T2 = T1 x (D2/D1)<sup>1.07</sup>
+	var postsecs = Math.floor(presecs * Math.pow(d2 / d1, 1.07));
+	if (postsecs != 0){
+		form.posttime.value = maketimestring(postsecs);
+	}
+	return;
+}
+
+function totalcalc(form)
+{
+	if (form.min.value==null||form.min.value.length==0){
+		form.min.value="0";
+	}
+	if (form.sec.value==null||form.sec.value.length==0){
+		form.sec.value="0";
+	}
+
+	var d2 = form.d2.options[form.d2.selectedIndex].value
+	var presecs = (form.min.value*60) + form.sec.value/1;
+
+	var postsecs = Math.round(presecs * d2 / 1000);
+	if (postsecs != 0){
+		form.totaltime.value = maketimestring(postsecs);
+	}
+	return;
+}
+
+var ghour,gmin,gsec;
+function timedivide(val)
+{
+	idx1 = val.indexOf(":");
+	if(idx1 < 0){
+		alert("시간 입력 오류(예: 1:02:03)");
+		return -1;
+	}
+	idx2 = val.indexOf(":", idx1+1);
+	if(idx2 < 0){
+		alert("시간 입력 오류(예: 1:02:03)");
+		return -1;
+	}
+	ghour=val.substring(0,idx1);
+	gmin=val.substring(idx1+1, idx2);
+	gsec=val.substring(idx2+1);
+}
+function lapcalc(form)
+{
+	if(timedivide(form.timeend.value) < 0){
+		form.timeexp.focus();
+		return;
+	}
+	var allsec =  3600 * ghour + 60 * gmin + gsec / 1;
+	if(timedivide(form.timebegin.value) < 0){
+		form.timebegin.focus();
+		return;
+	}
+	var allsec2 =  3600 * ghour + 60 * gmin + gsec / 1;
+
+	var diffsec = allsec - allsec2;
+	var minusstr = "";
+	if(diffsec < 0){
+		minusstr = "-";
+		diffsec = -diffsec;
+	}
+	form.laptime.value = minusstr + maketimestring(diffsec);
+	return;
+}
+
+function equalspeedcalc(form)
+{
+	var allsec,allsec2;
+
+	if(form.dist1.value == "" || form.dist1.value == "0"){
+		alert("미터 수 입력");
+		form.dist1.focus();
+		return;
+	}
+	if(form.time1.value == "" || form.time1.value == "0:0:0"){
+		alert("시간(예: 1:02:03) 입력");
+		form.time1.focus();
+		return;
+	}
+	if(timedivide(form.time1.value) < 0){
+		form.time1.focus();
+		return;
+	}
+	allsec =  3600 * ghour + 60 * gmin + gsec / 1;
+	if(form.dist2.value == "" || form.dist2.value == "0"){
+		if(timedivide(form.time2.value) < 0){
+			form.time2.focus();
+			return;
+		}
+		allsec2 =  3600 * ghour + 60 * gmin + gsec/1;
+		if(allsec2 == 0){
+			alert("시간(예: 1:02:03) 입력");
+			form.time2.focus();
+			return;
+		}
+		form.dist2.value = form.dist1.value * allsec2 / allsec;
+	}else if(form.time2.value == "" || form.time2.value == "0"
+		|| form.time2.value == "0:0:0"){
+		allsec2 =  Math.ceil(allsec * form.dist2.value / form.dist1.value);
+
+// alert("allsec="+allsec + " allsec2="+allsec2);
+		form.time2.value = maketimestring(allsec2);
+	}else{
+		alert("결과의 시간이나 속도 중 하나를 지우시오.");
+		return;
+	}
+
+	return;
+}
+
+
+<!-- done hiding from old browsers -->
+</script>
+        <div align="center">
+        <table border cellpadding="5" cellspacing="0" width="600" bordercolor="#CCCCCC" bordercolordark="white" bordercolorlight="#CCCCCC">
+                <tr>
+                    <form name="pace" method="post">
+                    <td align="center" bgcolor="#D8EDFF">
+		            10Km 기록<br>
+                    <input type="text" name="minute" value=0 maxlength="2" size="4">분
+                    &nbsp;&nbsp;
+                    <input type="text" name="second" value=0 maxlength="2" size="4">초
+		    	    </td>
+			        <td align="center" bgcolor="#D8EDFF"><p>훈련성격<br>
+                        <table>
+                        <tr><td><input type="radio" name="type" value="lsd">LSD</td>
+                                                                        </tr>
+
+                        <tr><td><input type="radio" name="type" value="temporun">Tempo Run</td>
+                                                                        </tr>
+
+                        <tr><td><input type="radio" name="type" value="interval">Interval</td>
+                                                                        </tr>
+
+                        </table>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="center" colspan="2" bgcolor="#D8EDFF" width="570"><p><font size="2"><input type="button" value="계산하기" onclick="training(this.form);"></font></td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#D8EDFF">
+                    <p><font size="2">적정 훈련 강도</font>
+                    </td>
+                    <td align="center" bgcolor="#D8EDFF">
+                    <p>
+                        <table>
+                        <tr><td><input type="text" name="dist1600" size="9">/1.6Km(마일)</td>
+                                                                        </tr>
+
+                    	<tr><td><input type="text" name="dist800" size="9">/800m</td>
+                                                                        </tr>
+
+                    	<tr><td><input type="text" name="dist1000" size="9">/1Km</td>
+                                                                        </tr>
+
+                    	</table>
+                    </font>
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan=2 height="86">
+                	주1) 자신이 바라는 10km 페이스가 아니라 현재의 운동능력에 적절한 페이스로 훈련해야 함<br><br>주2) 위 계산은 앰비 버풋의 '이것이 진짜 마라톤이다' 238~239쪽의 표에 있는 자료를 기초로 만든 수식을 이용한 결과임</td>
+
+                </tr>
+
+            </table></div>
+                                                    <p>&nbsp;</p>
+</td>
+    </tr>
+                                <tr>
+                                    <td width="660">            <p align="left"><a href='/data/VDOT.htm' target=_new><font size="4" style='color:blue'><b>VDOT에 의한 대회 기록 예측 및 훈련 강도(Jack Daniels)</b></font></a>&nbsp;<br>&nbsp;                                    </td>
+                                </tr>
+</table>
+<p align="center">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div align="right">
+                                <p>&nbsp;</p>
+                            </div>
+                        </td>
+                        <td width="0" height="137" align="left" valign="top">
+<?
+	include "quickmenu.txt";
+?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="990" colspan="3" bgcolor="#E7E3E7">
+<?
+	include "copyright.txt";
+?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
