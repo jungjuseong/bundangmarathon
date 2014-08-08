@@ -34,6 +34,13 @@ SmartEditor2Skin.html : 에디터를 적용한 페이지에서 로드하는 에�
 src_include.txt : 자바스크립트 플러그인 소스를 직접 수정하고자 할 경우 참고할 수 있는 파일
 
 ===================================================================================
+자바스크립트 소스를 직접 수정하고자 할 경우는 SmartEditor2Skin.html 소스를 아래의 과정으로 수정한 후 자바스크립트 소스를 수정합니다.
+
+1) SmartEditor2Skin.html 소스에서 아래의 부분을 삭제합니다.
+<script src='js/smarteditor2.min.js' charset='utf-8'></script>
+
+2) 다음의 라인을 복사하여 붙여넣습니다.
+<script src='js/smarteditor2.js' charset='utf-8'></script>
 
 사용 중 불편한 점이 있거나 버그를 발견하는 경우 SmartEdtitor™ 프로젝트의 이슈에 올려 주세요~~~
 http://dev.naver.com/projects/smarteditor/issue
