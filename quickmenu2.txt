@@ -1,0 +1,79 @@
+<script language="javascript">
+
+	var isDOM = (document.getElementById ? true : false);
+	var isIE4 = ((document.all && !isDOM) ? true : false);
+	var isNS4 = (document.layers ? true : false);
+
+	function getRef(id)
+	{
+		if (isDOM) return document.getElementById(id);
+		if (isIE4) return document.all[id];
+		if (isNS4) return document.layers[id];
+	}
+
+	var isNS = navigator.appName == "Netscape";
+
+	function moveRightEdge()
+	{
+		var yMenuFrom, yMenuTo, yOffset, timeoutNextCheck;
+		if (isNS4)
+		{
+			yMenuFrom   = Probal_Layer.top;
+			yMenuTo     = windows.pageYOffset + 29;   // 위쪽 위치
+		}
+		else if (isDOM)
+		{
+			yMenuFrom   = parseInt (Probal_Layer.style.top, 10);
+			yMenuTo     = (isNS ? window.pageYOffset : document.body.scrollTop) + 430; // 위쪽 위치
+		}
+
+		timeoutNextCheck = 500;
+
+		if (yMenuFrom != yMenuTo)
+		{
+			yOffset = Math.ceil(Math.abs(yMenuTo - yMenuFrom) / 20);
+			if (yMenuTo < yMenuFrom)
+				yOffset = -yOffset;
+			if (isNS4)
+				Probal_Layer.top += yOffset;
+			else if (isDOM)
+				Probal_Layer.style.top = parseInt (Probal_Layer.style.top, 10) + yOffset;
+				timeoutNextCheck = 10;
+		}
+		setTimeout ("moveRightEdge()", timeoutNextCheck);
+	}
+</script>
+<div id="Probal_Layer" style="position:absolute; align:center; margin:auto; top:450px; width:80px; height:220px; z-index:1; visibility: visible;left:expression( 990 + (document.body.clientWidth-1000)/2 );">
+  <table width="115" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="/img/ddvv.jpg" border="0" usemap="#Map"></td>
+    </tr>
+  </table>
+</div>
+
+<script language="javascript">
+	if (isNS4)
+	{
+		var Probal_Layer = document["Probal_Layer"];
+		Probal_Layer.top = top.pageYOffset + 120;
+		Probal_Layer.visibility = "visible";
+		moveRightEdge();
+
+	}
+	else if (isDOM)
+	{
+		var Probal_Layer = getRef('Probal_Layer');
+		Probal_Layer.style.top = (isNS ? window.pageYOffset : document.body.scrollTop) + 120;
+		Probal_Layer.style.visibility = "visible";
+		moveRightEdge();
+	}
+</script>
+<map name="Map">
+<area shape="rect" coords="15, 30, 83, 60" href="http://www.bundangmarathon.com/intro1_01.htm">
+<area shape="rect" coords="13, 68, 85, 94" href="http://www.bundangmarathon.com/member/prog/mempub1.php?mode=mempub-photo">
+<area shape="rect" coords="11, 98, 87, 129" href="http://www.bundangmarathon.com/bbs/zboard.php?id=training_plan">
+<area shape="rect" coords="11, 134, 87, 165" href="http://www.bundangmarathon.com/bbs/zboard.php?id=memboard">
+<area shape="rect" coords="11, 168, 85, 208" href="http://www.bundangmarathon.com/bbs/zboard.php?id=pubboard">
+<area shape="rect" coords="10, 219, 89, 261" href="http://www.bundangmarathon.com/bbs/zboard.php?id=photo">
+</map>
+

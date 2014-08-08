@@ -1,0 +1,93 @@
+@CHARSET "euc-kr";
+
+/******* GENERAL RESET *******/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border:0pt none;
+    font-family:inherit;
+    font-size: 100%;
+    font-style:inherit;
+    font-weight:inherit;
+    margin:0px;
+    padding:0px;
+}
+
+body{padding:0 10px}
+
+p,div {font-family:"³ª´®°íµñ"; font-size:9.5pt; line-height:16px; }
+td {font-family:"³ª´®°íµñ"; font-size:9.5pt; line-height:16px; }
+a:link     	{color:#333333;text-decoration:none}
+a:visited  	{color:#666666;text-decoration:none}
+a:active 	{color:#666666;text-decoration:none}
+A:hover 	{color:#666666;text-decoration:none}
+a.bmc:link { color:#0000ff; text-decoration: none; }
+a.bmc:visited {color:#0000ff; text-decoration: none; }
+a.bmc:active { color:#0000ff; text-decoration: none; }
+a.bmc:hover { color:#00ff00; text-decoration: none; }
+
+.bmc_message {line-height:150%; margin-top:0; margin-bottom:0; align:justify;}
+
+.club_logo{
+	width:950px;
+	margin-bottom:3px;
+}
+
+#main_body {
+	overflow:hidden;
+	position:relative;
+	width: 950px;
+}
+
+.wrap {
+	overflow:hidden;
+	width:950px;
+}
+
+.content_foot {
+	width: 890;
+}
+
+#main_foot {
+	width: 980;
+	position:absolute;
+	top:990px;
+	background:#ffffff;
+}
+
+.first_column {
+	_display:inline;
+	overflow:hidden;
+	float:left;
+	width:207px;
+	margin-right:10px;
+}
+
+.second_column {
+	_display:inline;
+	float:left;
+	width:482px;
+	margin-right:2px;
+}
+
+.third_column {
+	_display:inline;
+	float:left;
+	width:249px;
+}
+
+.second_wide_column {
+	_display:inline;
+	float:left;
+	width:733px;
+	overflow:hidden;
+}
+
+/* banner */
+.boxSep { background-color:#f7f7f7; border:1px solid #ddd; margin:2px; float:left; }
+.ad{width:181px;_width:207px;margin:0 0 8px;padding:10px;border:3px solid #ccc;background:#fff;color:#333;line-height: 20px;}
+.ad_title{margin: 0 0 7px;font-size: 16px;font-weight:bold;color:#2e4b9c;}
+.ad_tit_small{font-size:13px;color:#c00}
+.ad_cnt{font-size:13px;line-height:16px}
+.ad_cnt table{font-size:12px;line-height:16px}
+.ad_cnt table th{font-weight:bold;text-align:left;letter-spacing:1px;word-spacing:-1px;white-space:nowrap}
+.ad_cnt table span{color:#999}
+.ad_cnt table b{color:#090;font-weight:bold}

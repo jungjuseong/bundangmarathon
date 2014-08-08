@@ -1,0 +1,6 @@
+total 144
+drwxr-xr-x  2 coretek coretek 131072 Apr 16 17:04 .
+drwxr-x---  4 coretek coretek   4096 Apr 14 14:24 ..
+-rw-r--r--  1 coretek coretek    178 Apr 13 16:08 a.bat
+-rw-r--r--  1 coretek coretek      0 Apr 16 17:04 testls
+-rw-r--r--  1 coretek coretek    706 Jan  7 17:47 tolower

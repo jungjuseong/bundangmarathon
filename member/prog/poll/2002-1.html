@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+<TITLE> 총회 안건 투표 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2003 총회 안건 투표(1차)</H2>
+<hr color=red width="90%">
+<P>
+<font color=red>투표는 한번만 가능하므로 신중히 처리하시기 바랍니다.
+<p>
+<font color=red>임원 선출 투표는 본 회칙 개정안 투표 후에 실시됩니다.</font>
+<p>
+<font size="+2" color=blue>회칙 개정건</font>
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=2002-1.php>
+<input type=hidden name="pollid" value="2002-1">
+<tr>
+<td>
+1. 클럽 명칭 변경에 관한 건
+<td>
+<input type="radio" name="rule0" value="Y" >1안 : 분당검푸마라톤크럽
+<br><input type="radio" name="rule0" value="N">2안 : 분당탄천검푸마라톤클럽(현행)
+<tr>
+<td>
+2. 임원의 임기 변경에 관한 건
+<td>
+<input type="radio" name="rule1" value="Y" >1안 : 선출직 임원의 임기는 2년으로하되 1회에 한해서 연임할 수 있다<br>
+<input type="radio" name="rule1" value="N">2안 : 임원의 임기는 1년으로 연임할 수 있다(현행)
+<tr>
+<td>
+3. 회원 의무사항 추가 : 클럽 주최 마라톤대회 운영 의무 봉사 <br>
+- 회칙 제6조[회원의 권리와 의무]에<br>"회원은 본 클럽에서 주최하는 마라톤대회에 특별한<br>사정이 없는 한 대회 운영에 봉사하여야 한다" 추가 여부 
+<td>
+<input type="radio" name="rule2" value="Y" >1안 : 추가 
+<br><input type="radio" name="rule2" value="N">2안 : 추가 반대(현행) 
+<tr>
+<td>
+4. 임원 피선거 자격 요건 개정에 관한 건
+<td>
+<input type="radio" name="rule3" value="Y" >1안 : 정회원 3년차부터 임원 피선거권을 가짐
+<br><input type="radio" name="rule3" value="N">2안 : 정회원은 임원 피선거권을 가짐(현행)
+</TABLE>
+<P>
+
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+/*
+    {
+	alert("투표 기간 경과로 투표할 수 없습니다.");
+	return false;
+    }
+*/
+
+   if (chk_checked(form.rule0) == false) {
+	alert("1번 안건에 투표하십시오.");
+	return false;
+    }
+   if (chk_checked(form.rule1) == false) {
+	alert("2번 안건에 투표하십시오.");
+	return false;
+    }
+   if (chk_checked(form.rule2) == false) {
+	alert("3번 안건에 투표하십시오.");
+	return false;
+    }
+   if (chk_checked(form.rule3) == false) {
+	alert("4번 안건에 투표하십시오.");
+	return false;
+    }
+
+/*
+    if(form.mem0.options[form.mem0.selectedIndex].value == '선택' ||
+    form.mem1.options[form.mem1.selectedIndex].value == '선택' ||
+    form.mem2.options[form.mem2.selectedIndex].value == '선택' ||
+    form.mem3.options[form.mem3.selectedIndex].value == '선택' ||
+    form.mem4.options[form.mem4.selectedIndex].value == '선택' ){
+	alert("'선택'을 회원이름으로 바꾸십시오.");
+	return false;
+    }
+*/
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+</SCRIPT>
+<input type=submit value="위 지정 사항을 다시 한번 확인 후 여기를 눌러 주십시오." onClick="javascript:return(chk_data(this.form))">
+</form>
+<p align=center>
+<a href="2002-1.php?pollid=2002-1">결과 보기</a>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="/images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 탄천검푸마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

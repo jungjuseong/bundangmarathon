@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 2013 중앙마라톤대회 빅매치 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2013 중앙마라톤대회 빅매치</H2>
+<hr color=red width="90%">
+<p> 베팅은 한번만 가능하므로 신중히 하시기 바랍니다. </p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='2013joongangmatch'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date('Y.m.d H:m:s')." 현재 $row[0] 명이 투표했습니다.</font>";
+?>
+<br> (11월2일 밤 12시에 모두 마감합니다) 
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2013joongangmatch.php>
+<input type=hidden name="pollid" value="2013joongangmatch">
+
+<tr>
+<td> 제 1 경기 - 서상철 vs. 신남철 <td>
+<input type="radio" name="rule0" value="서상철  ">서상철
+<input type="radio" name="rule0" value="신남철  ">신남철
+</td> </td> </tr>
+<tr>
+<td> 제 2 경기 - 우인종 vs. 정재욱 <td>
+<input type="radio" name="rule1" value="우인종  ">우인종
+<input type="radio" name="rule1" value="정재축  ">정재욱
+</td> </td> </tr>
+<tr>
+<td> 제 3 경기 - 김미영 vs. 고서윤 <td>
+<input type="radio" name="rule2" value="김미영  ">김미영
+<input type="radio" name="rule2" value="고서윤  ">고서윤
+</td> </td> </tr>
+<tr>
+<td> 제 4 경기 - 정주성 vs. 김영진 <td>
+<input type="radio" name="rule3" value="정주성  ">정주성
+<input type="radio" name="rule3" value="김영진  ">김영진
+</td> </td> </tr>
+<tr>
+<td> 제 5 경기 - 나광섭 vs. 전제원 <td>
+<input type="radio" name="rule4" value="나광섭  ">나광섭
+<input type="radio" name="rule4" value="전제원  ">전제원
+</td> </td> </tr>
+<tr>
+<td> 제 6 경기 - 나기남 vs. 양희왕 <td>
+<input type="radio" name="rule5" value="나기남  ">나기남
+<input type="radio" name="rule5" value="양희왕  ">양희왕
+</td> </td> </tr>
+<tr>
+<td> 제 7 경기 - 송재혁 vs. 김성현 <td>
+<input type="radio" name="rule6" value="송재혁  ">송재혁
+<input type="radio" name="rule6" value="김성현  ">김성현
+</td> </td> </tr>
+<tr>
+<td> 제 8 경기 - 박삼연 vs. 박종완 <td>
+<input type="radio" name="rule7" value="박삼연  ">박삼연
+<input type="radio" name="rule7" value="박종완  ">박종완
+</td> </td> </tr>
+<tr>
+<td> 제 9 경기 - 박용식 vs. 이점우 vs. 김정중 <td>
+<input type="radio" name="rule8" value="박용식  ">박용식
+<input type="radio" name="rule8" value="이점우  ">이점우
+<input type="radio" name="rule8" value="김정중  ">김정중
+</td> </td> </tr>
+<tr>
+<td> 제 10 경기 - 유성복 vs. 김영철 <td>
+<input type="radio" name="rule9" value="유성복  ">유성복
+<input type="radio" name="rule9" value="김영철  ">김영철
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center>
+<input type=submit value="베팅 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("매치1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("매치2를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("매치3를 정하십시오.");
+		return false;
+	}
+    if (chk_checked(form.rule3) == false) {
+		alert("매치4를 정하십시오.");
+		return false;
+	}
+    if (chk_checked(form.rule4) == false) {
+		alert("매치5를 정하십시오.");
+		return false;
+	}
+    if (chk_checked(form.rule5) == false) {
+		alert("매치6를 정하십시오.");
+		return false;
+	}
+    if (chk_checked(form.rule6) == false) {
+		alert("매치7를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule7) == false) {
+		alert("매치8를 정하십시오.");
+		return false;
+	}
+    if (chk_checked(form.rule8) == false) {
+		alert("매치9를 정하십시오.");
+		return false;
+	}
+    if (chk_checked(form.rule9) == false) {
+		alert("매치10를 정하십시오.");
+		return false;
+	}
+	
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

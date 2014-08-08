@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<meta http-equiv=Content-Type content=text/html; charset=EUC-KR>
+<TITLE> 2006 동아마라톤 대회 빅매치 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2006 동아마라톤 대회 빅매치</H2>
+<hr color=red width="90%">
+<P>
+베팅은 한번만 가능하므로 신중히 하시기 바랍니다.
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2006dongamatch.php>
+<input type=hidden name="pollid" value="2006dongabet">
+<tr>
+<td>
+<!--
+제  1 경기 김경아 vs 김매자
+제  2 경기 유성복 vs 이희원
+제  3 경기 나광섭 vs 김영헌
+제  4 경기 박하명 vs 이경규
+제  5 경기 김철영 vs 이경태
+제  6 경기 이홍석 vs 안경근
+제  7 경기 강선영 vs 박홍균
+제  8 경기 정주성 vs 윤재경
+제  9 경기 김도연 vs 김영근
+제 10 경기 정관택 vs 황규철
+-->
+
+1. 김경아님 대 김매자님
+<td>
+<input type="radio" name="rule0" value="김경아님勝">김경아님 勝
+<br><input type="radio" name="rule0" value="김매자님勝">김매자님 勝
+<tr>
+<td>
+2. 유성복님 대 이희원님 
+<td>
+<input type="radio" name="rule1" value="유성복님勝">유성복님 勝
+<br><input type="radio" name="rule1" value="이희원님勝">이희원님 勝
+<tr>
+<td>
+3. 나광섭님(+10분) 대 김영헌A님 
+<td>
+<input type="radio" name="rule2" value="나광섭님勝">나광섭님 勝
+<br><input type="radio" name="rule2" value="김영헌A勝">김영헌A님 勝
+<tr>
+<td>
+4. 박하명님 대 이경규님(+5분) 
+<td>
+<input type="radio" name="rule3" value="박하명님勝">박하명님 勝
+<br><input type="radio" name="rule3" value="이경규님勝">이경규님 勝
+<tr>
+<td>
+5. 김철영님 대 이경태님 
+<td>
+<input type="radio" name="rule4" value="김철영님勝">김철영님 勝
+<br><input type="radio" name="rule4" value="이경태님勝">이경태님 勝
+<tr>
+<td>
+6. 이홍석님 대 안경근님 
+<td>
+<input type="radio" name="rule5" value="이홍석님勝">이홍석님 勝
+<br><input type="radio" name="rule5" value="안경근님勝">안경근님 勝
+<tr>
+<td>
+7. 강선영님 대 박홍균님 
+<td>
+<input type="radio" name="rule6" value="강선영님勝">강선영님 勝
+<br><input type="radio" name="rule6" value="박홍균님勝">박홍균님 勝
+<tr>
+<td>
+8. 정주성님 대 윤재경님 
+<td>
+<input type="radio" name="rule7" value="정주성님勝">정주성님 勝
+<br><input type="radio" name="rule7" value="윤재경님勝">윤재경님 勝
+<tr>
+<td>
+9. 김도연님 대 김영근님 
+<td>
+<input type="radio" name="rule8" value="김도연님勝">김도연님 勝
+<br><input type="radio" name="rule8" value="김영근님勝">김영근님 勝
+<tr>
+<td>
+10. 정관택님 대 황규철님(+8분) 
+<td>
+<input type="radio" name="rule9" value="정관택님勝">정관택님 勝
+<br><input type="radio" name="rule9" value="황규철님勝">황규철님 勝
+
+
+<tr>
+<td colspan=2 align=center>
+<?
+if(date("Ymd") < "20060312"){
+	echo "<input type=submit value=\"베팅 저장\" onClick=\"javascript:return(chk_data(this.form))\">";
+}else{
+	echo "<a href='2006dongamatch.php?pollid=2006dongabet'>결과 보기</a>";
+}
+?>
+</form>
+<tr>
+<td colspan=2>
+* 회원별 베팅 결과가 저장되어 있습니다.
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+	if (chk_checked(form.rule0) == false) {
+		alert("매치1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("매치2를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("매치3을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule3) == false) {
+		alert("매치4를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule4) == false) {
+		alert("매치5를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule5) == false) {
+		alert("매치6을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule6) == false) {
+		alert("매치7을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule7) == false) {
+		alert("매치8을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule8) == false) {
+		alert("매치9를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule9) == false) {
+		alert("매치10을 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

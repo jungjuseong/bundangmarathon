@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Demo::jQuery Quake Image Slider Plugin</title>
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+    <link href="css/quake.slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/quake.slider-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.quake-slider').quake({ effects: ['swirlFadeIn', 'swirlFadeOut', 'swirlFadeIn', 'linearPealReverse', 'slideIn', 'swirlFadeIn', 'explodeFancy'],
+                thumbnails: true,
+                captionOpacity: '0.3',
+                captionsSetup: [
+                                 {
+                                     "orientation": "bottom",
+                                     "slides": [0, 1, 2],
+                                     "callback": captionAnimateCallback
+                                 },
+                                  {
+                                      "orientation": "top",
+                                      "slides": [3, 4],
+                                      "callback": captionAnimateCallback
+                                  }
+                                  ,
+                                  {
+                                      "orientation": "left",
+                                      "slides": [5, 6],
+                                      "callback": captionAnimationCallback1
+                                  }
+                                  ,
+                                  {
+                                      "orientation": "right",
+                                      "slides": [7, 8],
+                                      "callback": captionAnimationCallback1
+                                  }
+                                ]
+
+            });
+
+            function captionAnimateCallback(captionWrapper, captionContainer, orientation) {
+                captionWrapper.css({ left: '-990px' }).stop(true, true).animate({ left: 0 }, 500);
+                captionContainer.css({ left: '-990px' }).stop(true, true).animate({ left: 0 }, 500);
+            }
+            function captionAnimationCallback1(captionWrapper, captionContainer, orientation) {
+                captionWrapper.css({ top: '-330px' }).stop(true, true).animate({ top: 0 }, 500);
+                captionContainer.css({ top: '-330px' }).stop(true, true).animate({ top: 0 }, 500);
+            }
+        });
+    </script>
+  <style type="text/css">
+   .demobar
+   {
+       display:none!important;
+   }
+   </style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+var left = parseInt( $(document).width()) - parseInt( $('#demo-side-bar').outerWidth()) - 146;
+$('#demo-side-bar').css({'left': left +'px',display:'block'});
+
+});
+</script>
+	
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="jQuery Image Slider Plugin: Quake Image Slider" /></div>
+        <div class="quake-slider">
+            <div class="quake-slider-images">
+                <img src="http://bundangmarathon.com/bbs/data/photo/SDC13554.jpg" alt="" />
+                <img src="http://bundangmarathon.com/bbs/data2/photo/SDC13555.jpg" alt="" />
+                <img src="http://bundangmarathon.com/bbs/data2/photo/SDC13556.jpg" alt="" />
+                <a target="_blank" href="#"><img src="images/1.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/2.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/3.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/4.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/5.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/6.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/7.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/8.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/9.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/10.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/11.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/12.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/13.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/14.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/15.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/16.jpg" alt="" /></a>
+                <a target="_blank" href="#"><img src="images/17.jpg" alt="" /></a>
+            </div>
+            <div class="quake-slider-captions">
+                <div class="quake-slider-caption"> 달리기의 즒거움이 있는곳, <span class='quake-highlight'>
+                        분당마라톤클럽</span> 매주 일요일 아침7시 중앙공원 돌마각에서 만납니다</div>
+                <div class="quake-slider-caption"> BlueWhale Admin, <span class='quake-highlight'><a target="_blank" href="#">
+                        Premium HTML Admin Template.</a></span> Free Premium Admin Template.</div>
+                <div class="quake-slider-caption"> HTML Mini vCard, <span class='quake-highlight'><a target="_blank" href="#"> 
+                        Single Pgae Portfolio.</a></span> jQuery powered mini website.</div> 
+                <div class="quake-slider-caption"> 
+                    Gips, <span class='quake-highlight'><a target="_blank" href="#"> 
+                        Cool Tooltips.</a></span> jQuery Clean and Simple Tooltips Plugin.</div> 
+                <div class="quake-slider-caption"> 
+                    SearchMeme, <span class='quake-highlight'><a target="_blank" href="#"> Fancy Search Box.</a></span> jQuery Plugin for On Demand Search Box.</div> 
+                <div class="quake-slider-caption"> 
+                    jQSimpleMenu, <span class='quake-highlight'><a target="_blank" href="#"> 
+                        Hierarchical Menus.</a></span> Multi Level Hierarchical jQuery Menu.</div> 
+                <div class="quake-slider-caption"> 
+                    jQSlider, <span class='quake-highlight'><a target="_blank" href="#"> 
+                        Multi Node Slider.</a></span> Free Multi Node Range Data Slider.</div> 
+                <div class="quake-slider-caption"> 
+                    PwChecker, <span class='quake-highlight'><a target="_blank" href="#"> 
+                        Password Strength Plugin.</a></span> jQuery Strong Password Plugin.</div> 
+                <div class="quake-slider-caption"> 
+                    VScroller, <span class='quake-highlight'><a target="_blank" href="#"> 
+                        New Scroller.</a></span> XML Driven Vertical New Scroller Script Using HTML and jQuery.</div> 
+                <div class="quake-slider-caption"> 
+                    PushUp Slider, <span class='quake-highlight'><a target="_blank" href="#"> Cotent Slider.</a></span> jQuery Pushup Content Bar.</div> 
+                <div class="quake-slider-caption"> 
+                    SmartValidate, <span class='quake-highlight'><a target="_blank" href=""> Credit Card Validator.</a></span> jQuery Credit Card Validation Plugin.</div> 
+                <div class="quake-slider-caption"> 
+                    jsShare, <span class='quake-highlight'><a target="_blank" href="#"> Social Media Buttons.</a></span> jQuery Social Media Share Plugin.</div> 
+                <div class="quake-slider-caption"> 
+                    Carousel, <span class='quake-highlight'><a target="_blank" href="#"> Content Slider.</a></span> jQuery Content/Thumbnail Carousel Slider Plugin.</div>
+
+                <div class="quake-slider-caption"> 
+                    dNews, <span class='quake-highlight'><a target="_blank" href=""> News Slider.</a></span> RSS Driven Dynamic jQuery News Slider Plugin.</div>
+
+                <div class="quake-slider-caption"> 
+                    SmartPaginator, <span class='quake-highlight'><a target="_blank" href="#"> Pagination Plugin.</a></span> jQuery Pagination Plugin.</div>
+
+                <div class="quake-slider-caption"> 
+                    SmartSpin, <span class='quake-highlight'><a target="_blank" href=""> Spinner Control.</a></span> jQuery Spin Button Control Plugin.</div>
+
+                <div class="quake-slider-caption"> 
+                    Akordeon, <span class='quake-highlight'><a target="_blank" href="#"> Toggle Menus.</a></span> A Stylo Modern jQuery Accordion Plugin.</div>
+
+            </div> 
+        </div> 
+    </div>
+
+    <div class="clear"> 
+    </div>
+
+    <div class="wrapper">
+
+        <ul class="labels">
+
+            <li>Circular</li>
+
+            <li>Boxes</li>
+
+            <li class="last">Bars</li>
+
+        </ul>
+
+    </div>
+
+    <div class="clear">
+
+    </div>
+
+    <div class="wrapper"> 
+        <div class="item"> 
+            <a href="circular.htm"> <img src="http://www.egrappler.com/jquery-image-slider-quake-slider/images/effect-circular.jpg" width="250" height="200" /> </a> 
+        </div>
+
+        <div class="item"> 
+            <a href="boxes.htm"> <img src="http://www.egrappler.com/jquery-image-slider-quake-slider/images/effect-boxes.jpg" width="250" height="200" /></a> 
+        </div>
+
+        <div class="item"> 
+            <a href="bars.htm" class="last"> <img src="http://www.egrappler.com/jquery-image-slider-quake-slider/images/effect-bars.jpg" width="250" height="200" /></a> 
+        </div>
+
+    </div>
+
+    <div class="clear">
+
+    </div>
+
+    <div class="wrapper"> 
+        <ul class="labels"> 
+            <li>No Thumbnails</li> 
+            <li>Custom Captions</li> 
+            <li class="last">Random</li> 
+        </ul> 
+    </div>
+
+    <div class="clear">
+
+    </div>
+
+    <div class="wrapper"> 
+        <div class="item"> 
+            <a href="without-thumbs.htm"> 
+                <img src="http://www.egrappler.com/jquery-image-slider-quake-slider/images/nothumb.jpg" width="250" height="200" /></a></div> 
+        <div class="item"> 
+            <a href="custom-captions.htm"> 
+                <img src="http://www.egrappler.com/jquery-image-slider-quake-slider/images/custom-captions.jpg" width="250" height="200" /></a></div>
+
+        <div class="item"> 
+            <a href="without-next-prev.htm" class="last"> 
+                <img src="http://www.egrappler.com/jquery-image-slider-quake-slider/images/random.jpg" width="250" height="200" /></a></div> 
+    </div>
+
+	  <div id="demo-side-bar">
+
+     <!--Facebook Like Plugin-->
+
+<div style="margin-top:10px">
+
+<div data-href="http://www.facebook.com/pages/EGrappler/344326175587989" class="fb-like" data-send="true" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+
+<!--End Facebook Like Plugin-->
+
+		
+
+    </div>
+
+    <div style="margin-top:130px">
+
+   <div style="margin-top:10px">
+<div class="clear"></div>
+
+   </div>
+   </div>
+   <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var left = parseInt(jQuery(document).width()) - parseInt(jQuery('#demo-side-bar').outerWidth());
+            jQuery('#demo-side-bar').css({ 'left': left + 'px', display: 'block', top: '322px' });
+        });
+    </script>    
+    <!--wrapper end-->
+	<!--Dynamically creates analytics markup-->
+	<!-- <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21576262-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>-->
+   
+    <div id="demo-footer">
+    <div id="demo-footer-small">
+    <ul >
+    <li><a href="http://www.egrappler.com">Home</a> <span>&nbsp;</span></li> <li><a href="http://www.egrappler.com/jquery-image-content-slider-plugin-quake-slider">Back to Post</a></li>
+    </ul>
+    </div>
+    </div>
+    <div id="demo-footer-1">
+     <div id="demo-footer-large">
+    <ul >
+    <li><a href="http://www.egrappler.com/jquery-contentthumbnail-slder-v2-0-jscarousel-v2-0/" target="_blank">jQuery Carousel Plugin</a> <span>&nbsp;</span> </li>
+    <li><a href="http://www.egrappler.com/xml-driven-vertical-news-scroller-script-using-html-and-jquery-vscroller/" target="_blank">jQuery XML News Slider Plugin</a> <span>&nbsp;</span> </li>
+    <li><a href="http://www.egrappler.com/rss-driven-dynamic-jquery-news-slider-plugin-dynamic-news/" target="_blank">jQuery RSS News Slider Plugin</a> <span>&nbsp;</span> </li>
+    <li><a href="http://www.egrappler.com/jquery-credit-card-validation-plugin-smart-validate/" target="_blank">jQuery Credit Card Plugin</a> <span>&nbsp;</span> </li>
+
+    <li><a href="http://www.egrappler.com/jquery-pagination-plugin-smart-paginator/" target="_blank">jQuery Pagination Plugin</a> </li>
+
+    </ul>
+
+    </div>
+
+    </div>
+
+
+
+     <style type="text/css">
+
+    #demo-footer,#demo-footer-1
+
+    {
+
+        width:100%;
+
+        }
+
+    #demo-footer-small
+
+    {
+
+        margin:auto;
+
+        width:20%;
+
+        }
+
+        #demo-footer-large
+
+        {
+
+            margin:auto;
+
+            width:70%;
+
+            }
+
+       
+
+        #demo-footer ul,#demo-footer-1 ul
+
+        {
+
+            
+
+            padding:0;
+
+            list-style:none;           
+
+            }
+
+            #demo-footer ul li, #demo-footer-1 ul li
+
+            {
+
+                display:inline-block;
+
+                
+
+                }
+
+                #demo-footer ul li span, #demo-footer-1 ul li span
+
+                {
+
+                    display:inline-block;
+
+                    border-right:solid 1px black;
+
+                    margin-right:6px;
+
+                    font-size:10px;
+
+                    }
+
+    </style>
+
+</body>
+
+</html>
+

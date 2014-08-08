@@ -1,0 +1,58 @@
+ 
+
+<html>
+<head>
+<title>탄천검푸 회원용 기능</title>
+</head>
+
+<body  bgcolor='#E0FFE0' text='black' link='blue' vlink='purple' alink='red'>
+<center>
+<font size='+2'>회원 사진 슬라이드로 보기</font><hr color=red width='80%'>
+<br>
+회원님들의 얼굴과  이름을 익히기 위한 것입니다.<br>사진에 커서를 올리면 화면 아래에 이름이 나옵니다.
+<p align=center>
+<applet archive='mosaic.jar' code='mosaic.class' width=150 height=200>
+<param name=credits value='Applet by Fabio Ciucci (www.anfyteam.com)'>
+<param name=regcode value='NO'>
+<param name=regnewframe value='NO'>
+<param name=regframename value='_blank'>
+<param name=res value='1'>
+<param name=image1 value="../../photo/kimyb2.jpg">
+<param name=link1 value="NO">
+<param name=statusmsg1 value="1. 김영백(정회원,검푸번호:101)">
+<param name=image2 value="../../photo/ahngg2.jpg">
+<param name=link2 value="NO">
+<param name=statusmsg2 value="2. 안경근(정회원,검푸번호:102)">
+<param name=image3 value="../../photo/kimdy2.jpg">
+<param name=link3 value="NO">
+<param name=statusmsg3 value="3. 김도연(정회원,검푸번호:103)">
+<param name=image4 value="../../photo/kimyh2.jpg">
+<param name=link4 value="NO">
+<param name=statusmsg4 value="4. 김영헌(정회원,미디어팀장,검푸번호:104)">
+<param name=image5 value="../../photo/seosc2.jpg">
+<param name=link5 value="NO">
+<param name=statusmsg5 value="5. 서상철(정회원,검푸번호:106)">
+<param name=pause value='1500'>
+<param name=tileswidth value=15>
+<param name=tilesheight value=4>
+<param name=tilesteps value=24>
+<param name=backimage value='NO'>
+<param name=backr value='112'>
+<param name=backg value='128'>
+<param name=backb value='160'>
+<param name=overimg value='NO'>
+<param name=overimgX value='0'>
+<param name=overimgY value='0'>
+<param name=memdelay value='1000'>
+<param name=priority value='3'>
+<param name=MinSYNC value='10'>
+Sorry, your browser doesn't support Java.
+</applet><br><br>사진 크기(150x200) 이상자 : 없음<p><form method='POST' action=/member/prog/meminfo.php>
+<input type=hidden name=mode value='meminfo-slide'>
+
+<input type=text name=startno size=4 maxlength=3>번째 사진부터
+<input type=submit value='다시 보기'>
+</form></center>
+</body>
+</html>
+

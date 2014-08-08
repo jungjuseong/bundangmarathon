@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html;" charset="EUC-KR">
+<TITLE> 2007 춘천마라톤 빅매치 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2007 춘천마라톤 빅매치</H2>
+<hr color=red width="90%">
+<P>
+베팅은 한번만 가능하므로 신중히 하시기 바랍니다.
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=2007chuncheonmatch.php>
+<input type=hidden name="pollid" value="2007chuncheonbet">
+<tr>
+<td>
+1. 양희왕님 대 이점우님
+<td>
+<input type="radio" name="rule0" value="양희왕님勝">양희왕님 勝
+<br><input type="radio" name="rule0" value="이점우님勝">이점우님 勝
+<tr>
+<td>
+2. 김영철님 대 최남균님
+<td>
+<input type="radio" name="rule1" value="김영철님勝">김영철님 勝
+<br><input type="radio" name="rule1" value="최남균님勝">최남균님 勝
+<tr>
+<td>
+3. 박균철님 대 박하명님(박균철님이 3분 접어줌)
+<td>
+<input type="radio" name="rule2" value="박균철님勝">박균철님 勝
+<br><input type="radio" name="rule2" value="박하명님勝">박하명님 勝
+
+<tr>
+<td colspan=2 align=center>
+<?
+$betstartday = "20071021";
+$betendday = "20071027";
+if(date("Ymd") < $betstartday){
+	echo "베팅 시기가 아직 아닙니다.";
+}else{
+	if(date("Ymd") >= $betstartday && date("Ymd") < $betendday){
+		echo "<input type=submit value=\"베팅 저장\" onClick=\"javascript:return(chk_data(this.form))\">";
+	}else if(date("Ymd") >= $betendday){
+		echo "<a href='2007chuncheonmatch.php?pollid=2007chuncheonbet'>결과 보기</a>";
+	}
+	echo "
+<tr>
+<td colspan=2>
+* 회원별 베팅 결과가 저장되어 있습니다.";
+}
+?>
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+	if (chk_checked(form.rule0) == false) {
+		alert("매치1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("매치2를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("매치3을 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

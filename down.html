@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+<title>Untitled</title>
+<meta name="author" content="김영헌">
+<meta name="generator" content="Namo WebEditor v4.0">
+<LINK type="text/css" rel="stylesheet" href="gumpu.css">
+
+<script language="JavaScript">
+function news(){
+	var today = new Date();
+	var todaystr, newdaystr, finaldaystr;
+	var msg=new Array();
+	var i = 0, idx, idx2, str;
+
+//if (parent.menu.location == "http://home.hanmir.com/~gumpu/menu.html")
+//  return;
+
+
+msg[i++]="2004.01.13;2004.08.01;8.1 삼척대회 단체 참가";
+msg[i++]="2001.01.13;2001.01.21;<a href=\"activity/gukjongdal/2000/20001224.html\">국토종단 이어달리기(평택-잠실) 결과</a>";
+msg[i++]="2000.12.10;2002.12.31;<a href=\"att-1.xls\">정기모임 참석현황(매주)</a>";
+msg[i++]="1999.06.19;1999.06.20;<a href='....'><b>new표시기일;표시기일;설명</b></a>";
+
+	todaystr = makeDateString(today);
+
+	document.writeln("<p><font size='-1'><UL>");
+	for(i = 0; i < msg.length; i++){
+		str = msg[i];
+		idx = str.indexOf(';', 0);
+		if(idx > 0){
+			idx2 = str.indexOf(';', idx+1);
+			if(idx > 0){
+				newdaystr = str.substring(0, idx);
+				finaldaystr = str.substring(idx+1, idx2);
+				if(finaldaystr < newdaystr)
+					continue;
+				if(finaldaystr >= todaystr){
+					document.writeln("<li type=disc>");
+					if(newdaystr >= todaystr){
+						document.writeln("<img src=new.gif border=0>");
+					}
+					document.writeln(str.substring(idx2+1));
+				}
+			}
+		}
+	}
+	document.writeln("</UL></font>");
+	return;
+}
+
+function makeDateString(cdate){
+  yyyy = 1900 + cdate.getYear() 
+  if(yyyy >= 3900) yyyy = yyyy - 1900;
+  val = yyyy + "."
+  mm = 1 + cdate.getMonth()
+  if (mm < 10)
+	mm = "0" + mm
+  val = val + mm + "."
+  dd = cdate.getDate() 
+  if (dd < 10)
+	dd = "0" + dd
+  val = val + dd
+  return val
+}
+
+function CalcDays(raceday)
+{
+//	var raceday = new Date("July 11, 2004 00:00:00")
+	var now = new Date();
+
+	var difference = parseInt(((raceday.getTime() - now.getTime()) / 1000) + 0.999)
+	var days = parseInt(difference / (60 * 60 * 24) + 1);
+	var weeks = parseInt(days/7)
+	var remaindays = days - weeks * 7
+	//alert	("days="+days+" weeks="+weeks);
+	return days+"["+weeks+"주"+remaindays+"일전]"
+}
+</script>
+<script language="JavaScript">
+<!---->
+
+
+<!---- // -->
+</script>
+
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" >
+
+<table border="0" width="800">
+    <tr>
+        <td width="794" colspan="7"><p style="line-height:2pt;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="176" valign="top" height="431" rowspan="3"><p align="center"><font face="돋움" size="2">
+<!--
+<img src="image/gumpu-logo-new.jpg" border="0"><br>
+-->
+<img src="image/fist-downbanner-logo.jpg" border="0"><br>
+<!--
+<br><img src="image/underconstruction.jpg">
+<br>
+<B>분당마라톤</B>
+-->
+<br><br>
+<B>&lt;클럽 공유 가치&gt;</B>
+<br><br>
+* 마라톤 클럽입니다.
+<br>
+*존중해야 할 전통이 있습니다.
+<br>
+* 서로를 배려합니다.
+<!--
+           <br><a href="race/2003/english2003.htm"><img src="image/fist-downbanner-eng.jpg" width="170" height="23" border="0"></a><br> </font><font face="돋움"
+             size="2">
+            <a href="http://www.gumpu.pe.kr/race/2003/intro.html" target="gumpumain"><img src="image/fist-downbanner-info.jpg" width="170" height="23" border="0"></a><br>
+	<a href="http://www.gumpu.pe.kr/race/2003/reg.html" target="gumpumain"><img src="image/fist-downbanner-shin.jpg" width="170" height="23" border="0"></a><br>
+	<a href="2003/cgi/search_new.html"><img src="image/fist-downbanner-shinwhag.jpg" width="170" height="23" border="0"></a><br>
+	<a href="http://www.gumpu.pe.kr/2003/cgi/search_record.html"><img src="image/fist-downbanner-record.jpg" width="170" height="23" border="0"></a><br>
+            </font>
+	<a href="http://www.gumpu.pe.kr/wowboard/board.cgi?bd=2" target="gumpumain"><font
+             face="돋움" size="2"><img src="image/fist-downbanner-board.jpg"
+             width="170" height="23" border="0"></font></a><font
+             face="돋움" size="2"><br>
+	<a href="http://www.iphotal.com/views/slideshow/slideshow.html?aid=254641#" target="_blank"><img src="image/fist-downbanner-slideshow1.jpg" width="170" height="23" border="0"></a><br>
+	<a href="http://www.iphotal.com/views/slideshow/slideshow.html?aid=254461#" target="_blank"><img src="image/fist-downbanner-slideshow2.jpg" width="170" height="23" border="0"></a>
+-->
+<br><br></font><font face="돋움" size="2">
+<B>&lt;D-Day&gt;</B><br>
+<script language="JavaScript">
+document.writeln("춘천대회 : D-" + CalcDays(new Date("October 25, 2009 00:00:00")));
+document.writeln("춘천대회 : D-" + CalcDays(new Date("October 24, 2004 00:00:00")));
+</script> <br>
+<script language="JavaScript">
+document.writeln("중앙대회 : D-" + CalcDays(new Date("November 7, 2004 00:00:00")));
+</script> <br>
+<!--
+<script language="JavaScript">
+document.writeln("제1회 장애우와 함께하는 희망의마라톤 : D-" + CalcDays(new Date("April 20, 2003 00:00:00")));
+</script> <br>
+-->
+<!--
+<script language="JavaScript">
+document.writeln("2003분당마라톤 : D-" + CalcDays(new Date("May 4, 2003 00:00:00")));
+</script> <br>
+-->
+<br><B>&lt;행사일&gt;</B>
+<script language="JavaScript">
+    news();
+</script>
+<!--
+4/4분기 검푸닷컴배 : 11.23<br>
+정기총회/송년회 : 12.13(토)<br>
+-->
+<br>
+            <a href="http://1m1won.com" target="_blank"><img src="image/1m1won.gif" width="170" height="35" border="0"></a><br>
+            </font></td>
+        <td width="10" height="313"><p><font face="돋움" size="2"><img src="image/first-down-line.gif"
+             width="16" height="280" border="0"></font></td>
+
+<!--
+        <td valign="top" width="170" height="313">
+<p><font face="돋움" size="2">
+<a href='http://www.gumpu.pe.kr/wowboard/board.cgi?bd=4' target=gumpubbs>&lt;회원공지사항&gt;</a><br>
+            <iframe bgcolor="#E0FFE0" border="0" height="110" marginheight="3"
+             marginwidth="5" src="http://www.gumpu.pe.kr/wowboard/board.cgi?bd=4&amp;j=ShowShortBoard"
+             width="190" scrolling="no"> </iframe></font></p>
+        </td>
+        <td width="10" height="313"><p><font face="돋움" size="2"><img src="image/first-down-line.gif"
+             width="16" height="280" border="0"></font></td>
+        <td valign="top" width="194" height="313"><p><font face="돋움" size="2"><a href="http://www.gumpu.pe.kr/wowboard/board.cgi?bd=6" target=gumpubbs>&lt;2003
+            분당마라톤 공지사항&gt;</a><br>
+	    <iframe bgcolor="#E0FFE0" border="0" height="110" marginheight="3" marginwidth="5" src="http://www.gumpu.pe.kr/wowboard/board.cgi?bd=6&amp;j=ShowShortBoard" width="190" scrolling="no"> </iframe></font></p>
+
+</td>
+-->
+        <td valign="top" width="370" height="313"><p><font face="돋움" size="2">
+	    <iframe bgcolor="#E0FFE0" border="0" height="350" marginheight="3" marginwidth="5" src="bbs/main.php" width="370" scrolling="no"> </iframe></font></p>
+	</td>
+
+        <td valign="top" width="16" height="313"><p><font face="돋움" size="2"><img src="image/first-down-line.gif"
+             width="16" height="280" border="0"></font></td>
+
+        <td valign="top" width="190" height="313" bgcolor="#CAF4F4">
+<!--
+            <p align="center" style="line-height:20%;"><font size="2"> 
+-->
+            <p align="center" ><font size="2"> 
+<br><br>
+<B>&lt;안내문&gt;</B>
+<br><br>
+<a href="bbs/member_join.php?id=memboard">회원 가입</a>
+<!--
+<a href="http://www.hyundai-motor.com/main.html" target="_blank"><img src="race/2003/banners/hyundaimotors.gif" width="170" height="40" border="0"></a><br><br>&nbsp;<a href="http://www.mccol.co.kr" target="_blank"><img src="race/2003/banners/ilwha.gif" width="170" height="40" border="0"></a><br><br><a href="http://www.outback.co.kr/" target="_blank"><img src="race/2003/banners/outbacksteak.gif" width="170" height="40" border="0"></a><br><br><a href="http://www.ibobath.com/" target="_blank"><img src="race/2003/banners/bobathhospital.jpg" width="170" height="40" border="0"></a><br><br><a href="http://www.asicskorea.co.kr/" target="_blank"><img src="race/2003/banners/asics.gif" width="170" height="40" border="0"></a><br><br><a href="http://www.nowmed.co.kr/" target="_blank"><img src="race/2003/banners/nowhospital.gif" width="55" height="60" border="0"></a>
+            &nbsp;&nbsp;
+            <a href="http://www.nowmed.co.kr/" target="_blank"><img src="race/2003/banners/nowsports.gif" width="55" height="60" border="0"></a>
+            <br><br><a href="http://www.roxywellness.com/" target="_blank"><img src="race/2003/banners/roxy.gif" width="170" height="50" border="1"></a><br><br>&nbsp;<a href="http://www.spor-tech.com" target="_blank"><img src="race/2003/banners/weider.gif" width="170" height="40" border="0"></a><br><a href="http://www.hite.com/" target="_blank"><img src="race/2003/banners/hite.jpg" width="170" height="40" border="0"></a><br><br><a href="http://www.marathontour.co.kr" target="_blank"><img src="race/2003/banners/travelchunchoo.gif" width="170" height="45" border="0"></a>&nbsp;
+-->
+</font></p>
+</td>
+
+    </tr>
+    <tr>
+        <td height="116" width="16" rowspan="2"><p>&nbsp;</td>
+        <td colspan="5" width="594" height="27"> </td>
+    </tr>
+    <tr>
+        <td colspan="2" width="185"><p align="center">
+	<iframe src="http://freewiw.kweather.co.kr/freenal/result/type4.php?locate=data9.txt&color=7&type=4&gigan=1&aname=분당탄천검푸마라톤클럽&url=http://www.gumpu.com&part=4&areacode=108" width="195" height="105" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+</p>
+</td>
+        <td width="405" colspan="3"><p align="center" style="line-height:90%;"><font face="돋움" size="2"><!-- <img src="http://home.hanmir.com/cgi-bin/count.cgi?id=run4joy&type=sgold" border="0"> --><img src='http://hosting.kornet.net/cgi-bin/Count.cgi?ft=1|frgb=0;255;0|tr=0|trgb=0;255;0|wxh=15;20|md=6|st=74696|sh=1|df=gumpu1.dat"'
+             border="0"> <br>
+            &nbsp;Copyright ⓒ by 분당 탄천검푸 마라톤클럽. <br>
+            All rights reserved. <br></font></p>
+</td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<div align="left">
+<script language='javascript'> 
+function AntiSpam(id) 
+{ 
+	window.open('/bbs/gdantispamin.php?UniqId='+id,'AntiSpam','width=180,height=263,left=1,top=1,resize'); 
+} 
+</script>
+<!--
+<table border="0" cellpadding="0" cellspacing="0" width="867">
+<tr>
+<img src="http://www.bundangmarathon.com/img/new_foot.jpg" usemap="#22" border="0">
+</tr>
+</table>
+</div>
+<map name="22">
+<area shape="rect" coords="1, 16, 181, 62" href="http://www.sujigreen.com/index.asp" target="_blank">
+<area shape="rect" coords="193, 12, 376, 65" href="http://e-pyunggang.com" target="_blank">
+<area shape="rect" coords="384, 14, 567, 62" href="http://kgc.or.kr" target="_blank">
+<area shape="rect" coords="576, 14, 759, 64" href="http://www.samsunglife.com" target="_blank">
+<area shape="rect" coords="766, 11, 948, 65" href="http://www.xn--q20bq8o03ad3nt4gnxa.com" target="_blank">
+</map>
+-->
+
+<!--
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<tr><td align=center>
+	<img src="/img/bunma-text.jpg" border="0">
+</td>
+</tr>
+</table>
+-->
+</div>
+
+<map name="top1">
+<area shape="rect" coords="7, 1, 283, 63" href="/">
+<area shape="rect" coords="818, 41, 883, 66" href="/">
+<area shape="rect" coords="889, 43, 948, 66" href="http://news.google.co.kr/news?hl=ko&newwindow=1&lr=&ie=UTF-8&oe=UTF-8&um=1&tab=wn&q=%EB%A7%88%EB%9D%BC%ED%86%A4&btnG=%EB%89%B4%EC%8A%A4+%EA%B2%80%EC%83%89" target="_blank">
+</map>

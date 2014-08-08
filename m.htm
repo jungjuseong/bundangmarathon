@@ -1,0 +1,725 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<title>분당마라톤클럽</title>
+
+<?
+   include "index_head_PHP.txt";
+?>
+
+<style type="text/css">
+#C1 { position:absolute; width:210px; top:110; left:2px; z-index:2; padding: 2 2 2 2; margin: 2 2 2 2;background-color:#f8f8f8; border:solid darkgray 0px;}
+#HOTNEWS { position:absolute; width:640; top:110px; left:216; z-index:2;padding:2 2 2 2;margin:2 2 2 2: ;border: solid darkgray 0px;}
+#C2 { position:absolute; width:320; top:120px; left:216px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#C3 { position:absolute; width:316; top:120px; left:540px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#C4 { position:absolute; width:160; top:660; left:200px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;}
+#copyright { position:absolute; width:1024; top:670; left:2px; z-index:1;border:solid darkgray 0px;}
+#minibox {width:180;padding: 2 2 2 2;margin:2 2 2 2;font-size:9pt;border:solid darkgray 1px;}
+#matchbox {width:180;padding: 2 2 2 2;margin:2 2 2 2;font-size:11pt;border:solid red 2px;}
+</style>
+<!-- ◈ 메인플래시 좌측 이벤트 배너 ◈ -->
+
+<script language="javascript">
+	function checkMobile() {
+       var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'SCH-', 'SPH-', 'LG-', 'CANU', 'IM-', 'EV-', 'Nokia');
+        for (var word in mobileKeyWords){
+            if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+                var conf = confirm('모바일기기로 접속하셨습니다. 모바일 페이지로 이동하시겠습니까?');
+                if (conf==true)
+                {
+                    location.href = "http://www.bundangmarathon.com/bbs/mobile/";
+                    break;
+                } else {
+                    // set 쿠키
+                    $.cookie('vzm_move', 'false', { expires: 1 });
+                    return false;
+                }
+            }
+        }
+	}
+
+	var isDOM = (document.getElementById ? true : false);
+	var isIE4 = ((document.all && !isDOM) ? true : false);
+	var isNS4 = (document.layers ? true : false);
+
+	function getRef(id)
+	{
+		if (isDOM) return document.getElementById(id);
+		if (isIE4) return document.all[id];
+		if (isNS4) return document.layers[id];
+	}
+
+	var isNS = navigator.appName == "Netscape";
+
+	function moveRightEdge()
+	{
+		var yMenuFrom, yMenuTo, yOffset, timeoutNextCheck;
+		if (isNS4)
+		{
+			yMenuFrom   = Probal_Layer.top;
+			yMenuTo     = windows.pageYOffset + 29;   // 위쪽 위치
+		}
+		else if (isDOM)
+		{
+			yMenuFrom   = parseInt (Probal_Layer.style.top, 10);
+			yMenuTo     = (isNS ? window.pageYOffset : document.body.scrollTop) + 59; // 위쪽 위치
+		}
+
+		timeoutNextCheck = 500;
+
+		if (yMenuFrom != yMenuTo)
+		{
+			yOffset = Math.ceil(Math.abs(yMenuTo - yMenuFrom) / 20);
+			if (yMenuTo < yMenuFrom)
+				yOffset = -yOffset;
+			if (isNS4)
+				Probal_Layer.top += yOffset;
+			else if (isDOM)
+				Probal_Layer.style.top = parseInt (Probal_Layer.style.top, 10) + yOffset;
+				timeoutNextCheck = 10;
+		}
+		setTimeout ("moveRightEdge()", timeoutNextCheck);
+	}
+</script>
+
+<? if(!$is_smartphone){ ?>
+<div id="Probal_Layer" style="position:absolute; align:center; margin:auto; top:18px; width:80px; height:220px; z-index:1; visibility: visible;left:expression( 990 + (document.body.clientWidth-1000)/2 );">
+  <table width="115" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="/img/ddvv.jpg" border="0" usemap="#Map"></td>
+    </tr>
+  </table>
+</div>
+
+<script language="javascript">
+	if (isNS4)
+	{
+		var Probal_Layer = document["Probal_Layer"];
+		Probal_Layer.top = top.pageYOffset + 120;
+		Probal_Layer.visibility = "visible";
+		moveRightEdge();
+
+	}
+	else if (isDOM)
+	{
+		var Probal_Layer = getRef('Probal_Layer');
+		Probal_Layer.style.top = (isNS ? window.pageYOffset : document.body.scrollTop) + 120;
+		Probal_Layer.style.visibility = "visible";
+		moveRightEdge();
+	}
+</script>
+<? }  ?>
+<script language="javascript">
+<!--
+function DisplayMenu(index) {
+        for (i=1; i<=5; i++)
+        if (index == i) {
+        thisMenu = eval("menu" + index + ".style");
+        thisMenu.display = "";
+        } 
+        else {
+        otherMenu = eval("menu" + i + ".style"); 
+        otherMenu.display = "none"; 
+        }
+        }
+-->
+</script>
+
+</head>
+<body >
+<script>
+checkMobile();
+
+</script>
+
+
+<style type="text/css">
+<!--
+font{ font-family:"나눔고딕"; font-size:9pt; line-height:17px; }
+td{ font-family:"나눔고딕"; font-size:9pt; line-height:17px; }
+a:link     	{color:#333333;text-decoration:none}
+a:visited  	{color:#666666;text-decoration:none}
+a:active 	{color:#666666;text-decoration:none}
+A:hover 	{color:#666666;text-decoration:none}
+a.bmc:link { color:#0000ff; text-decoration: none; }
+a.bmc:visited {color:#0000ff; text-decoration: none; }
+a.bmc:active { color:#0000ff; text-decoration: none; }
+a.bmc:hover { color:#00ff00; text-decoration: none; }
+-->
+#quickmenu3 {font-family:나눔고딕;font:#222222 10pt;font-weight:bold;text-align:center;}
+</style>
+<table align="center" cellpadding="0" cellspacing="0" width="950">
+    <tr>
+        <td ><IMG src="http://www.bundangmarathon.com/img/top_0001.jpg"  border="0" usemap="#top1"></td>
+    </tr>
+	 <tr>
+        <td >
+<? if(!$is_smartphone) { ?>
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="950" height="302" id="maiin" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" >
+	<param name="allowFullScreen" value="false" >
+	<param name="movie" value="/img/maiin.swf" >
+	<param name="quality" value="high" >
+	<param name="bgcolor" value="#ffffff" >	
+	<embed src="/img/maiin.swf" quality="high" bgcolor="#ffffff" width="950" height="302" name="maiin" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+<? } ?>
+		</td>
+    </tr>
+	 <tr>
+	 	<td align="center">
+<? if($is_smartphone) { ?>
+<div style="color:#0000ff; font-size:20px">
+<br>
+<a href="/intro1.htm"><span style="color:blue;">클럽소개</span></a>
+<a href="/bbs/zboard.php?cafe_style=&id=noticeboard"><span style="color:blue;">클럽마당</span></a> 
+<a href="/bbs/zboard.php?id=training_plan"><span style="color:blue;">클럽훈련</span></a> 
+<a href="/bbs/zboard.php?id=databoard"><span style="color:blue;">마라톤정보</span></a> 
+<a href="/bbs/zboard.php?id=photo"><span style="color:blue;">포토갤러리</span></a> 
+<a href="/intro1_07.htm"><span style="color:blue;">회원광장</span></a> 
+</div>
+<? }else { ?>
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="950" height="71" id="index_new" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="/img/index_new.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#cccccc" />	
+	<embed src="/img/index_new.swf" quality="high" bgcolor="#cccccc" width="950" height="71" name="index_new" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+<? } ?>
+		</td>
+    </tr>
+    <tr>
+        <td width="1869">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td width="219" valign="top">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="209">
+                                    <img src="/img//new_left_01.gif" width="219" height="133" border="0">
+									
+</b>                                </td>
+                           </tr>
+                            <tr>
+                                <td width="209" background="/img/new_left_02.gif" width="219" height="222">
+                                    <br>											                         			
+                                    
+                                    <center> <font color="Red" size="20pt"><b> 운영위원회의(12월16일)
+      </font></center><br>
+
+</td>		
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="209">
+                                   <!-- 날씨 정보  -->
+	<iframe src="http://freewiw.kweather.co.kr/freenal/result/type4.php?locate=data9.txt&color=7&type=4&gigan=1&aname=분당마라톤클럽&url=http://&part=4&areacode=108" width="200" height="105" scrolling="no" frameborder="0" allowtransparency="true" ></iframe>
+<br>
+<a href="http://www.bundangmarathon.com/intro1_04_a.htm"><img src="/img/ru_001.jpg" border=0><br>
+
+<? if($member[no]) { ?>
+	<iframe src="http://www.bundangmarathon.com/bbs/minipoll.php" width="200" height="100" scrolling="yes" frameborder="0" allowtransparency="true" ></iframe>
+<? } ?>
+								   <!--  -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="482" valign="top" >
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td width="209"  valign="top">
+                                    <p><img src="/img/new_middle_01.gif" width="482" height="133" border="0"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="209" valign="top">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        
+                                        <tr>
+                                            <td width="472" valign="top">
+                                               <!-- 게시판 -->
+											   <div id="menu1" style="display:;">
+<table align="center" cellpadding="0" cellspacing="0" width="482" background="/img/new_main_m_bg.gif">
+    <tr>
+        <td width="1066">
+            <table cellpadding="0" cellspacing="0" width="100%" >
+                <tr>
+                    <td width="89" onclick="DisplayMenu(1)" style="cursor:hand">
+                        <p><img src="/img/ue_01.gif" width="82" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(2)" style="cursor:hand">
+                        <p><img src="/img/ue_02.gif" width="109" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(3)" style="cursor:hand">
+                        <p><img src="/img/ue_03.gif" width="80" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(4)" style="cursor:hand">
+                        <p><img src="/img/ue_04.gif" width="105" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(5)" style="cursor:hand">
+                        <p><img src="/img/ue_05.gif" width="106" height="38" border="0"></p>
+                    </td>
+                </tr>
+            </table>
+</td>
+    </tr>
+    <tr>
+        <td width="1066" style="padding:5 15 5 15;">
+       <!-- 1내용 -->
+<? 
+	$decoration_box_path = "boxonly/default_bbs"; /* unistyle6box2/unistyle6_box_bbs */
+	$characters = 46;
+
+
+	
+		print_bbs($decoration_box_path, "<b>함께하는이야기</b>", "noticeboard", 10, $characters);
+	
+
+?>
+	   <!--  -->
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="1066">
+            <img src="/img/new_main_m_battle.gif"  border="0">
+        </td>
+    </tr>
+</table>
+</div>
+
+<!-- div2 -->
+<div id="menu2" style="display:none;">
+<table align="center" cellpadding="0" cellspacing="0" width="482" background="/img/new_main_m_bg.gif">
+    <tr>
+        <td width="1066">
+            <table cellpadding="0" cellspacing="0" width="100%" >
+                <tr>
+                    <td width="89" onclick="DisplayMenu(1)" style="cursor:hand">
+                        <p><img src="/img/ue_01_a.gif" width="82" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(2)" style="cursor:hand">
+                        <p><img src="/img/ue_02_a.gif" width="109" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(3)" style="cursor:hand">
+                        <p><img src="/img/ue_03.gif" width="80" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(4)" style="cursor:hand">
+                        <p><img src="/img/ue_04.gif" width="105" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(5)" style="cursor:hand">
+                        <p><img src="/img/ue_05.gif" width="106" height="38" border="0"></p>
+                    </td>
+                </tr>
+            </table>
+</td>
+    </tr>
+    <tr>
+        <td width="1066" style="padding:5 15 5 15;">
+       <!-- 1내용 -->
+	  <? 
+	$decoration_box_path = "boxonly/default_bbs"; /* unistyle6box2/unistyle6_box_bbs */
+	$characters = 46;
+
+	
+
+		print_bbs($decoration_box_path, "<b>함께하는이야기</b>", "pubboard", 10, $characters);
+
+
+?>
+	   <!--  -->
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="1066">
+            <img src="/img/new_main_m_battle.gif"  border="0">
+        </td>
+    </tr>
+</table>
+</div>
+<!-- div2 end -->
+
+<!-- div3  -->
+<div id="menu3" style="display:none;">
+<table align="center" cellpadding="0" cellspacing="0" width="482" background="/img/new_main_m_bg.gif">
+    <tr>
+        <td width="1066">
+            <table cellpadding="0" cellspacing="0" width="100%" >
+                <tr>
+                    <td width="89" onclick="DisplayMenu(1)" style="cursor:hand">
+                        <p><img src="/img/ue_01_a.gif" width="82" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(2)" style="cursor:hand">
+                        <p><img src="/img/ue_02.gif" width="109" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(3)" style="cursor:hand">
+                        <p><img src="/img/ue_03_a.gif" width="80" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(4)" style="cursor:hand">
+                        <p><img src="/img/ue_04.gif" width="105" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(5)" style="cursor:hand">
+                        <p><img src="/img/ue_05.gif" width="106" height="38" border="0"></p>
+                    </td>
+                </tr>
+            </table>
+</td>
+    </tr>
+    <tr>
+        <td width="1066" style="padding:5 15 5 15;">
+       <!-- 1내용 -->
+<? 
+	$decoration_box_path = "boxonly/default_bbs"; /* unistyle6box2/unistyle6_box_bbs */
+	$characters = 46;
+
+
+	
+		print_bbs($decoration_box_path, "<b>함께하는이야기</b>", "training_plan", 10, $characters);
+	
+
+?>
+	   <!--  -->
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="1066">
+            <img src="/img/new_main_m_battle.gif"  border="0">
+        </td>
+    </tr>
+</table>
+</div>
+<!-- div3 end -->
+
+<!-- div4 -->
+<div id="menu4" style="display:none;">
+<table align="center" cellpadding="0" cellspacing="0" width="482" background="/img/new_main_m_bg.gif">
+    <tr>
+        <td width="1066">
+            <table cellpadding="0" cellspacing="0" width="100%" >
+                <tr>
+                    <td width="89" onclick="DisplayMenu(1)" style="cursor:hand">
+                        <p><img src="/img/ue_01_a.gif" width="82" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(2)" style="cursor:hand">
+                        <p><img src="/img/ue_02.gif" width="109" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(3)" style="cursor:hand">
+                        <p><img src="/img/ue_03.gif" width="80" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(4)" style="cursor:hand">
+                        <p><img src="/img/ue_04_a.gif" width="105" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(5)" style="cursor:hand">
+                        <p><img src="/img/ue_05.gif" width="106" height="38" border="0"></p>
+                    </td>
+                </tr>
+            </table>
+</td>
+    </tr>
+    <tr>
+        <td width="1066" style="padding:5 15 5 15;">
+       <!-- 1내용 -->
+  <?
+	print_rundailji("", 10, 42); flush(); 
+?>
+	   <!--  -->
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="1066">
+            <img src="/img/new_main_m_battle.gif"  border="0">
+        </td>
+    </tr>
+</table>
+</div>
+<!-- div4 end -->
+
+<!-- div5 -->
+<div id="menu5" style="display:none;">
+<table align="center" cellpadding="0" cellspacing="0" width="482" background="/img/new_main_m_bg.gif" >
+    <tr>
+        <td width="1066">
+            <table cellpadding="0" cellspacing="0" width="100%" >
+                <tr>
+                    <td width="89" onclick="DisplayMenu(1)" style="cursor:hand">
+                        <p><img src="/img/ue_01_a.gif" width="82" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(2)" style="cursor:hand">
+                        <p><img src="/img/ue_02.gif" width="109" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(3)" style="cursor:hand">
+                        <p><img src="/img/ue_03.gif" width="80" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(4)" style="cursor:hand">
+                        <p><img src="/img/ue_04.gif" width="105" height="38" border="0"></p>
+                    </td>
+                    <td width="89" onclick="DisplayMenu(5)" style="cursor:hand">
+                        <p><img src="/img/ue_05_a.gif" width="106" height="38" border="0"></p>
+                    </td>
+                </tr>
+            </table>
+</td>
+    </tr>
+    <tr>
+        <td width="1066" style="padding:5 15 5 15;">
+       <!-- 5내용 -->
+<? 
+	$decoration_box_path = "boxonly/default_bbs"; /* unistyle6box2/unistyle6_box_bbs */
+	$characters = 46;
+
+	
+	if($member[user_id] != '') {
+		print_bbs($decoration_box_path, "<b>회원게시판</b>", "memboard", 10, $characters);
+		
+	}
+
+	
+	
+?>
+	   <!--  -->
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="1066">
+            <img src="/img/new_main_m_battle.gif"  border="0">
+        </td>
+    </tr>
+</table>
+</div>
+<!-- div5end -->
+											   <!--  -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="209">
+                                    <p><img src="/img/new_middle_03.gif" width="482" height="26" border="0"><BR></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="209">
+                                  <!-- 포토갤러리 -->
+								  <?
+	$photo_gallery_decoration_box_path = "boxonly/default_gallery";
+	//print_gallery($photo_gallery_decoration_box_path, "<img src='/image/camera.jpg' border=0 height=26 align=absmiddle>", "photo", 2, 16, 140)
+	print_gallery($photo_gallery_decoration_box_path, "Photo Gallery", "photo", 5, 8, 85)
+?>
+								  <!--  -->
+                                </td>
+                            </tr>
+                            <tr height=100>
+								<td align=center valign=middle>
+<? global $member; if($member[user_id] > ' ') {
+// 단말 정보 수집
+	$query_name="userid,access_time,user_agent";
+	$query_value="'".$logid."',now(),'".$_SERVER['HTTP_USER_AGENT']."'";
+	$dbquery="insert into user_agent ($query_name) values($query_value)";
+	$result = mysql_query($dbquery);
+ ?>
+<div><a style='color=blue; font-size=14px' href='/bbs/bmnew.php?keykind=new#start'>게시판 신규 내용 보기</a></div>
+<? } ?>
+								</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="249" valign="top">
+                        <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tr>
+                                <td width="209">
+                                   <!--  -->
+								    <table cellpadding="0" cellspacing="0" width="100%" background="/img/new_r_bg.gif">
+                                        <tr>
+                                            <td width="239">
+                                                <p>
+												
+												
+												<A HREF="http://www.bundangmarathon.com/intro1_01.htm"><img src="/img/login_top_net.gif" width="249"  border="0"></A></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="239">
+                                                <table style="font-size:9pt;" align="center" cellpadding="0" cellspacing="0" width="90%">
+                                                    <tr>
+                                                        <td width="239">
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="239">
+                                                            <!-- 로그인 -->
+															
+
+<CENTER><?print_outlogin("login","1","10");?></CENTER>
+															<!--로그인end  -->
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="239">
+                                                <p><img src="/img/new_r_02.gif" width="249" height="22" border="0"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+								 
+		
+		
+								   <!--  -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="209">
+                                    <table cellpadding="0" cellspacing="0" width="100%" background="/img/new_r_bg.gif">
+                                        <tr>
+                                            <td width="239">
+                                                <p><A HREF="http://www.bundangmarathon.com/intro1_07.htm?url=L2Jicy9ibW1lbS5waHA/bW9kZT1jaHVrYQ==">
+												
+												
+												<img src="/img/new_r_01.gif" width="249" height="34" border="0"></A>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="239">
+                                                <table style="font-size:9pt;" align="center" cellpadding="0" cellspacing="0" width="90%">
+                                                    <tr>
+                                                        <td width="239">
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="239">
+                                                            <!-- 축하합니다. -->
+															
+
+	<? print_chuka("bmc", "<a href='intro1_07.htm?url=".base64_encode("/bbs/bmmem.php?mode=chuka")."'></a>", 10, 25); flush(); ?>
+															<!--  -->
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="239">
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="239">
+                                                <p><img src="/img/new_r_02.gif" width="249" height="22" border="0"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="209">
+                                    <table cellpadding="0" cellspacing="0" width="100%" background="/img/new_r_bg.gif">
+                                        <tr>
+                                            <td width="239">
+                                                <p><img src="/img/new_right_04.gif" width="249" height="36" border="0"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="239">
+                                                <table style="font-size:9pt;" align="center" cellpadding="0" cellspacing="0" width="90%">
+                                                    <tr>
+                                                        <td width="239" height="5">
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="239" style="padding-left:14px;">
+                                                          <!-- 회원접속현황 -->
+														  	
+														  
+														    <?
+	print_race("", 6, 42); flush(); 
+?>
+
+
+														  <!--  -->
+                                                        </td>
+                                                    </tr>
+                                                  <tr>
+                                                        <td width="239" height="5">
+                                                           
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="239">
+                                                <p><img src="/img/new_r_02.gif" width="249" height="22" border="0"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td width="1869">
+		<IMG src="/img/new_foot.jpg" usemap="#22" border="0"> 
+		</td>
+    </tr>
+</table>
+
+
+
+<map name="22">
+<area shape="rect" coords="1, 16, 181, 62" href="http://www.sujigreen.com/index.asp" target="_blank">
+<area shape="rect" coords="193, 12, 376, 65" href="http://e-pyunggang.com" target="_blank">
+
+
+<area shape="rect" coords="384, 14, 567, 62" href="http://kgc.or.kr" target="_blank">
+<area shape="rect" coords="576, 14, 759, 64" href="http://www.samsunglife.com" target="_blank">
+<area shape="rect" coords="766, 11, 948, 65" href="http://www.xn--q20bq8o03ad3nt4gnxa.com" target="_blank">
+
+</map>
+
+<map name="ImageMap1">
+<map name="33">
+<area shape="rect" coords="8, 2, 296, 63" href="/">
+<area shape="rect" coords="3, 372, 158, 417" href="http://www.bundangmarathon.com/intro1.htm">
+<area shape="rect" coords="166, 373, 319, 417" href="http://www.bundangmarathon.com/bbs/zboard.php?cafe_style=&id=noticeboard&select_arrange=headnum&desc=asc&category=&sn=off&ss=on&sc=on&keyword=&sn1=&divpage=1&page=1">
+<area shape="rect" coords="327, 370, 486, 414" href="http://www.bundangmarathon.com/intro3_02.htm">
+<area shape="rect" coords="494, 370, 642, 417" href="http://www.bundangmarathon.com/bbs/zboard.php?id=training_plan">
+<area shape="rect" coords="650, 369, 794, 420" href="http://www.bundangmarathon.com/intro1_07.htm">
+<area shape="rect" coords="799, 370, 945, 419" href="http://www.bundangmarathon.com/intro1_07.htm">
+</map>
+</map>
+
+
+<map name="Map">
+<area shape="rect" coords="15, 30, 83, 60" href="http://www.bundangmarathon.com/intro1_01.htm">
+<area shape="rect" coords="13, 68, 85, 94" href="http://www.bundangmarathon.com/member/prog/mempub1.php?mode=mempub-photo">
+<area shape="rect" coords="11, 98, 87, 129" href="http://www.bundangmarathon.com/bbs/zboard.php?id=training_plan">
+<area shape="rect" coords="11, 134, 87, 165" href="http://www.bundangmarathon.com/bbs/zboard.php?id=memboard">
+<area shape="rect" coords="11, 168, 85, 208" href="http://www.bundangmarathon.com/bbs/zboard.php?id=pubboard">
+<area shape="rect" coords="10, 219, 89, 261" href="http://www.bundangmarathon.com/bbs/zboard.php?id=photo">
+</map>
+
+
+<map name="top1">
+<area shape="rect" coords="7, 1, 283, 63" href="/">
+<area shape="rect" coords="818, 41, 883, 66" href="/">
+<area shape="rect" coords="889, 43, 948, 66" href="http://news.google.co.kr/news?hl=ko&newwindow=1&lr=&ie=UTF-8&oe=UTF-8&um=1&tab=wn&q=%EB%A7%88%EB%9D%BC%ED%86%A4&btnG=%EB%89%B4%EC%8A%A4+%EA%B2%80%EC%83%89" target="_blank">
+</map>
+</body>
+</html>

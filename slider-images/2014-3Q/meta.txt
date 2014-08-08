@@ -1,0 +1,23 @@
+        <div class="quake-slider"> 
+            <div class="quake-slider-images"> 
+                 <img src="/slider-images/2014-3Q/2014_3Q_01.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_02.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_03.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_04.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_05.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_06.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_07.jpg">
+                 <img src="/slider-images/2014-3Q/2014_3Q_08.jpg">
+            </div>
+
+            <div class="quake-slider-captions"> 
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+                <div class="quake-slider-caption"> 2014 BMC Birth</div>
+            </div> 
+        </div> 

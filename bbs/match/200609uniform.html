@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<meta http-equiv=Content-Type content=text/html; charset=EUC-KR>
+<TITLE> 2006 유니폼 선정</TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2006 유니폼 선정</H2>
+<hr color=red width="90%">
+<P>
+투표는 한번만 가능하므로 신중히 하시기 바랍니다.<br>
+9월 19일(화요일)부터 9월 21일(목요일)까지 투표 가능합니다.<br>
+정회원과 준회원 대상 투표입니다.
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/200609uniform.php>
+<input type=hidden name="pollid" value="200609uniform">
+<tr>
+<td colspan=2>
+
+<font size='+2' color=red>I. 유니폼 배색안(案)</font><br>
+* 클럽 기본 색상(pantone 362CVC)을 중심색으로 하여 같은 계통색으로 명도와 채도를 조절해 안을 만들었음<br>
+<tr>
+ <td><img src='/img/200609-I-1.jpg'>
+ <td width=70><input type="radio" name="rule0" value="1안">1안
+<tr>
+ <td><img src='/img/200609-I-2.jpg'>
+ <td width=70><input type="radio" name="rule0" value="2안">2안
+<tr>
+ <td><img src='/img/200609-I-3.jpg'>
+ <td width=70><input type="radio" name="rule0" value="3안">3안
+<tr>
+<td colspan=2>
+<font size='+2' color=red>II. 유니폼 로고안(案)</font><br>
+* 오른편 가슴 클럽로고(1~3안 공통사항임)
+<br><img src='/img/200609-II-logo.jpg'><br>
+<tr>
+ <td><img src='/img/200609-II-1.jpg'>
+ <td width=70><input type="radio" name="rule1" value="1안">1안
+<tr>
+ <td><img src='/img/200609-II-2.jpg'>
+ <td width=70><input type="radio" name="rule1" value="2안">2안
+<tr>
+ <td><img src='/img/200609-II-3.jpg'>
+ <td width=70><input type="radio" name="rule1" value="3안">3안
+<? 
+	require("bmauth.php"); 
+	if($logid==""){
+	}else{
+		$dbquery = "select name from member where userid='$logid' and (membertype='정회원' or membertype='준회원')";
+		$result = mysql_query($dbquery) or die("mysql_query error");
+		if(mysql_num_rows($result) > 0 && date("Ymd") >= "20060918" && date("Ymd") <= "20060923"){
+			echo "<tr>
+<td colspan=2 align=center><br>
+<input type=submit value=\"투표 저장\" onClick=\"javascript:return(chk_data(this.form))\">";
+		}
+	}
+?>
+<tr>
+<td colspan=2 align=center><br>
+<a href='/bbs/200609uniform.php?pollid=200609uniform'>결과 보기</a>
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+	if (chk_checked(form.rule0) == false) {
+		alert("안건 1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("안건 2를 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

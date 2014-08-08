@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<TITLE> 회장 재신임 투표 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>회장 재신임 투표 </H2>
+<hr color=red width="90%">
+
+<!--
+<font size="+2" color=blue>임원 선출건</font>
+<p>
+-->
+
+<TABLE border=1>
+<form name=pollform method=post action=2003-1.php>
+<input type=hidden name="pollid" value="2003-1">
+<tr>
+<td>
+사퇴의사를 표명한 김영백 회장을 회장직에 재추대하는 것에 대하여
+<td>
+<input type="radio" name="rule0" value="Y" >찬성
+<br><input type="radio" name="rule0" value="N">반대
+
+<td>
+</TABLE>
+<!-- 1차 off, 2차 on End -->
+
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+/*
+    {
+	alert("투표 기간 경과로 투표할 수 없습니다.");
+	return false;
+    }
+*/
+
+   if (chk_checked(form.rule0) == false) {
+	alert("안건에 투표하십시오.");
+	return false;
+    }
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+</SCRIPT>
+<p>
+<input type=submit value="위 지정 사항을 다시 한번 확인 후 여기를 눌러 주십시오." onClick="javascript:return(chk_data(this.form))">
+</form>
+<p align=center>
+<a href="2003-1.php?pollid=2003-1">결과 보기</a>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="/images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 탄천검푸마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

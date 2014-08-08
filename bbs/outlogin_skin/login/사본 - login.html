@@ -1,0 +1,49 @@
+<!--- 로그인 폼입니다 -->
+
+
+
+<table cellpadding=1 cellspacing=1 border=0>
+
+<form name=zb_login method=post action="[action]" onsubmit="return zb_login_check_submit();">
+<input type=hidden name=s_url value="[s_url]">
+
+	<tr>
+		<td height="1" bgcolor=#b8b3b3 colspan=4></td>
+	<tr>
+	<tr>
+		<td height="5" colspan=4></td>
+	</tr>
+
+
+
+<tr>
+	<td weith="20"></td>
+	<td align=right valign="middle"><img src=[dir]id.gif border=0></td>
+	<td> <input type=text name=user_id value='' size=9 class=input style="border:1;border-color:#999999;border-style:solid;"> </td>
+	<td weith="20"></td>
+</tr>
+
+<tr>
+	<td weith="20"></td>
+	<td align=right valign="middle"><img src=[dir]pass.gif border=0></td>
+	<td> 
+	<input type=password name=password value='' size=9 class=input style="border:1;border-color:#999999;border-style:solid;"> 
+	</td>
+	<td weith="20"></td>
+</tr>
+<tr>
+	<td align=center valign="top" colspan=4>
+		<input type=checkbox name=auto_login value=1 onclick=check_autologin()>
+		[login] [member_join] <br>
+	</td>
+</tr>
+
+	<tr>
+		<td height="5" colspan=4></td>
+	<tr>
+	<tr>
+		<td height="1" bgcolor=#b8b3b3 colspan=4></td>
+	</tr>
+
+
+</table>

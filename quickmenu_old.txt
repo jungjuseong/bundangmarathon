@@ -1,0 +1,40 @@
+                            <div align="left">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100" height="85">
+				<tr><td height="45"></td></tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                                            <p align="center"><a href="/intro1_07.htm"><b><font color="#333333">회원광장</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                            <p align="center"><a href="/intro1_01.htm"><b><font color="#333333">가입안내</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                            <p align="center"><a href="/member/prog/mempub1.php?mode=mempub-photo"><b><font color="#333333">회원안내</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                            <p align="center"><a href="/bbs/zboard.php?id=training_plan"><b><font color="#333333">훈련게시판</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                            <p align="center"><a href="/bbs/zboard.php?id=memboard"><b><font color="#333333">회원게시판</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                            <p align="center"><a href="/bbs/zboard.php?id=pubboard"><b><font color="#333333">함께하는<br>이야기</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100" height="85" background="/img/right.gif">
+                                            <p align="center"><a href="/bbs/zboard.php?id=photo"><b><font color="#333333">Photo<br>Gallery</font></b></a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>

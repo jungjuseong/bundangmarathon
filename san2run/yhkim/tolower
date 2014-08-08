@@ -1,0 +1,27 @@
+#!/bin/sh
+# update dq_revolution set file_names=replace(file_names,"JPG","jpg"), s_file_names=replace(s_file_names,"JPG","jpg")
+# 파일과 디렉토리를 소문자로 변경하기
+# [:upper:] 와 [:lower:] 의 순서를 바꾸면 대문자로 변경이 가능합니다.
+
+# 디렉토리부터 소문자로 변경
+
+#for i in `find . -type d -print` ; do
+    #OLD=$i
+    #NEW=$( echo $i|tr -s '[:upper:]' '[:lower:]' )
+    #if [ $OLD != $NEW ] ; then
+    #echo "$OLD -> $NEW"
+    #mv $OLD $NEW
+    #fi
+#done
+
+# 개개 파일을 소문자로 변경 
+
+for i in `find . -print` ; do
+    OLD=$i
+    #NEW=$( echo $i|tr -s '[:upper:]' '[:lower:]' )
+    NEW=$( echo $i|sed 's/JPG/jpg/' )
+    if [ $OLD != $NEW ] ; then
+    echo "$OLD -> $NEW"
+    mv $OLD $NEW
+    fi
+done 

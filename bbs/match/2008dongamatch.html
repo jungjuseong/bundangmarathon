@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html;" charset="EUC-KR">
+<TITLE> 2008 동아마라톤 빅매치 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2008 동아마라톤 빅매치</H2>
+<hr color=red width="90%">
+<P>
+<?
+$betstartday = "2008/03/11";
+$betendday = "2008/03/15";
+$pollid = "2008dongabet";
+echo "베팅은 $betstartday~$betendday 동안 한번만 가능하므로 신중히 하시기 바랍니다.";
+?>
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=2008dongamatch.php>
+<input type=hidden name="pollid" value="<?=$pollid?>">
+<input type=hidden name="betstartday" value="<?=$betstartday?>">
+<input type=hidden name="betendday" value="<?=$betendday?>">
+<tr>
+<td>
+1. 이경규님 대 최홍배님
+<td>
+<input type="radio" name="rule0" value="이경규님勝">이경규님 勝
+<br><input type="radio" name="rule0" value="최홍배님勝">최홍배님 勝
+<tr>
+<td>
+2. 김영진님 대 임광성님
+<td>
+<input type="radio" name="rule1" value="김영진님勝">김영진님 勝
+<br><input type="radio" name="rule1" value="임광성님勝">임광성님 勝
+<tr>
+<td>
+3. 나광섭님 대 박희선님(나광섭님이 10분 접어줌)
+<td>
+<input type="radio" name="rule2" value="나광섭님勝">나광섭님 勝
+<br><input type="radio" name="rule2" value="박희선님勝">박희선님 勝
+<tr>
+<td>
+4. 권석우님 대 이만영님
+<td>
+<input type="radio" name="rule3" value="권석우님勝">권석우님 勝
+<br><input type="radio" name="rule3" value="이만영님勝">이만영님 勝
+
+<tr>
+<td colspan=2 align=center>
+<?
+if(date("Y/m/d") < $betstartday){
+	echo "베팅 시기가 아직 아닙니다.";
+}else{
+	if(date("Y/m/d") >= $betstartday && date("Y/m/d") < $betendday){
+		echo "<input type=submit value=\"베팅 저장\" onClick=\"javascript:return(chk_data(this.form))\">";
+	}else if(date("Y/m/d") >= $betendday){
+		echo "<a href='2008dongamatch.php?pollid=$pollid&betendday=$betendday'>결과 보기</a>";
+	}
+	echo "
+<tr>
+<td colspan=2>
+* 회원별로 베팅 결과가 저장됩니다.";
+}
+?>
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+	if (chk_checked(form.rule0) == false) {
+		alert("매치1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("매치2를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("매치3을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule3) == false) {
+		alert("매치4를 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

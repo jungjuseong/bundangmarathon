@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 분당마라톤클럽 8대 회장 선출 투표 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>분당마라톤클럽 8대 회장 선출 투표 </H2>
+<hr color=red width="90%">
+<p> 투표는 한번만 가능합니다. <br><br>
+<font color=red>(투표자격 : 분당마라톤클럽 정회원)</font></p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='2013bmc_election'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date('Y.m.d H:m:s')." 현재 $row[0] 명이 투표했습니다.</font>";
+?>
+<br> <br> 12월28일 밤 12시에 마감합니다... 
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2013bmc_election.php>
+<input type=hidden name="pollid" value="2013bmc_election">
+
+<tr>
+<td> <br> 분당마라톤클럽 8대 회장 후보 <br> <br>
+<center> 정 주 성<br><br>
+(회원번호 : 203번) <br> <br> </center> <td>
+
+<input type="radio" name="rule0" value="찬성  ">찬성
+<input type="radio" name="rule0" value="반대  ">반대
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center> <br>
+<input type=submit value="투표 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("찬성/반대를 선택 하세요.");
+		return false;
+	}
+		
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

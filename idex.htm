@@ -1,0 +1,186 @@
+<?
+	include "main_top.txt";
+?>
+
+<script type=text/javascript src=/js/jquery-1.4.2.js></script>
+
+<style type="text/css">
+#C1 { position:absolute; width:210px; top:110; left:2px; z-index:2; padding: 2 2 2 2; margin: 2 2 2 2;background-color:#f8f8f8; border:solid darkgray 0px;}
+#HOTNEWS { position:absolute; width:640; top:110px; left:216; z-index:2;padding:2 2 2 2;margin:2 2 2 2: ;border: solid darkgray 0px;}
+#C2 { position:absolute; width:320; top:120px; left:216px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#C3 { position:absolute; width:316; top:120px; left:540px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#C4 { position:absolute; width:160; top:160; left:865px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;}
+#copyright { position:absolute; width:1024; top:670; left:2px; z-index:1;border:solid darkgray 0px;}
+#minibox {width:180;padding: 2 2 2 2;margin:2 2 2 2;font-size:9pt;border:solid darkgray 1px;}
+#matchbox {width:180;padding: 2 2 2 2;margin:2 2 2 2;font-size:11pt;border:solid red 2px;}
+</style>
+<script language=JavaScript>
+//var openwin = window.open("error.htm",'event','width=800,height=600,top=100,left=100,status=no');
+</script>
+
+<!-- hot news --->
+<div id=HOTNEWS>
+<? include "dynamic-hotnews.txt" ?>
+</div>
+
+<script type=text/javascript src=event.js></script>
+
+<!-- 1번째 칼럼 -->
+<div id=C1>
+<table>
+<tr>
+<td bgcolor="white" background="img/side_bg.gif" valign="top"></td>
+</tr>
+<tr><td>
+	<p align="center"><a href="intro1.htm"><img src="image/share-value-small.jpg" border="0"></p></a>
+</td></tr>
+<tr><td align=center>
+<? 
+	//if($member[user_id] != '')  {
+	
+	//echo "<div id=matchbox><img src='/image/collection/new.gif' border=0><a href='/bbs/2010kkmatch.html' target='kkmatch' width='200' height='400'><b>아!고구려 싱글매치</b><br>부회장님간의 맞대결</a></div>";
+
+	//}
+?>
+<script type=text/javascript>
+first_top = $("#C1").css("top");
+//$("#C1").css("top", "200px");
+</script>
+
+<script type=text/javascript>
+print_club_events();
+</script>
+</td></tr>
+<!--
+<tr><td align=center>
+	<div id=minibox><a href=/bbs/zboard.php?id=training_plan><b>클럽훈련스케줄</b></a></div>
+</td> </tr>
+-->
+<tr> <td align=center>
+<?
+if($member[user_id] != '')  {
+	echo "<div id=minibox><b>클럽공식계좌</b><br><a href=http://www.kbstar.com target=neww>국민은행</a> 993101-01-165447<br>최영대(분당마라톤)<br><b>행사계좌</b><br><a href=http://www.kbstar.com target=neww>국민은행</a> 993101-01-165434<br>최영대(분당마라톤)</div>";
+	// poll
+	//echo "<p align='center'><b><iframe src='/bbs/minipoll.php?mode=' width='200' height='180' frameborder='1' leftmargin='0' marginheight='0' marginwidth='0' topmargin='0'></iframe></b></p>";
+}
+?>
+</td> </tr>
+<tr>
+<td align=center>
+<iframe src="http://freewiw.kweather.co.kr/freenal/result/type4.php?locate=data9.txt&color=7&type=4&gigan=1&aname=분당마라톤클럽&url=http://&part=4&areacode=108" width="200" height="105" scrolling="no" frameborder="0" allowtransparency="true" ></iframe>
+	</td>
+</tr>
+</table>
+
+<!--
+<div style="margin:2 2 2 2;padding:2 2 2 2;font-size:12px;border:solid darkgray 1px;">
+<? print_marathon_news("<b>***마라톤 뉴스***</b>", 10, 30); flush(); ?>
+</div>
+-->
+
+
+<!--iframe frameborder='0' src='http://ticker.kbs.co.kr/kbsnewsticker.html' frameborder='0' width='200' height='40' scrolling='no'></iframe--><br>
+
+<table border=0 width="100%">
+<tr> <td align="center"><p style="font:9pt; font-weight:bold;">shared info</td></tr>
+<!--
+<tr><td align="center">
+<a align=center href='http://www.asicskorea.com' target=_banner><img src='/bbs/upload/asicskorea.jpg' border=1 title='아식스 송파점 지하철8호선 송파전철역 4번출구 100m'></a></td></tr>
+<tr><td align="center">
+<a href='http://www.e-pyunggang.com/' target=_banner><img src='/bbs/upload/pyeonggang.gif' border=1 title='길동역 1번 출구(마루빌딩 6층)'></a>
+</td></tr>
+-->
+<tr><td align=center><a href=http://hangeul.naver.com/share.nhn target=naver><img title="아름다운 나눔글꼴" src=/img/nanum-font.jpg border=1></a></td></tr>
+<tr><td align=center><a href=http://ndrive.naver.com/index.nhn target=naver><img title="n drive" src=/img/ndrive.jpg border=1></a></td></tr>
+
+<tr><td align=center>
+	<div id=minibox><a href=/bbs/zboard.php?id=raceboard>마라톤대회-홍보</a></div>
+	<div id=minibox><a href=/bbs/zboard.php?id=databoard>마라톤상식</a></div>
+</td> </tr>
+</table>
+</div>
+
+
+<!-- 2번째 칼럼 -->
+<div id=C2>
+<table>
+<tr>
+	<td width="350" height=0 valign=center>
+<? 
+	$decoration_box_path = "boxonly/default_bbs"; /* unistyle6box2/unistyle6_box_bbs */
+	$characters = 46;
+
+	print_bbs($decoration_box_path, "<b>훈련스케줄</b>", "training_plan", 2, $characters);
+	if($member[user_id] != '') {
+		print_bbs($decoration_box_path, "<b>회원게시판</b>", "memboard", 4, $characters);
+		print_bbs($decoration_box_path, "<b>세상사는이야기</b>", "pubboard", 3, $characters);
+	}
+	else {
+		print_bbs($decoration_box_path, "<b>세상사는이야기</b>", "pubboard", 8, $characters);
+	}
+	//print_bbs($decoration_box_path, "<b>마라톤대회 - 홍보</b>", "raceboard", 2, $characters);
+	//print_bbs($decoration_box_path, "<b>마라톤상식</b>", "databoard", 2, $characters);
+?>
+		<table border=0 cellspacing=0 cellpadding=0 width=98%>
+		<tr>
+		  <td><img src=bbs/images/trace_back.gif border=0></td>
+		  <td valign=middle width=100% background=bbs/images/trace_back.gif align=center style="font-size:10pt">
+			<a class=bmc href='bbs/bmnew.php?keykind=new' ><img src='image/collection/new2.gif' border=0> <b>새글</b><? print_bbsnew() ?></a></td>
+		  <td><img src=bbs/images/trace_back.gif border=0></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</div>
+
+<!-- 3번째 칼럼 -->
+<div id=C3>
+<?
+	$photo_gallery_decoration_box_path = "boxonly/default_gallery";
+	//print_gallery($photo_gallery_decoration_box_path, "<img src='/image/camera.jpg' border=0 height=26 align=absmiddle><img src='/image/BMCPhotoGallery.jpg' border=0 height=26 align=absmiddle><img src='/image/camera.jpg' border=0 height=26 align=absmiddle>", "photo", 2, 16, 140)
+	print_gallery($photo_gallery_decoration_box_path, "Photo Gallery", "photo", 4, 8, 70)
+?>
+
+<? //print_trainingplan() ?>
+
+	<? print_chuka("bmc", "축하합니다(<a class=bmc href='intro1_07.htm?url=".base64_encode("/bbs/bmmem.php?mode=chuka")."'>등록</a>)", 4, 32); flush(); ?> <!-- 17 -->
+	<br>
+	
+<div style="width:190px;height:16px;padding:0 0 0 0;margin:10 0 0 0;font:12pt bold;font-family:'나눔고딕';">
+<a href="http://www.rundiary.co.kr/clubdiary/index.asp?menu=400&clubid=380" target=runda><b>훈련일지-런다이어리</b></a>
+</div>
+<hr color=green width=99%>
+<?
+	print_rundailji("", 4, 42); flush(); 
+?>
+</div>
+<br>
+
+<!-- 4번째 칼럼 -->
+<div id=C4>
+<p align=center>
+<?
+	include "quickmenu3.txt";
+?>
+</p>
+<br><? print_race()?>
+</div>
+</div>
+<br>
+<!-- 5번째(copyright) 칼럼 -->
+
+<div id=copyright>
+<table border=0>
+<tr>
+  <td bgcolor="#E7E3E7">
+<?
+	include "copyright.txt";
+?>
+  </td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>

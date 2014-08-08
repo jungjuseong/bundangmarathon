@@ -1,0 +1,16 @@
+(
+for host in g01.asadal.net
+do
+echo "
+open g01.asadal.net
+user gumpu qnsekddkwk
+ascii
+prompt
+cd tmp
+lcd ..
+get t test/t
+close
+bye
+"
+done
+) | ftp -i -n -v > ./ftplog

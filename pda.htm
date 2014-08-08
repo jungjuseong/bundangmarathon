@@ -1,0 +1,87 @@
+<?
+   $_zb_url = "/bbs/"; // "제로보드가 설치된 url";
+   $_zb_path = "/home/gumpu/bbs/";
+   include $_zb_path."outlogin.php";
+?>
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta name="keywords" content="분당마라톤클럽,분당마라톤,분당,bundang,달리기,마라톤,marathon,마라톤클럽,마라톤동호회,running">
+<meta name="description" content="★♡ 순수와 열정이 있는 분당마라톤클럽은 전통을 소중히 여기고 서로를 배려하는 마라톤(달리기) 클럽입니다.♡★">
+<meta name="generator" content="분당마라톤클럽">
+<meta name="classification" content="스포츠,동호회,마라톤,달리기">
+<title>분당마라톤클럽 홈페이지</title>
+<style type="text/css">
+<!--
+font{ font-family:"굴림"; font-size: 10pt; line-height:17px; }
+td{ font-family:"굴림"; font-size: 10pt; line-height:17px; }
+a:link     	{color:#333333;text-decoration:none}
+a:visited  	{color:#666666;text-decoration:none}
+a:active 	{color:#666666;text-decoration:none}
+A:hover 	{color:#666666;text-decoration:none}
+a.bmc:link { color:#0000ff; text-decoration: none; }
+a.bmc:visited {color:#0000ff; text-decoration: none; }
+a.bmc:active { color:#0000ff; text-decoration: none; }
+a.bmc:hover { color:#00ff00; text-decoration: none; }
+-->
+</style>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" topmargin=0 leftmargin=0>
+<p><?print_outlogin("login","1","10");?></p>
+		
+<table>
+	<tr><td>
+* 마라톤 클럽입니다.
+<br>
+* 전통을 소중히 여깁니다.
+<br>
+* 서로를 배려합니다.
+	</td></tr>
+	<tr><td width="190">
+<?
+	include "d_day.txt";
+?>
+	</td></tr>
+	<tr><td width="190">
+<br>
+<?
+	include "event.txt";
+?>
+	</td></tr>
+	<tr><td width="190" align=center>
+<iframe src="http://freewiw.kweather.co.kr/freenal/result/type4.php?locate=data9.txt&color=7&type=4&gigan=1&aname=분당마라톤클럽&url=http://&part=4&areacode=108" width="190" height="105" scrolling="no" frameborder="0" allowtransparency="true" ></iframe>
+	</td></tr>
+</table>
+
+<table>
+<tr>
+	<td width="350" height="22" align=center>
+		<table border=0 cellspacing=0 cellpadding=0 width=98%>
+		<tr>
+		  <td><img src=bbs/images/trace_back.gif border=0></td>
+		  <td valign=middle width=100% background=bbs/images/trace_back.gif align=center style="font-size:12pt"><a class=bmc href='bbs/bmnew.php?keykind=new' ><img src='image/collection/new2.gif' border=0> <b>게시판 신규내용보기</b></a></td>
+		  <td><img src=bbs/images/trace_back.gif border=0></td>
+		</tr>
+		</table>
+<? print_bbs("unistyle6box2/unistyle6_box_bbs", "<b>회원게시판</b>", "memboard", 5, 30)?>
+<? print_bbs("unistyle6box2/unistyle6_box_bbs", "<b>세상사는이야기</b>", "pubboard", 6, 30)?>
+	</td>
+</tr>
+</table>
+
+	<? print_gallery("unistyle6box2/unistyle6_box_gallery", "<img src='/image/camera.jpg' border=0 height=26 align=absmiddle><img src='/image/BMCPhotoGallery.jpg' border=0 height=26 align=absmiddle><img src='/image/camera.jpg' border=0 height=26 align=absmiddle>", "photo", 2, 9, 100)?>
+<? print_trainingplan()?>
+	<? print_chuka("bmc", "축하합니다(<a class=bmc href='intro1_07.htm?url=".base64_encode("/bbs/bmmem.php?mode=chuka")."'>등록</a>)", 7, 30); flush(); ?> <!-- 17 -->
+	<br><? print_rundailji("<b>***런 다이어리 달리기일지***</b>", 6, 35); flush(); ?>
+	<br><? print_bbs("unistyle6box2/unistyle6_box_bbs", "<b>마라톤대회</b>", "raceboard", 4, 26)?>
+
+
+<a href='/intro1.htm'>클럽소개</a><br>
+<a href='/intro2.htm'>게시판</a><br>
+<a href='/intro1.htm'>클럽소개</a><br>
+<a href='/intro1.htm'>클럽소개</a><br>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<H2>유니폼 관련 의견 수렴</H2>
+<hr color=red width="90%">
+<P>
+<table width=500><tr><td>
+<p>
+새로운 유니폼에 로고와 마크를 어떤 형태로 넣을지를 회원 여러분의 의견에 따르도록 하겠습니다.
+<br>
+7개안을 만들어 운영위원, 집행부에서 1차로 3개안(득표순)을 골랐습니다. 이는 표의 분산을 방지하기 위해서였습니다.
+<br>
+3개안 중에서 하나의 안을 선택해 주시기 바랍니다. (뒷면은 2개안 중에서 택일) 시간이 많지 않기 때문에 10월 2일까지 투표와 유니폼 치수를 적어 주시면 일하는데 도움이 되겠습니다.
+<br>
+유니폼 가격은 확정되지는 않았습니다만 벌당 60,000원 내에서 결정될 것 같습니다. 여성복은 디자인과 칼라는 동일하나 특별히 만들고, 팬티 안주머니도 보통의 것 보다 사이즈를 약간 크게 만들도록 주문코자 합니다.
+<br>
+유니폼 표준치수 : 90, 95, 100, 105, 110
+<p>
+*** 투표는 9.25 ~ 10.2 중 한번만 가능하므로 신중히 처리하시기 바랍니다. ***
+</table>
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=pollanswer.php>
+<input type=hidden name="pollid" value="2004-1">
+<tr><td align=center>
+<TABLE border=1>
+<td colspan=3>
+<br><br>
+설문1. 유니폼 전면 디자인 선정
+<br><br>
+<tr>
+<td width=230 align=center>
+<img src='/member/prog/img/uniform-front-a.jpg'><br>
+분당마라톤클럽 : 단순 인식 유리, 마크 홍보 불가<br><br>
+<input type="radio" name="rule0" value="A">A안
+<td width=230 align=center>
+<img src='/member/prog/img/uniform-front-b.jpg'><br>
+심볼 마크 기본형 : 클럽 홍보 유리, 다소 복잡 <br><br>
+<input type="radio" name="rule0" value="B">B안
+<td width=230 align=center>
+<img src='/member/prog/img/uniform-front-c.jpg'><br>
+분당+심볼 마크 : 마크, 명칭 동시 홍보 가능, 흔한 형태<br><br>
+<input type="radio" name="rule0" value="C">C안
+</table>
+<p>
+<TABLE border=1>
+<tr><td colspan=2>
+<br><br>
+설문2. 유니폼 후면 디자인 선정
+<br><br>
+<tr>
+<td align=center>
+<img src='/member/prog/img/uniform-back-a.jpg'><br><br>
+<input type="radio" name="rule1" value="A">A안
+<td align=center>
+<img src='/member/prog/img/uniform-back-b.jpg'><br><br>
+<input type="radio" name="rule1" value="B">B안
+</table>
+<p>
+<TABLE border=1>
+<tr><td colspan=5>
+<br><br>
+설문3. 본인의 유니폼 치수 지정
+<br><br>
+<tr>
+<td>
+<input type="radio" name="rule2" value="90">90 &nbsp;
+<td>
+<input type="radio" name="rule2" value="95">95 &nbsp;
+<td>
+<input type="radio" name="rule2" value="100">100 &nbsp;
+<td>
+<input type="radio" name="rule2" value="105">105 &nbsp;
+<td>
+<input type="radio" name="rule2" value="110">110 &nbsp;
+</table>
+
+</TABLE>
+<P>
+<input type=submit value="위 지정 사항을 다시 한번 확인 후 여기를 눌러 주십시오." onClick="javascript:return(chk_data(this.form))">
+</form>
+<p align=center>
+<a href="pollanswer.php?pollid=2004-1">결과 보기</a>
+</center>
+<br>
+<SCRIPT LANGUAGE="javascript">
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+function chk_data(form) {
+/*
+    {
+	alert("투표 기간이 아니라 투표할 수 없습니다.");
+	return false;
+    }
+*/
+	if (chk_checked(form.rule0) == false) {
+		alert("설문1에 답하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("설문2에 답하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("설문3에 답하십시오.");
+		return false;
+	}
+
+    return true;
+}
+</SCRIPT>

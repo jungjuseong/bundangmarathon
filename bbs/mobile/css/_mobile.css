@@ -1,0 +1,8 @@
+/*!
+속도를 위해 CSS파일들을 압축함
+*/
+.backgroundStyle { background:#6F7C83;}.page_backgroundStyle {background:#F8F8F8;}.portrait label.error, .landscape label.error {color: red;font-size: 16px;font-weight: normal;line-height: 1.4;margin-top: 0.5em;width: 100%;float: none;}.landscape label.error { display: inline-block; margin-left: 22%; }.portrait label.error { margin-left: 0; display: block; }em { color: red; font-weight: bold; padding-right: .25em; }#paging a { text-decoration: none;border:1px solid #CCCCCC;padding:5px 10px 5px 10px;color: #000000;margin-right: 5px;}.secret,#currentPage { text-decoration: none;background-color: #6F7C83;border:1px solid #CCCCCC;padding:5px 10px 5px 10px;color: #FFFFFF;margin-right: 5px;}.notice { text-decoration: none;background-color: #628BB3;border:1px solid #CCCCCC;padding:5px 10px 5px 10px;color: #FFFFFF;margin-right: 5px;}.category { text-decoration: none;background-color: #5E8350;border:1px solid #CCCCCC;padding:5px 10px 5px 10px;color: #FFFFFF;margin-right: 5px;}form { margin:0px;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}

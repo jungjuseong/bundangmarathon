@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 2014 동아마라톤대회 빅매치 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2014 동아마라톤대회 빅매치</H2>
+<hr color=red width="90%">
+<p> 베팅은 한번만 가능하므로 신중히 하시기 바랍니다. </p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='2014dongamatch'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date('Y.m.d H:m:s')." 현재 $row[0] 명이 투표했습니다.</font>";
+?>
+<br> - 투표종료 : 3월15일(토요일) 밤 10시 - 
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2014dongamatch.php>
+<input type=hidden name="pollid" value="2014dongamatch">
+
+<tr>
+<td> 제 1 경기 - 최홍배 vs. 김창오 <td>
+<input type="radio" name="rule0" value="최홍배  ">최홍배
+<input type="radio" name="rule0" value="김창오  ">김창오
+</td> </td> </tr>
+<tr>
+<td> 제 2 경기 - 박용식 vs. 김용철 <td>
+<input type="radio" name="rule1" value="박용식  ">박용식
+<input type="radio" name="rule1" value="김용철  ">김용철
+</td> </td> </tr>
+<tr>
+<td> 제 3 경기 - 정관택 vs. 황기성 <td>
+<input type="radio" name="rule2" value="정관택  ">정관택
+<input type="radio" name="rule2" value="황기성  ">황기성
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center> <br>
+<input type=submit value="베팅 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("매치1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("매치2를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("매치3를 정하십시오.");
+		return false;
+	}
+ 	
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

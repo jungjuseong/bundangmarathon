@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+<TITLE>코리아엠넷 뮤직비디오 플레이어 Ver 3.0</TITLE>
+<script>
+
+/*♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡
+Dasom Player
+Copyright (c)2001 by dasomlove.net all right reserved
+HomePages : http://www.dasomlove.net/
+이 스크립트는 Dasom Player 라이센스에 따릅니다.
+사용시 저작권 명시부분을 훼손하면 안됍니다.
+♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡*/
+
+</script>
+<META name="Subject" content="I love you warts and all.">
+<META name="Title" content="">
+<META name="Author" content="♡다솜지기♡">
+<META name="keywords" content="Dasom BGM player">
+<META http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script src="../../java/autoscroll.js"></script>
+
+<script language="JavaScript">
+
+// 리스트 파일의 설정부분입니다.
+
+var framesetting =1; // 프래임 삽입을 설정하는 부분입니다.(0일경우 새창으로, 1일경우 DasomBGM내에 아이프래임 삽입시, 2일경우 다른프래임에 삽입시, 아래프래임 이름을 바꾸어주여야 합니다.)
+var e;
+var f;
+	switch(framesetting) {
+	case 0 :
+	e = opener;
+	f = "opener";
+	break;
+	case 1 :
+	e = parent;
+	f = "parent";
+	break;
+	case 2 :
+	e = DasomBGM.parent;
+	f = "DasomBGM.parent";
+	//만약 다른페이지에 이 목록 파일을 삽입한다면 DasomBGM을 DasomBGM.html파일의 프래임 이름으로 바꾸세요.
+	break;
+	}
+//★여기부터 수정하지 마세요
+
+function scrolling() { // 자동 초기 셋팅
+	switch(e.UP) {
+	case 0 :
+	document.all.up.style.visibility = "hidden";
+	document.all.up.style.width = 0;
+	document.all.up.style.height = 0;
+	break;
+	case 1 :
+	break;
+	}
+	switch(e.Down) {
+	case 0 :
+	document.all.down.style.visibility = "hidden";
+	document.all.down.style.width = 0;
+	document.all.down.style.height = 0;
+	break;
+	case 1 :
+	break;
+	}
+	switch(e.Close) {
+	case 0 :
+	document.all.close.style.visibility = "hidden";
+	document.all.close.style.width = 0;
+	document.all.close.style.height = 0;
+	break;
+	case 1 :
+	break;
+	}
+	switch(e.DasomBGM) {
+	case 0 :
+	document.all.dasombgm.style.visibility = "hidden";
+	document.all.dasombgm.style.width = 0;
+	document.all.dasombgm.style.height = 0;
+	break;
+	case 1 :
+	break;
+	}
+}
+function scing() { // 스크롤바 셋팅
+	if (e.scrollover==0){
+	document.write("<DIV ID=s1 STYLE='width:100%; height:100%; overflow:hidden; margin-left:0px;'>");
+	}
+	else if (e.scrollover==1){
+	document.write("<DIV ID=s1 STYLE='width:100%; height:100%; overflow:auto; margin-left:0px;'>");
+	}
+}
+</script>
+<LINK REL='stylesheet' TYPE='text/css' HREF='./PlayerList.css'>
+</HEAD>
+<BODY OnLoad='scrolling();' oncontextmenu="return false"  ondragstart="return false" onkeydown="return false" topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 style='border: 0px solid black; margin: 0pt;'>
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100% >
+<tr>
+<td width=100% height='100%' valign=top align=left style='line-height:0px' class=button3>
+<table border=0 background=./images/bac.gif cellpadding=0 cellspacing=0 width=100% height=100% >
+<tr>
+
+<td width=100% height='100%' valign=top align=left style='line-height:0px' class=button>
+
+<!-- 스크롤바 자동셋팅 시작 -->
+<script language=JavaScript>scing()</script>
+<!-- 스크롤바 자동셋팅 끝 -->
+<table border=0  cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+<td width=100% height=100% align=left valign=top >
+<table border=0 cellpadding=0 cellspacing=2 width=100% class=button>
+<tr><td background=./images/dot.gif></td></tr></table>
+<center>
+<script language="JavaScript">
+// ★이부분 부터 목록을 배열하는 부분입니다. 수정하지 마시길 권합니다.
+for (i=0; i <= e.subj.length -1; i++)
+	{
+	idx = i + 1
+	var Dasom_music = " <a href=javascript:" + f + ".change("
+	Dasom_music = Dasom_music + i + "); onfocus=this.blur() title='"+e.dasomsub[i]+"'>" + e.subj[i] + "</a>\n"
+	Dasom_music = Dasom_music + "<table border=0 cellpadding=0 cellspacing=2 width=100% class=button><tr><td></td></tr></table>\n"
+	document.write(Dasom_music);
+	}
+// ★여기까지 목록배열 부분
+    </script>
+
+</td></tr></table></td></tr></table>
+</div>
+</td></tr>
+<tr>
+<td width=100% class=type align=center valign=center colspan=100>
+<table border=0 background=./images/bot.gif cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td align=center class=type>
+<script language="JavaScript">
+//minw=e.bgmlistminw;
+//minh=e.bgmlistminh;
+//if(e.PlayList==2){ //재생목록이 창 크기를 조절하는경우라면....
+//document.write("<img src=./images/Close.gif style='cursor:hand;' onclick='javascript:" + f + ".setWindowSize("+minw+","+minh+")' border=0 name=close align=middle alt='목록 창닫기'>");
+//if(e.Close==1){document.write("<br>");}
+//}else if(e.PlayList==1){ // 재생목록이 새창으로 띄워준 경우라면..
+//document.write("<img src=./images/Close.gif style='cursor:hand;' onclick='javascript:window.close();' border=0 name=close align=middle alt='목록 창닫기'>");
+//if(e.Close==1){document.write("<br>");}
+//}else{ // 재생을 숨긴경우나 잘못된 입력이라면..
+//document.write("<img src=./images/Close.gif style='cursor:hand;' onclick='javascript:window.close();' border=0 name=close align=middle alt='목록 창닫기'>");
+//if(e.Close==1){document.write("<br>");}
+//}
+
+//document.write(""+ e.dasomcopyright+"<sc"+"ript src=./maker.js></sc"+"ript>\n"); //절대 수정하거나 삭제하지 마세요(라이센스 명시부분).
+
+</script>
+</td></tr></table>
+</body>
+</html>

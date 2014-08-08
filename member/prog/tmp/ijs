@@ -1,0 +1,8 @@
+INSERT INTO record VALUES ('in7608',6,'01 ÃáÃµ','Ç®','',NULL,'','¹ö½Â½ÂÂ÷',NULL,'105','1',NULL);
+INSERT INTO record VALUES ('in7608',44,'01 È¤¼­±â','Ç®','4:41:23','','Y',NULL,'',NULL,NULL,NULL);
+INSERT INTO record VALUES ('in7608',37,'01-6 °ËÇª','ÇÏÇÁ','1:56:36','','Y',NULL,'',NULL,NULL,NULL);
+INSERT INTO record VALUES ('in7608',26,'01 ºÐ´ç','ÇÏÇÁ','2:07:51','','Y',NULL,'',NULL,NULL,NULL);
+INSERT INTO record VALUES ('in7608',54,'02 µ¿¾Æ','Ç®','4:35:20','5688','Y',NULL,'0:28:28(5k) 2:55:01(30k)',NULL,NULL,'4:35:20');
+INSERT INTO record VALUES ('in7608',85,'01-2 °ËÇª','ÇÏÇÁ','1:47:02','21','Y',NULL,'',NULL,NULL,NULL);
+INSERT INTO record VALUES ('in7608',145,'02-4 °ËÇª','ÇÏÇÁ','1:43:22','31','Y',NULL,'',NULL,NULL,NULL);
+INSERT INTO record VALUES ('in7608',167,'03 Áß¾Ó','Ç®','4:48:18','5041','Y',NULL,'¹è¹ø 3688',NULL,NULL,NULL);

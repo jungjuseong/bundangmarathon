@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 2009 서울국제마라톤 빅매치 </TITLE>
+<style>
+input, td {font-family:나눔고딕;font-size:10pt;}
+</style>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H4>2009 서울국제마라톤 대회 빅매치</H4>
+<hr color=red width="90%">
+<P>
+제1경기와 제5경기는 개인사정 상 취소되었습니다.<br>
+베팅은 한번만 가능하므로 신중히 하시기 바랍니다.
+<p>
+<TABLE border=0>
+<form name=pollform method=post action=/bbs/2009dongamatch.php>
+<input type=hidden name="pollid" value="2009dongamatch">
+<tr>
+<td>제 2 경기 - 김경아 vs. 김창오<br>
+<img width=100 src=/member/photo/nayoukka.jpg>
+<img width=100 src=/member/photo/pheath.jpg> </td>
+<td>
+<input type="radio" name="rule0" value="김경아님 승">김경아님 승
+<br><input type="radio" name="rule0" value="김창오님 승">김창오님 승
+</td>
+</tr>
+<tr>
+<td>제 3 경기 - 나기남 vs. 박희선 vs. 한광우<br>
+<img width=100 src=/member/photo/nknam.jpg>
+<img width=100 src=/member/photo/hspark53.jpg>
+<img width=100 src=/member/photo/thhan.jpg>
+<td>
+<input type="radio" name="rule1" value="나기남님 승">나기남님 승
+<br><input type="radio" name="rule1" value="박희선님 승">박희선님 승
+<br><input type="radio" name="rule1" value="한광우님 승">한광우님 승
+</td>
+</tr>
+<tr>
+<td>제 4 경기 - 박하명 vs. 유성복<br>
+<img width=100 src=/member/photo/sintofood.jpg>
+<img width=100 src=/member/photo/yusb.jpg>
+</td>
+<td>
+<input type="radio" name="rule2" value="박하명님 승">박하명님 승
+<br><input type="radio" name="rule2" value="유성복님 승">유성복님 승
+</tr>
+<tr>
+<td>제 6 경기 - 송재혁 vs. 정관택<br>
+<img width=100 src=/member/photo/s590329.jpg>
+<img width=100 src=/member/photo/jeonggt.jpg>
+</td>
+<td>
+<input type="radio" name="rule3" value="송재혁님 승">송재혁님 승
+<br><input type="radio" name="rule3" value="정관택님 승">정관택님 승
+</tr>
+<tr>
+<td>제 7 경기 - 최남균 vs. 허무룡<br>
+<img width=100 src=/member/photo/hriver21.jpg>
+<img width=100 src=/member/photo/youyou.jpg>
+</td>
+<td>
+<input type="radio" name="rule4" value="최남균님 승">최남균님 승
+<br><input type="radio" name="rule4" value="허무룡님 승">허무룡님 승
+</td>
+</tr>
+<tr>
+<td colspan=2 align=center>
+<input type=submit value="베팅 저장" onClick="javascript:return(chk_data(this.form))">
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("제1경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("제3경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("제4경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule3) == false) {
+		alert("제6경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule4) == false) {
+		alert("제7경기를 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

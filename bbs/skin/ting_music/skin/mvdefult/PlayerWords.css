@@ -1,0 +1,15 @@
+BODY 
+{scrollbar-face-color: #FDDEE8; 
+scrollbar-shadow-color: #FDDEE8; 
+scrollbar-highlight-color: #ffffff; 
+scrollbar-3dlight-color: #FDCFDD; 
+scrollbar-darkshadow-color: #FDCFDD; 
+scrollbar-track-color: FFF6F9; 
+scrollbar-arrow-color: #FEA6C0}
+A:link    {color:FD60A2;text-decoration:none;cursor=w-resize;}
+A:visited {color:FD60A2;text-decoration:none;cursor=w-resize;}
+A:active  {color:FD60A2;text-decoration:none;cursor=w-resize;}
+A:hover  {color:fDC0DD;text-decoration:none;cursor=w-resize;}
+      TD.type{font-size:8pt; color:#FF90B0;background-color:#FFF6F9}
+      .button {padding-left:5;color:#FF90B0; font-size: 12px; background-color:#FFF6F9;}
+table.aa{border:1px solid #FF90B0;}

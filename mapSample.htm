@@ -1,0 +1,58 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<script type="text/javascript" src="http://maps.naver.com/js/naverMap.naver?key=2046b34148336663260c4394733acbed">
+</script>
+                            <div id='mapDiv'> </div>
+<script type="text/javascript">
+ var naver_map = new NMap(document.getElementById('mapDiv'), 600, 500);
+
+ var point = new NLatLng(37.3748008,127.1249899);	//돌마각
+// var point = new NLatLng(37.3321331,127.1884499);	//오포사업장
+// var point = new NPoint(321198,529730);			// NHN
+ var iconurl = "http://static.asjs.net/map/spot_green.png";
+ var iconSize = new NSize(57,65);
+ var iconOffset = new NSize(30, 65);
+ var markerIcon = new NIcon(iconurl, iconSize, iconOffset);
+ var marker = new NMark(point, markerIcon);
+ 
+ naver_map.addOverlay(marker);
+
+ var zoomControl = new NZoomControl();
+ zoomControl.setAlign("left");
+ zoomControl.setValign("top");
+ naver_map.addControl(zoomControl);
+
+ var mapBtns = new NMapBtns()
+ mapBtns.setAlign("right");
+ mapBtns.setValign("top");
+ naver_map.addControl(mapBtns);
+
+ var infoWindow = new NInfoWindow();
+ infoWindow.setOpacity(0.5);
+// infoWindow.set(new NLatLng(37.3748016,127.1252384), "돌마각");
+ infoWindow.set(point, "<div style='margin-bottom=1px;margin-left=20px;border=4px;padding=1px'><b>돌마각</b></div>");
+ naver_map.addOverlay(infoWindow);
+
+ var infoWindowA = new NInfoWindow();
+ infoWindowA.setOpacity(0.5);
+ infoWindowA.set(new NLatLng(37.3745696,127.1231331), "<div><b>A주차장</b></div>");
+ naver_map.addOverlay(infoWindowA);
+
+ var infoWindowB = new NInfoWindow();
+ infoWindowB.setOpacity(0.5);
+ infoWindowB.set(new NLatLng(37.3760157,127.1215446), "<div><b>B주차장</b></div>");
+ naver_map.addOverlay(infoWindowB);
+
+ naver_map.setCenterAndZoom(point, 2);
+
+ infoWindow.showWindow();
+ infoWindowA.showWindow();
+ infoWindowB.showWindow();
+
+</script>
+</body>
+</html>

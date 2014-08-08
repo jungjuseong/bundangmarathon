@@ -1,0 +1,51 @@
+<HTML style="width: 280; height: 130;">
+<HEAD>
+<TITLE>File Open</TITLE>
+<script type="text/javascript">
+function okClick() {
+  if(!document.all.fileURL.value)
+  {
+   alert('선택된 파일이 없습니다..');
+   document.all.fileURL.focus();
+   return false;
+  }else{
+   window.returnValue = fileURL.value;
+   window.close();
+  }
+}
+
+function cancelClick()
+{ 
+	window.returnValue=window.dialogArguments;
+	window.close();
+}
+</script>
+</HEAD>
+<link rel=StyleSheet HREF=open.css type=text/css title=style>
+</HEAD>
+<BODY  scroll="no">
+<table cellpadding="0" border=0 cellspacing="0" width="100%">
+    <tr>
+        <td width="100%" align=center colspan=2>
+            <font size=3><b>사용자 파일열기</b></td>
+    </tr>
+    <tr>
+        <td width="100%" colspan=2>
+            <input type="file" class="input" id="fileURL" style='width:100%;'>
+        </td>
+    </tr>
+    <tr>
+        <td width="100%" colspan=2 align=center >
+           URL을 입력 또는 파일을 선택하세요
+        </td>
+    </tr>
+    <tr>
+        <td width="50%"align=center >
+            <input class="input" onclick="okClick()" type="submit" value="확인">
+        </td><td width="50%"align=center > 
+            <input class="input"  onclick="cancelClick()" type="submit" value="취소">
+        </td>
+    </tr>
+</table>
+</BODY>
+</HTML>

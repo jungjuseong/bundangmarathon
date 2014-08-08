@@ -1,0 +1,6 @@
+<?php
+$css_name   = "±âº»-Èò»ö";
+$css_maker  = "µå¸²Äù½ºÆ®";
+$css_date   = "2004-04-03";
+$match_bgColor = "#FFFFFF";
+?>

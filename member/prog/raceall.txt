@@ -1,0 +1,657 @@
+<tr>
+    <td><p><a href="mailto:wdoctor@unitel.co.kr">김영백<br>(회장)<br>55.02.14<br>101</a></td>
+    <td><p><img src="kimyb.jpg" border="0"></td>
+    <td><p>풀 3:19:05 (99 조선)<br>하프 1:34:58 (01-6 검푸닷컴배)<br>2000년 보스톤마라톤 참가</td>
+    <td><p>분당구 정든마을 동아아파트</td>
+    <td><p>(주)창의 인터네셔날 대표</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:kyj5204@hanmail.net">권영주<br>(부회장)<br>52.04.16<br>107</a></td>
+    <td><p><img src="kwonyj.jpg" border="0"></td>
+    <td><p>풀 3:39:30 (2001 동아)<br>풀 3:37:06 (2000 춘천)<br>  
+        하프 1:40:30 (2000 하남)<br> 하프 1:38:40 (2000 중앙)</td>
+    <td><p>분당구 이매촌</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td nowrap><p><a href="mailto:dykim@garak.co.kr">김도연<br>(기획담당)<br>56.12.15<br>103</a></td>
+    <td><p><img src="kimdy.jpg" border="0"></td>
+    <td><p>풀 3:36:30 (2001 동아)<br>풀 3:40:28 (97 동아)<br> 하프 1:34:08(98 SAKA)<br> 
+        하프 1:30:59 (2000 하남)<br> 하프 1:32:38 (2000 중앙)</td>
+    <td><p>분당구 수내동 푸른마을</td>
+    <td><p><a href="http://www.garak.co.kr/">서울특별시 농수산물공사</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><img src="../image/star2.gif" border="0"><br> <a href="mailto:greatgwanggaeto@hanmail.net">강호<br>(훈련담당)<br>64.07.18<br>114</a></td>
+    <td><p><img src="kangho.jpg" border="0"></td>
+    <td><p>풀 2:56:26 (2001 동아)<br>풀 3:01:33 (2000 춘천)<br> 하프 1:17:03 (2000 하남)<br>10K 0:35:07 (01 청주, 2위)<br> 
+        10K 0:37:33 (2000 생활체육)<br> 5K 0:16:40 (2000 수원)</td>
+    <td><p>분당구 정자동 정든마을</td>
+    <td><p><a href="http://www.hanmiparsons.com/">한미파슨스</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:jryu@cau.ac.kr">류중석<br>(홈담당)<br>57.07.12<br>213</a></td>
+    <td><p><img src="ryujs3.jpg" border="0"></td>
+    <td nowrap><p>풀 5:26:45 (2001 동아)<br>풀 4:32:59 (2000 춘천)<br>하프 1:47:22 (01-6 검푸닷컴배)<br> 하프 2:03:28 (2000 분당)<br> 하프 1:44:22 (2000 하남)<br> 10Km 53:27 (2000생활체육)</td>
+    <td><p>분당구 구미동 무지개마을 신한아파트</td>
+    <td><p>중앙대학교 도시공학과(안성캠퍼스)</p>
+        <p><a href="http://www.const.cau.ac.kr/jryu/">류중석 
+        교수의 사이버 도시계획</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:seosc@kt.co.kr">서상철<br>(총무)<br>68.10.12<br>106</a></td>
+    <td><p><img src="seosc.jpg" border="0"></td>
+    <td><p>풀 3:21:37 (2001 동아)<br>풀 3:23:56 (2000 춘천)<br> 풀 3:39:19(2000 동아)<br> 
+        하프 1:34:28 (2000 하남)<br> 하프 1:32:24 (2000 중앙)</td>
+    <td><p>분당구 수내동 양지마을 금호아파트</td>
+    <td><p><a href="http://www.kt.co.kr">한국통신</a> 통신망관리센터</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:thkang@kpc.or.kr">강태호<br>71.08.28<br>303</a></td>
+    <td><p><img src="kangth.jpg" border="0"></td>
+    <td nowrap><p>풀 3:47:39 (2001 동아)<br>하프 1:34:03 (01-6 검푸닷컴배)<br></td>
+    <td><p>성남시 중원구 금광2동 </td>
+    <td><p><a href="http://www.kpc.or.kr/">한국생산성본부</a> 
+        국제협력실</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:hgkang@koland.co.kr">강형구<br> 63.11.01<br>301</a></td>
+    <td><p><img src="kanghg.jpg" border="0"></td>
+    <td><p>풀 4:08:13 (2000 춘천)</td>
+    <td><p>&nbsp;</td>
+    <td><p><a href="http://www.koland.co.kr/">토지공사</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:bestksh@intizen.com">곽상효<br>(운영위원)<br>52.08.30<br>309</a></td>
+    <td><p><img src="kwacsh.jpg" border="0"></td>
+    <td nowrap><p>풀 4:28:21 (2001 동아)<br>풀 4:42:37 (2000 동아 경주)<br>하프 1:54:31 (01-6 검푸닷컴배)<br>하프 1:55:50 (01 인천)<br>하프 2:04 (99 동아 국제 하프) </td>
+    <td><p>분당 구미동 서울그린빌</td>
+    <td><p><a href="http://www.heights.co.kr/">(주) 중앙건설</a> 상무</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:ohk@ktb.co.kr">권오훈<br>64.03.27<br>113</a></td>
+    <td><p><img src="kwonoh.jpg" border="0"></td>
+    <td nowrap><p>풀 4:03:46 (2001 동아)<br>풀 4:11:11(2000 서울)<br>하프 1:41:10 (01-6 검푸닷컴배)<br> 하프 1:38:32 (01 일산)<br>하프 1:40:18(01 3.1 SAKA)<br>하프 1:41:48 (01 인천)</td>
+    <td><p>분당구 수내동 푸른마을 쌍용APT</td>
+    <td><p><a href="http://www.ktb.co.kr/">KTB네트워크(주)</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:kimsk3811@hanmail.net">김상규 A<br>54.03.15<br>310</a></td>
+    <td><p><img src="kimsga.jpg" border="0"></td>
+    <td nowrap><p>풀 4:22:03 (2001 동아)<br>하프 1:49:58 (01 인천)<br>하프 1:46:13 (2001 3.1 SAKA)<br>하프 1:58:41 (2000 중앙)<br> 10Km 52:17 (2000 춘천)</td>
+    <td><p>분당구 이매동 두산아파트</td>
+    <td><p><a href="http://www.kiep.go.kr/">대외경제정책연구원(KIEP)</a></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:">김상규 B<br> 66.10.12<br>312</a></td>
+    <td><p><img src="kimsgb.jpg" border="0"></td>
+    <td nowrap><p>풀 3:23:07 (2001 동아)<br>하프 1:30:18 (01-6 검푸닷컴배)<br>10km 0:38:56 (01 인천, 연령2위)</td>
+    <td><p>성남 중동</td>
+    <td><p>우성내장건축</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:san2run@hanmir.com">김영헌<br>(전 홈담당)<br>58.06.22<br>104</a></td>
+    <td><p><img src="kimyh.jpg" border="0"></td>
+    <td><p>풀 3:24:54 (2001 동아)<br>풀 3:27:38(99 조선)<br> 하프 1:32:17 (01 인천)<br>하프 1:30:27 (2000 하남)<br> 하프 1:38:55(99 중앙)</td>
+    <td><p>용인 수지1지구 현대아파트</td>
+    <td><p><a href="http://www.kt.co.kr">한국통신</a> 멀티미디어연구소<br> 
+        0502-102-2744</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:desookim@hanmir.com">김일수<br>64.10.20<br>304</a></td>
+    <td><p><img src="kimis.jpg" border="0"></td>
+    <td nowrap><p>풀 4:56:56 (2001 동아)<br>하프 1:58:24 (01-6 검푸닷컴배)<br></td>
+    <td><p>&nbsp;</td>
+    <td><p>분당 차병원 총무과</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:">김준기<br> 65.02.23<br>306</a></td>
+    <td><p><img src="kimjg.jpg" border="0"></td>
+    <td nowrap><p>풀 4:18:40 (2001 동아)<br>풀 5:30 (96 조선)<br> 풀 3:48 (98 조선)<br>풀 4:28 (00 조선)</td>
+    <td><p>과천시 부림동</td>
+    <td><p>제일특허법률사무소 </td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:agasunu@hanmail.net">김진용<br> 66.11.08<br>109</a></td>
+    <td><p><img src="kimjy.jpg" border="0"></td>
+    <td><p>풀 4:20:47 (99 조선)</td>
+    <td><p>분당구 정자동 느티마을</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:run21@yonsei.ac.kr">문환구<br> 63.03.13<br>105</a></td>
+    <td><p><img src="moonhg.jpg" border="0"></td>
+    <td><p>풀 3:22:10 (2000 춘천)<br> 풀 3:23:46(99 조선)<br> 
+        하프 1:33:29 (2000 하남)</td>
+    <td><p>용인 수지1지구 삼성2차아파트</td>
+    <td><p><a href="http://www.yonsei.ac.kr/">연세대학교</a></p>
+        <p><a href="http://home.hanmir.com/~run21/">개인 홈페이지</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:psh7052@hanmail.net">박세희<br> 74.04.12<br>218</a></td>
+    <td><p><img src="parksh.jpg" border="0"></td>
+    <td nowrap>하프 2:08:20 (01-6 검푸닷컴배)<br>하프 2:24:02 (2000 중앙)<br> 10Km 1:11:27 
+        (99 중앙)</td>
+    <td><p>&nbsp;</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><img src="../image/star2.gif" border="0"><br><a href="mailto:junkyu01@unitel.co.kr">박준규<br>66.09.20<br>308</a></td>
+    <td><p><img src="parkjg.jpg" border="0"></td>
+    <td nowrap><p>풀 3:14:25 (2001 동아)<br>하프 1:23:19 (01-6 검푸닷컴배)<br>하프 1:27:18 (01 청주)</td>
+    <td><p>수정구 태평동</td>
+    <td><p>한영외국어고등학교 행정실 </td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:hyukose@yahoo.co.kr">박혁수<br> 55.01.18<br>108</a></td>
+    <td><p><img src="parkhs.jpg" border="0"></td>
+    <td><p>풀 4:08:13 (2000 춘천)<br> 풀 4:27:21 (2000 동아)<br> 
+        하프 1:46:13 (99 조선)</td>
+    <td><p>분당구 야탑동 매화마을 동신빌라</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:sojon@mocie.go.kr">서헌전<br> 55.12.05<br>209</a></td>
+    <td><p><img src="seohj2.jpg" border="0"></td>
+    <td nowrap><p>풀 3:34:43 (2001 동아)<br>하프 1:31:56 (01-6 검푸닷컴배)<br>하프 1:36:13 (2000 분당)<br> 하프 1:41:28 
+        (2000 통일)<br> 하프 1:34:35 (2000 중앙)</td>
+    <td><p>분당구 정자동 느티마을</td>
+    <td><p>산업자원부</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:jimisong@hanabank.co.kr">송정면<br>57.10.11<br>302</a></td>
+    <td><p><img src="songjm.jpg" border="0"></td>
+    <td><p>풀 4:21:52 (2001 동아)<br>하프 1:54:40 (01-6 검푸닷컴배)<br>하프 1:56:40 (2000 동아)</td>
+    <td><p>서초구 서초동 금호아파트</td>
+    <td><p><a href="http://www.hanabank.co.kr">하나은행</a> 
+        분당 이매동 지점장</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:sestech@kornet.net">신기범<br> 51.01.06<br>202</a></td>
+    <td><p><img src="shingb.jpg" border="0"></td>
+    <td nowrap><p>풀 4:23:55 (2001 동아)<br>풀 4:27:59 (2000 춘천)<br> 풀 4:44:25 (2000 
+        통일)<br>하프 1:41:35 (01-6 검푸닷컴배)<br> 하프 1:47:57 (2000 하남)<br> 하프 1:51:48 
+        (2000 중앙)</td>
+    <td><p>용인 수지 풍덕천 동보아파트</td>
+    <td><p>(주)세스텍 대표</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:greengumpu@hanmail.net">신의성<br>54.10.20<br>110</a></td>
+    <td><p><img src="shines.jpg" border="0"></td>
+    <td><p>풀 3:55:26 (2001 동아)<br>풀 3:59:53 (2000 춘천)<br> 풀 4:16:55 (2000 동아)<br> 
+        하프 1:35:01 (01-6 검푸닷컴배)<br>하프 1:28:45 (01 인천)<br> 하프 1:38:41 (2000 하남)<br> 
+        하프 1:35:40 (2000 중앙)<br>하프 1:45:03 (99 조선)</td>
+    <td><p>안양시 만안구 안양6동</td>
+    <td><p>연성케미칼 대표</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:srsim@hanmir.com">심영종<br>58.03.25<br>210</a></td>
+    <td><p><img src="shimyj.jpg" border="0"></td>
+    <td nowrap><p>풀 3:42:21 (2001 동아)<br>풀 3:32:28 (2000 춘천)<br>하프 1:58:29 (01-6 검푸닷컴배)<br> 하프 1:35:51 (2000 
+        분당)<br> 하프 1:29:11 (2000 하남)<br> 하프 1:30:40 
+        (2000 중앙)</td>
+    <td><p>분당구 수내동</td>
+    <td><p></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:NTIMAL@provin.kyonggi.kr">안경근<br>(운영위원)<br>56.10.01<br>102</a></td>
+    <td><p><img src="ahngg.jpg" border="0"></td>
+    <td><p>풀 3:50:49 (2001 동아)<br>풀 3:33:11 (2000 춘천)<br> 풀 3:49:24 (99 조선)<br> 
+        하프 1:41:02 (2000 하남)<br> 하프 1:36:41 (2000 중앙)</td>
+    <td rowspan="2"><p>분당구 정자동</td>
+    <td><p>스타상사 대표</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p>송정숙<br> 61.04.28<br>111</td>
+    <td><p><img src="songjs.jpg" border="0"></td>
+    <td><p>하프 2:24:47 (2000 동아)<br> 10Km 0:57:45 (99 조선)</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:ruchiano2000@hanmir.com">오재현<br> 61.09.23<br>205</a></td>
+    <td><p><img src="ohjh.jpg" border="0"></td>
+    <td nowrap><p>풀 4:08:45 (2001 동아)<br>하프 2:02:56 (01-6 검푸닷컴배)<br>하프 1:51:54 (2000 하남)<br> 하프 1:40:48 
+        (2000 중앙)</td>
+    <td><p>분당구 정자동</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:jkyun@hotmail.com">윤재경<br> 65.8.10<br>206</a></td>
+    <td><p><img src="yoonjg.jpg" border="0"></td>
+    <td nowrap><p>풀 3:48:24 (2001 동아)<br>풀 3:54:24 (2000 춘천)<br>하프 1:36:46 (01-6 검푸닷컴배)<br> 하프 1:41:34<br> 
+        하프 1:43:31 (2000 중앙)</td>
+    <td><p>분당구 정자동 정든마을 우성APT</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><a href="mailto:jlaw@netlaw.co.kr"><p>이명현<br>(고문변호사)<br>63.04.03<br>311</a></td>
+    <td><p><img src="leemh2.jpg" border="0"></td>
+    <td nowrap><p>풀 4:31:28 (2001 경주벚꽃)<br>하프 2:02:38 (2001 동아)<br>하프 1:59:41 (2001 3.1 SAKA)<br>25K 2:44:20 (2001 금강산)</td>
+    <td><p>분당구 정자동 정든마을</td>
+    <td><p>변호사</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:yeaslee@yahoo.co.kr">이성<br> 60.05.24<br>217</a></td>
+    <td><p><img src="lees.jpg" border="0"></td>
+    <td><p>풀 3:32:36 (2000 춘천)<br> 하프 1:51:16(99.09 중앙)<br> 
+        하프 1:41:47(99.10 충주)<br> 하프 1:39:04 (2000 양평)<br> 
+        하프 1:31:25 (2000 하남)<br>하프 1:32:04 (2000 중앙)<br>하프 1:31:37 (01-6 검푸닷컴배)</td>
+    <td><p>분당동 샛별마을 동성아파트</td>
+    <td><p>대현실업(주)</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><img src="../image/star2.gif" border="0"><br> <a href="mailto:yosolee@hanmail.net">이영수<br> 43.05.25<br>207</a></td>
+    <td><p><img src="leeys2.jpg" border="0"></td>
+    <td nowrap><p>풀 3:09:49 (2000 춘천)<br> 풀 2:53:46 (88 
+        세계노장마라톤)<br> 하프 1:23:25 (2000 하남)</td>
+    <td><p>&nbsp;</td>
+    <td><p>검푸 최고수</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:lee246@mocie.go.kr">이은수<br>(운영위원)<br> 50.08.27<br>212</a></td>
+    <td><p><img src="leees.jpg" border="0"></td>
+    <td nowrap><p>풀 3:52:31 (2000 경주동아)<br> 풀 3:54:37 
+        (2000 춘천)<br> 풀 4:30:18(2000.3 동아)<br> 하프 1:39:48 
+        (2000.5 분당)</td>
+    <td><p>분당구 야탑동 매화마을</td>
+    <td><p><a href="http://www.mocie.go.kr/">산업자원부</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:jangho@jinro.co.kr">이장호<br> 64.03.17<br>215</a></td>
+    <td><p><img src="leejh.jpg" border="0"></td>
+    <td><p>풀 4:03:30 (2001 서울)<br>하프 1:36:20 (01-6 검푸닷컴배)<br>하프 1:35:36 (01 인천)<br>하프 1:34:09 (2000 중앙)<br> 하프 1:53:40 (99 서울)<br> 
+        10Km 46:22 (2000 춘천)</td>
+    <td><p>용인 수지</td>
+    <td><p><a href="http://www.jinro.co.kr/">진로</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:aaaa7011@hanmail.net">이종창<br> 44.02.25<br>208</a></td>
+    <td><p><img src="leejc.jpg" border="0"></td>
+    <td nowrap><p>풀 4:01:33 (2001 동아)<br>풀 3:51:45 (2000 춘천)<br>하프 1:57:04 (01-6 검푸닷컴배)<br> 하프 1:39:39 (2000 하남)</td>
+    <td><p>분당구 수내동 파크타운</td>
+    <td><p>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:LEEHORI@shinbiro.com">이진두<br>64.01.30<br>112</a></td>
+    <td><p><img src="leejd.jpg" border="0"></td>
+    <td><p>풀 4:21:52 (2001 동아)<br>풀 4:07:42 (2000 춘천)<br> 풀 4:27:20 (2000 동아)<br> 
+        하프 1:50:51 (99 조선)<br> 하프 1:47:27 (2000 하남)</td>
+    <td><p>오산</td>
+    <td><p><a href="http://www.hdec.co.kr/">현대건설</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:running21@netsgo.com">이홍석<br>52.06.19<br>115</a></td>
+    <td><p><img src="leehs.jpg" border="0"></td>
+    <td><p>풀 4:31:45 (2001 동아)<br>풀 4:38:10 (2000 춘천)<br> 풀 4:53:24 (2000 동아)<br> 하프 2:02:28 (01-6 검푸닷컴배)<br>하프 1:54:50 (2000 하남)</td>
+    <td><p>분당구 정자동 정든마을 동아아파트</td>
+    <td><p>(주)에어랩 상무</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:eiplus@hanmail.net ">정상천<br> 74.05.03<br>214</a></td>
+    <td><p><img src="jungsc.jpg" border="0"></td>
+    <td nowrap><p>풀 4:09:23 (2001 동아)<br>풀 4:17:43 (2000 춘천)<br>하프 1:48:35 (01-6 검푸닷컴배)<br> 하프 1:47:23 (2000 
+        하남)<br> 하프 2:10:09 (99 필리핀)<br> 10Km 45:10 (98 
+        필리핀)</td>
+    <td><p>성남시 수정구 태평3동</td>
+    <td><p>Cathay Pacific</p>
+        <p><a href="http://myhome.shinbiro.com/~eiplus/index.htm">개인홈페이지</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:running21@netsgo.com">정주성<br> 64.12.23<br>203</a></td>
+    <td><p><img src="jungjs2.jpg" border="0"></td>
+    <td nowrap><p>풀 4:18:31 (2001 동아)<br>풀 4:29:17 (2000 춘천)<br> 하프 2:07:07 (2000 
+        양평)<br> 하프 1:57:25 (2000 하남)<br> 하프 1:55:35 
+        (2000 중앙)</td>
+    <td><p>&nbsp;</td>
+    <td><p>수원여자대학교 컴퓨터응용학부/교수</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:freeism@hanmir.com">조상국<br>(운영위원)<br>59.07.09<br>211</a></td>
+    <td><p><img src="chosg.jpg" border="0"></td>
+    <td><p>풀 4:27:01 (2001 동아)<br>풀 4:29:01 (2000 춘천)<br> 하프 1:53:39 (2000 분당)<br> 
+        하프 1:53:14 (2000 중앙)</td>
+    <td><p>송파구 거여동 효성아파트</td>
+    <td><p>태일가설산업</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:shacho@kornet.net">조성하<br> 62.08.08<br>116</a></td>
+    <td><p><img src="josh.jpg" border="0"></td>
+    <td><p>하프 1:47:20 (2000 동아)</td>
+    <td><p>분당구 서현동 효자촌 현대APT</td>
+    <td><p>(주)다산컨설턴트</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:pk-jsg@hanmail.net">주승균<br>(검푸주치의)<br>63.03.23<br>201</a></td>
+    <td><p><img src="jusg.jpg" border="0"></td>
+    <td><p>풀 4:02:32 (2001 동아)<br>풀 3:44:12 (2000 춘천)<br> 풀 3:53:28 (2000 동아)<br> 
+         하프 1:31:19 (2000 통일)<br> 하프 1:38:43 (2000 중앙)</td>
+    <td><p>분당구 이매동 삼성APT</td>
+    <td><p>평강한의원 원장<br> (뛰아그라 제조비법 보유)</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:jinchul@kt.co.kr">차진철<br> 53.11.19<br>305</a></td>
+    <td><p><img src="chajc.jpg" border="0"></td>
+    <td nowrap><p>풀 3:34:31 (2001 동아)<br>풀 3:53:46 (2000 통일)<br> 풀 3:38:07 (2000 춘천)<br>
+			하프 1:32:37 (01-6 검푸닷컴배)<br>하프 1:32:51 (2000 분당)<br> 하프 1:32:04 (2000 중앙)</td>
+    <td><p>분당 이매촌 금강아파트</td>
+    <td><p><a href="http://www.kt.co.kr">한국통신</a> 서울전화건설국</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:dalinda2@hanmir.com">차창근<br> 59.09.13<br>307</a></td>
+    <td><p><img src="chacg.jpg" border="0"></td>
+    <td nowrap><p>풀 3:41:06 (2001 전군)<br>풀 3:48:39 (2001 동아)<br>하프 1:32:42 (01-6 검푸닷컴배)<br>하프 1:33:37 (01 인천)<br>하프 1:50:23 (2000 중앙)<br>하프 1:32:43 (2001 3.1 SAKA)</td>
+    <td><p>중원구 상대원1동</td>
+    <td><p>개인택시</td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:body4u@hanmail.net">창용찬<br> 55.12.05<br>216</a></td>
+    <td><p><img src="changyc.jpg" border="0"></td>
+    <td><p>풀 4:19:47 (2000 춘천)<br> 하프 1:54:19 (2000 하남)<br> 
+        하프 1:42:15 (2000 중앙)</td>
+    <td><p>분당</td>
+    <td><p><a href="http://www.body4u.co.kr/index.asp">BODY4U</a></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:tbsun4430@hanmail.net">탁복선<br>57.04.07<br>204</a></td>
+    <td><p><img src="takbs.jpg" border="0"></td>
+    <td nowrap><p>풀 3:57:14 (2001 동아)<br>풀 3:58:29 (2000 춘천)<br>하프 1:51:40 (01-6 검푸닷컴배)<br> 하프 1:55:16 (2000 
+        분당)<br> 하프 1:51:09 (2000 하남)<br> 하프 1:52:29 
+        (2000 중앙)</td>
+    <td><p>&nbsp;</td>
+    <td><p>롯데백화점인근 맛자랑멋자랑 음식백화점5층 한식당 
+        다람쥐마을</td>
+    <td></td>
+</tr>
+<!-- ---------------------------------------------------------- -->
+<tr>
+    <td align="center" colspan="5" bgcolor="#FFEAE0"><p><font
+         size="5">준회원</font></td>
+    <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:hangagan@hanmail.net">김수녕<br>(총무)<br>70.03.04<br>01.03가입</a></td>
+    <td><p><img src="kimsn-2.jpg" border="0"></td>
+    <td><p>하프 2:04:56 (01-6 검푸닷컴배)<br>하프 2:14:11 (2001 동아)비공인</td>
+    <td><p>분당구 야탑동</td> <td><p>대신택배</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:koo-jg@hanmail.net">구재길<br> 58.05.12<br>00.10가입</a></td>
+    <td><p><img src="kujg.jpg" border="0"></td>
+    <td nowrap><p>하프 2:12:42 (01 인천)</td>
+    <td><p>분당 이매동 청구아파트</td>
+    <td><p>부광상사 대표</td>
+</tr>
+<tr>
+  <td><a href="mailto:lunabrkim@hanmail.net">김보름<br>76.11.<br>01.05가입</a></td><td><img src="kimbr.jpg"></td><td nowrap></td><td>분당구 운중동 50 한국정신문화연구원 기숙사</td><td>한국정신문화연구원 한국학대학원 대학원생</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:smile@hret.co.kr">김상용<br> 72.09.05<br> 
+        00.10가입</a></td>
+    <td><p><img src="kimsy.jpg" border="0"></td>
+    <td><p>하프 1:59:01 (2000 중앙)</td>
+    <td><p>&nbsp;</td>
+    <td><p><a href="http://www.hret.co.kr/">한국부동산신탁주식회사</a></td>
+</tr>
+<tr>
+    <td><a href="mailto:ksungdong@hanmir.com">김성동<br>56.10.04<br>01.04가입</a></td><td><img src="kimsd.jpg"></td>
+    <td nowrap>하프 1:40:27 (01-6 검푸닷컴배)<br></td><td>송파구 문정동</td><td>건국대 섬유공학과</td>
+</tr>
+<tr>
+  <td><a href="mailto:sukhavati@kebi.com">김양순<br>70.12.25<!--71.02.15--><br>01.04가입</a></td><td><img src="kimysn.jpg"></td>
+  <td nowrap>하프 2:38:52 (01-6 검푸닷컴배)<br>15Km 1:40:24 (2001 하남백제야간)<br>7Km 42:44 (01 대덕밸리)</td>
+  <td>분당구 운중동 50 한국정신문화연구원 기숙사</td><td><a href="http://www.aks.ac.kr/">한국정신문화연구원</a> 한국학대학원 대학원생<br><a href="http://my.netian.com/~phoebe70/">개인 홈페이지</a><br><a href="http://www.sutra.re.kr/">고려대장경연구소</a></td>
+</tr>
+<tr>
+  <td><a href="mailto:">김재현<br>54.07.23<br>01.04가입</a></td><td><img src="kimjh.jpg"></td>
+  <td nowrap></td><td>분당 야탑동</td><td>삼안건설기술공사</td>
+</tr>
+<tr>
+  <td><a href="mailto:aishteru@hanmail.net">김정은<br><br>01.05가입</a></td><td><img src="kimje.jpg"></td>
+  <td nowrap></td><td>용인 수지</td><td>(주)에어랩</td>
+</tr>
+<!-- ------------------------------------------
+<tr>
+    <td><p><img src="../image/star2.gif" border="0"><br><a href="mailto:">나광섭<br>53.08.28<br> 00.10가입</a></td>
+    <td><p><img src="nags.jpg" border="0"></td>
+    <td nowrap><p>풀 3:04:51 (2001 동아)<br></td>
+    <td><p>&nbsp;</td>
+    <td><p>성남시 생활체육회 총무</td>
+</tr>
+-->
+<tr>
+    <td><a href="mailto:">문희택<br>53.02.24<br>01.04가입</a></td><td><img src="moonht.jpg"></td><td nowrap>하프 1:50:49 (2000 중앙)</td><td>분당 수내동</td><td></td>
+</tr>
+<tr>
+    <td><a href="mailto:sungpak@hantech.co.kr">박승식<br>51.01.16<br>01.05가입</a></td><td><img src="parkss.jpg"></td>
+    <td nowrap>풀 4:10:10 (2001 동아) <br>풀 4:14:08 (2001 전군)<br>하프 1:44:44 (2001 일산)<br>하프 1:47:17 (2001 인천)<br>하프 1:47:44 (2001 경향)</td><td>분당구 구미동 무지개마을</td><td><a href="http://www.hantech.co.kr/">(주)한택기술연구소</a> 연구소장</td>
+</tr>
+<tr>
+    <td><a href="mailto:">박일우<br>57.02.<br>01.05가입</a></td><td><img src="parkiw.jpg"></td><td nowrap></td><td>용인 수지</td><td>(주)트리쯔</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:hk@olrim.com">박홍균<br> 63.03.<br> 
+        00.10가입</a></td>
+    <td><p><img src="parkhg.jpg" border="0"></td>
+    <td nowrap>하프 1:55:03 (01-6 검푸닷컴배)<br>하프 2:04:46 (2001 동아)</td>
+    <td><p>분당 정자동 상록우성아파트</td>
+    <td><p><a href="http://www.olrim.com">(주)올림닷컴 대표</a></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:hyejun20@hanmail.net">송혜준<br> 
+        81.07.<br> 00.12가입</a></td>
+    <td><p><img src="songhj.jpg" border="0"></td>
+    <td nowrap><p>10Km 1:27:07 (2001 국제관광)</td>
+    <td><p>용인시 수지읍 수지1지구 풍림아파트</td>
+    <td><p>수원여대 전자상거래학과</td>
+</tr>
+<tr>
+    <td><p><a href="mailto:missingpiece@hananet.net">안경님<br> 63.12<br> 01.03가입</a></td>
+    <td><p><img src="ahngn.jpg" border="0"></td>
+    <td nowrap><p><br></td>
+    <td><p>분당구 서현동</td> <td><p></td>
+</tr>
+<tr>
+    <td><p>안평기<br> 57.<br> 01.06가입</a></td>
+    <td><p><img src="ahnpg.jpg" border="0"></td>
+    <td nowrap><p><br></td>
+    <td colspan=2><p>분당구 정자동 정든마을</td> <td>쌍용엔지니어링</td>
+</tr>
+<tr>
+    <td><p>박선희<br> 64.<br> 01.06가입</a></td>
+    <td><p><img src="parksnh.jpg" border="0"></td>
+    <td nowrap><p><br></td>
+    <td>쌍용엔지니어링</td>
+</tr>
+<tr>
+    <td><a href="mailto:yki7@hanmir.com">유경일<br><br>01.04가입</a></td><td><img src="yoogi.jpg"></td>
+    <td nowrap>하프 1:47:53 (01-6 검푸닷컴배)<br></td><td>분당 아름마을</td><td>두원공조</td>
+</tr>
+<tr>
+    <td><a href="mailto:adman815@hanmir.com">윤준희<br>(운영위원)<br>68.05.12<br>01.04가입</a></td><td><img src="yoonjh.jpg"></td>
+    <td nowrap>하프 1:55:41 (01-6 검푸닷컴배)<br></td><td>수지읍 풍덕천리</td><td>광고기획</td>
+</tr>
+<tr>
+    <td><a href="mailto:haekyung108@hanmir.com">윤해경<br>(운영위원)<br>70.05.18<br>01.04가입</a></td><td><img src="yoonhg.jpg"></td>
+    <td nowrap>하프 2:06:56 (01-6 검푸닷컴배)<br></td><td>분당 장미마을</td><td>홍디자인출판부</td>
+</tr>
+<tr>
+    <td><a href="mailto:kicyoon@dreamwiz.com">윤창기<br>67..<br>01.06가입</a></td><td><img src="yooncg.jpg"></td>
+    <td nowrap>하프 2:04:59 (01-6 검푸닷컴배)<br></td><td>분당 까치마을1단지</td><td>삼성전자(삼성플라자)</td>
+</tr>
+<tr>
+    <td><a href="mailto:">이명재<br>55.<br>01.06가입</a></td><td><img src="leemj.jpg"></td><td nowrap>하프 1:49:19 (01-6 검푸닷컴배)<br></td><td>분당 수내동 파크타운</td><td>평화은행</td>
+</tr>
+<tr>
+    <td><a href="mailto:yk9629@hanmir.com">이용구<br>68.04.06<br>01.05가입</a></td><td><img src="leeyg.jpg"></td><td nowrap></td><td>서울 대림동</td><td></td>
+</tr>
+<tr>
+    <td><a href="mailto:lyh702@hanmir.com">이유학<br>59.07.02<br>01.04가입</a></td><td><img src="leeyh.jpg"></td>
+    <td nowrap>하프 1:51:31 (01-6 검푸닷컴배)<br></td><td>분당 샛별마을</td><td>스페이스텍 건축사무소</td>
+</tr>
+<tr>
+  <td><a href="mailto:">이형국<br>60.<br>01.06가입</a></td><td><img src="leehg.jpg"></td>
+  <td nowrap>하프 1:44:23 (01-6 검푸닷컴배)<br></td><td>산본</td><td>LG전자</td></tr>
+<tr>
+    <td><a href="mailto:hwlee68@shinbiro.com">이희원<br>68.05.25<br>01.04가입</a></td><td><img src="leehw.jpg"></td><td nowrap></td><td>분당구 수내동 대림파크타운</td><td>신호제지</td>
+</tr>
+<tr>
+    <td><a href="mailto:insarang@hananet.net">인정수<br>64.07.09<br>01.05가입</a></td><td><img src="injs.jpg"></td>
+    <td nowrap>하프 1:56:36 (01-6 검푸닷컴배)<br>하프 2:07:51 (2001 분당)</td><td>분당구 야탑동 장미마을</td><td>성남남부경찰서</td>
+</tr>
+<tr>
+    <td><a href="mailto:dlacldnj@yahoo.co.kr">임치원<br>58.01.03<br>01.05가입</a></td><td><img src="imcw.jpg"></td>
+    <td nowrap>풀 3:44:11 (2001 동아)<br>풀 03:51:50 (2000 춘천)<br>하프 1:37:32 (01-6 검푸닷컴배)<br>하프 1:37:36 (2000 중앙)</td><td>용인시 수지읍 풍덕천리</td><td>가보자 공인중개사</td>
+</tr>
+<tr>
+    <td><a href="mailto:j3bell@netian.com">전삼종<br>67.07.06</a></td><td><img src="jeonsj.jpg"></td>
+    <td nowrap>하프 1:49:22 (01-6 검푸닷컴배)<br></td><td>용인시 수지읍 풍덕천리 신정마을 현대Apt</td><td>롯데건설(주)</td>
+</tr>
+<tr>
+    <td><a href="mailto:jjwss@hanmir.com">전제원<br>57.05.12<br>01.05가입</a></td><td><img src="jeonjw.jpg"></td>
+    <td nowrap>하프 1:38:54 (01-6 검푸닷컴배)<br>하프 1:46:03 (2001 분당)</td><td>분당 양지마을 한양아파트</td><td><a href="http://ydsindo.co.kr/">영동신도판매(주) 대표</a></td>
+</tr>
+<tr>
+    <td><a href="mailto:">전흥길<br>58.10.08<br>01.04가입</a></td><td><img src="jeonhg.jpg"></td><td nowrap></td><td rowspan=2>분당 양지마을</td><td>(주)유래코</td>
+</tr>
+<tr>
+    <td><a href="mailto:">박은경<br><br>01.04가입</a></td><td><img src="parkeg.jpg"></td><td nowrap></td><td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:csg3463@hanmir.com">조성근<br> 66.03.18<br> 01.03가입</a></td>
+    <td><p><img src="chosgn.jpg" border="0"></td>
+    <td nowrap><p>풀 4:16:36 (2001 동아)<br>하프 1:40:38 (01-6 검푸닷컴배)<br></td>
+    <td><p>중원구</td>
+    <td><p>국제조각 대표</td>
+</tr>
+<tr>
+    <td><a href="mailto:choiki1108@hanmir.com">최경인<br>58.01.13<br>01.04가입</a></td><td><img src="choigi.jpg"></td>
+    <td nowrap>풀 3:50:48 (01 전군)<br>하프 1:36:56 (01-6 검푸닷컴배)<br>하프 1:35:43 (01 경향)</td><td>분당 분당동</td><td>한국도로공사</td>
+</tr>
+<tr>
+    <td><a href="mailto:buddhahan@hanmail.net">한명로<br>50.09.14<br>01.05가입</a></td><td><img src="hanmr.jpg"></td>
+    <td nowrap>풀 4:33:23 (2000 조선)<br>하프 1:45:24 (01-6 검푸닷컴배)<br>하프 1:59:05 (2000 중앙)</td><td>서현동 한양아파트</td><td>재정경제부 국세심판원</td>
+</tr>
+<tr>
+  <td><a href="mailto:">홍귀현<br>67.<br>01.06가입</a></td><td><img src="honggh.jpg"></td>
+  <td nowrap><br></td><td>분당 한솔마을</td><td>이대 대학원</td>
+</tr>
+<!-- ---------------------------------------------------------- -->
+<tr>
+  <td align="center" colspan="5" bgcolor="#FFEAE0"><p><font size="5">일반회원</font></td>
+  <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:mykim@keic.or.kr">김문영<br> 70.01.17</a></td>
+    <td><p><img src="kimmy.jpg" border="0"></td>
+    <td nowrap><p>하프 2:25:15 (2000 분당)</td>
+    <td><p>송파구 마천1동</td> <td><p>한국수출보험공사</td> <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:bjkim@kccworld.co.kr">김병준<br> 
+        63.04.18</a></td>
+    <td><p><img src="kimbj.jpg" border="0"></td>
+    <td nowrap><p>풀 5:37:51 (2000 춘천)<br> 하프 2:31:00 (2000 
+        분당)<br> 하프 1:50:43 (2000 하남)</td>
+    <td><p>&nbsp;</td> <td><p>금강고려화학</td> <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:bitec@channeli.net">김양수<br> 62.06.06</a></td>
+    <td><p><img src="kimys.jpg" border="0"></td>
+    <td><p>하프 1:36:27 (2000 서울)</td>
+    <td><p>&nbsp;</td> <td><p>바이텍다이아몬드(주) 대표</td> <td></td>
+</tr>
+<tr>
+    <td><p>김희태<br> 60.07.13</td>
+    <td></td>
+    <td><p>풀 3:40:00 (2000 춘천)<br> 하프 1:38:39 (2000 하남)</td>
+    <td><p>&nbsp;</td> <td><p>&nbsp;</td> <td></td> </tr>
+<tr>
+    <td><p><a href="mailto:jho@koland.co.kr">오재환<br> 59.02.08</a></td>
+    <td><p><img src="ohjhw.jpg" border="0"></td>
+    <td><p>풀 4:16:38 (2000 춘천)<br> 풀 4:33:41(99 통일)<br> 
+        풀 4:29:19 (2000 통일)<br> 하프 1:59:55 (99 중앙)</td>
+    <td><p>&nbsp;</td> <td><p><a href="http://www.koland.co.kr/">토지공사</a></td> <td></td>
+</tr>
+<tr>
+    <td><p><a href="mailto:forye@hanmail.net">임상준<br> 68.12.12</a></td>
+    <td><p><img src="limsj.jpg" border="0"></td>
+    <td><p>풀 4:03:12 (2000 동아)<br> 하프 1:58:37 (2000 중앙)</td>
+    <td><p>수원시 장안구 율전동 삼성APT</td>
+    <td><p><a href="http://www.sec.samsung.co.kr/">삼성전자</a></p>
+
+<!--
+
+<tr><td><a href="mailto:">이인숙</a></td><td><img src="leeis.jpg"></td><td nowrap>하프 2:38:52 (01-6 검푸닷컴배)<br></td><td></td><td></td></tr>
+
+<tr><td><a href="mailto:jhkang@lgcit.com">강정훈</a></td><td><img src=".jpg"></td><td nowrap></td><td>서초구 방배1차 현대아파트</td><td></td></tr>
+
+<tr><td>고동환</td><td></td><td></td><td>용인시 기흥읍 농서리 영광빌라</td><td>스포츠이벤트</td></tr>
+
+<tr><td><a href="mailto:sgkim65@garak.co.kr">김성균</a></td><td><img src="kimsgn.jpg"></td><td>풀5회 3:42:52 (97 조선)<br>하프 1:41:35(98 SAKA)</td><td></td><td><a href="http://www.garak.co.kr/">서울특별시 농수산물공사</a></td></tr>
+
+<tr><td>배선덕</td><td></td><td>하프 2:16:00 (99 조선)</td><td></td><td></td></tr>
+
+<tr><td><a href="mailto:jinko@samsung.co.kr">손진기</a></td><td><img src="sonjg.jpg"></td><td>풀 3:27:58 (2000 춘천)<br>풀 3:37:49 (99 조선)</td><td></td><td><a href="http://www.ssc.samsung.co.kr/">삼성물산</a></td></tr>
+
+<tr>
+    <td><p><a href="mailto:joekiki@hdec.co.kr">신영주<br> 69.10.3</a></td>
+    <td><p><img src="shinyj.jpg" border="0"></td>
+    <td nowrap><p>30km 2:39:00 (99 일산)<br> 하프 1:50:06 (2000 
+        분당)<br> 10km 53:00 (99 춘천)</td>
+    <td><p>분당구 수내동 파크타운</td>
+    <td><p>현대건설 엔지니어링사업본부</td>
+    <td></td>
+</tr>
+<tr><td><a href="mailto:">안경배</a></td><td><img src="ahngb.jpg"></td><td nowrap></td><td></td><td></td></tr>
+
+<tr>
+    <td><p><a href="mailto:wellcomoh@posec.co.kr">오영환<br> 
+        64.01.14</a></td>
+    <td><p><img src="ohyh.jpg" border="0"></td>
+    <td nowrap><p>풀 3:40:09 (2001 동아)<br>풀 4:02:40 (2000 춘천)<br> 하프 1:44:15 (2000 
+        동아)<br> 하프 1:39:13 (2000 하남)</td>
+    <td><p>&nbsp;</td>
+    <td><p>포스코개발</td>
+    <td></td>
+</tr>

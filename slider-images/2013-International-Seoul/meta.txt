@@ -1,0 +1,31 @@
+<div class="quake-slider-wrapper"> 
+        <div class="quake-slider"> 
+            <div class="quake-slider-images"> 
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_00.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_01.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_02.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_03.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_04.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_05.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_06.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_07.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_08.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_09.jpg">
+                 <img src="/slider-images/2013-International-Seoul/2013_1Q_10.jpg">
+            </div>
+
+            <div class="quake-slider-captions"> 
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+                <div class="quake-slider-caption"> 2013 Seoul Internation Marathon</div>
+            </div> 
+        </div> 
+</div>

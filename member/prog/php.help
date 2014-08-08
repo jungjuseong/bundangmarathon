@@ -1,0 +1,71 @@
+
+phpinfo();
+
+$PHP_SELF
+require("../../../member/prog/config.php");
+
+SetCookie("logid", "$uid", "");
+header("Content-Type: text/html");
+
+	$dbquery="select count(*) from reg2002";
+	$result = mysql_query($dbquery) or die("mysql_query select error");
+	$row=mysql_fetch_array($result);
+	mysql_free_result($result);
+	$regall=$row[0];
+	if($result=="1"){
+		echo "$name 삭제 완료";
+	}
+	mysql_close() or die("mysql_close error");
+
+$regall != ($regmoneyok+$regmoneyno+$regorgmoneyno)
+
+rename($regno_file, $regnotmp_file);
+$regno_list = file($regnotmp_file);
+$fp = fopen($regnotmp_file, "w");
+fwrite($fp, $regnonew);
+fclose($fp);
+
+	if( !file_exists($incom_file)){
+		die("");
+	}
+	$fp = fopen($incom_file, "r");
+	while (!feof ($fp)) {
+		$data = chop(fgets($fp, 256));
+		if($data == "")
+			continue;
+		
+		if ($moneyyn == "1" && strpos($data, "''") != false){
+		}
+		if (substr($data, 0, 5) == "chief"){
+			$chief = substr($data,6);
+		if(feof($fp))
+	}
+	fclose ($fp);
+
+	$sexkor = array ("'남자'","'남'","'여자'","'여'");
+	$sexeng = array ("'M'","'M'","'F'","'F'");
+	count($sexkor);
+	$data = str_replace($sexkor, $sexeng, $data);
+	$org = str_replace("_", " ", $fname);
+	if(mysql_num_rows($result) > 0)
+	mysql_free_result($result);
+
+	$dbquery="update reg2002 set postaddr='$postaddr' where regno=$regnoto";
+	$result = mysql_db_query("gumpu",$dbquery);
+	if($result<"1"){
+		echo "<br>주소 변경 이상. dbquery=$dbquery";
+		die("");
+	}
+$tmp = strrchr($row[6], " ");
+$addrshort = substr($row[6], 0, strlen($row[6])-strlen($tmp));
+$strs = explode(":", $raceid);
+$raceid = $strs[0];
+list($item, $record, $nn1, $nn2, $nn3) = sscanf( $partstr,"%s %s (%s %s %s)");
+mysql_affected_rows();
+replace(substring(now(),1,10), '-', '/')";
+	$photosize = GetImageSize ($userfile);
+	if($photosize[0] != 100 || $photosize[1] != 110)
+#upload
+	if(substr($userfile_name, strlen($userfile_name)-4) != ".jpg"){
+	if($userfile_size>(1024*6)){
+	move_uploaded_file($userfile, "../photo/$photofile");

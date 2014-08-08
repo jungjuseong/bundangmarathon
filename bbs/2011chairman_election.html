@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 제 7대 회장단 선임 투표 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>제 7대 회장단 선임 투표</H2>
+<hr color=red width="90%">
+<p> 선택은 한번만 가능하므로 신중히 하시기 바랍니다. </p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='2011election'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date("Y.m.d H:m:s")." 현재 $row[0] 명이 투표했습니다.</font>";
+?>
+<br> (12월2일 20:00에 모두 마감합니다) <br><br>
+
+<H3> [ 제 7대 회장단 ] </H3>
+*** 회장(김경아), 부회장(전제원, 주승균) *** <br>
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2011chairman_election.php>
+<input type=hidden name="pollid" value="2011election">
+
+<tr>
+<td> 제 7대 회장단 <td>
+<input type="radio" name="rule0" value="찬성  ">찬성
+<input type="radio" name="rule0" value="반대  ">반대
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center>
+<input type=submit value="투표 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("찬성 또는 반대 를 선택 하십시오.");
+		return false;
+	}
+	
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

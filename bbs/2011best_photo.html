@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 2011년 베스트 포토제닉 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2011년 베스트 포토제닉</H2>
+<hr color=red width="90%">
+<p> 선택은 한번만 가능하므로 신중히 하시기 바랍니다. </p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='2011best_photo'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date("Y.m.d H:m:s")." 현재 $row[0] 명이 투표했습니다.</font>";
+?>
+<br> (12월31일 14:00에 모두 마감합니다) <br><br>
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2011best_photo.php>
+<input type=hidden name="pollid" value="2011best_photo">
+
+<tr>
+<td> Best Funny <td>
+<input type="radio" name="rule0" value="1번 ">1번
+<input type="radio" name="rule0" value="2번 ">2번
+<input type="radio" name="rule0" value="3번 ">3번
+<input type="radio" name="rule0" value="4번 ">4번
+<input type="radio" name="rule0" value="5번 ">5번
+<input type="radio" name="rule0" value="6번 ">6번
+<input type="radio" name="rule0" value="7번 ">7번
+<input type="radio" name="rule0" value="8번 ">8번
+<input type="radio" name="rule0" value="9번 ">9번
+<input type="radio" name="rule0" value="10번 ">10번
+<input type="radio" name="rule0" value="11번 ">11번
+<input type="radio" name="rule0" value="12번 ">12번
+</td> </td> </tr>
+
+<tr>
+<td> Best Pose <td>
+<input type="radio" name="rule1" value="1번 ">1번
+<input type="radio" name="rule1" value="2번 ">2번
+<input type="radio" name="rule1" value="3번 ">3번
+<input type="radio" name="rule1" value="4번 ">4번
+<input type="radio" name="rule1" value="5번 ">5번
+<input type="radio" name="rule1" value="6번 ">6번
+<input type="radio" name="rule1" value="7번 ">7번
+<input type="radio" name="rule1" value="8번 ">8번
+<input type="radio" name="rule1" value="9번 ">9번
+<input type="radio" name="rule1" value="10번 ">10번
+<input type="radio" name="rule1" value="11번 ">11번
+<input type="radio" name="rule1" value="12번 ">12번
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center>
+<input type=submit value="투표 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("Best Funny 를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("Best Pose 를 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

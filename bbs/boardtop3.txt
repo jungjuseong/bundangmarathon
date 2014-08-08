@@ -1,0 +1,28 @@
+<!-- bbs/boardtop3.txt begin -->
+<?
+   include "../index_head_PHP.txt";
+?>
+
+<?
+	include "../main_top.txt";
+?>
+<div class="wrap">
+<div class="first_column">
+   <div algin="left"><img src="/img/login_005555.gif"></div>
+   <? print_outlogin("login","1","10");?>
+   <img src="/img/under_line.gif">
+   <img src="/img/intro_me_n_03.gif" border="0" usemap="#m3">
+</div>
+
+<map name="m3">
+  <area shape="rect" coords="6, 73, 147, 96" href="http://www.bundangmarathon.com/bbs/zboard.php?id=training_plan">
+  <area shape="rect" coords="10, 100, 154, 131" href="http://www.bundangmarathon.com/intro3_02.htm">
+  <area shape="rect" coords="5, 134, 151, 159" href="http://www.bundangmarathon.com/intro3_03.htm">
+  <area shape="rect" coords="8, 162, 150, 187" href="http://www.bundangmarathon.com/intro3_01.htm">
+</map>
+
+<div class="second_wide_column">
+    <p style="line-height:150%; margin-top:0; margin-bottom:0;" align="right">
+    현재위치 : <a href="/index.htm"><font color=blue>HOME</font></a> &gt;
+
+<!-- bbs/boardtop3.txt end -->

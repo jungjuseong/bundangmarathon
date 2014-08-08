@@ -1,0 +1,15 @@
+<script language=javascript>
+/*
+var whichday = Math.round(Math.random());
+
+if (whichday == 0) {
+document.write("<img src='/bbs/hotnews/2009-03-oppo.jpg' border=0>");
+}
+else {
+document.write("<img src='/bbs/hotnews/2009-11-07-marathoniaday.jpg' border=0>");
+}
+*/
+//document.write("<a href='/bbs/zboard.php?id=pubboard&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=4737'>");
+//document.write("<img src='/bbs/hotnews/2010-01-31goseong.jpg' border=0>");
+//document.write("</a>");
+</script>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="/elthe/css/style.css" type=text/css rel=stylesheet>
+<script language="javascript">
+function PopClose(cook, frm)
+{
+		var thisdate = new Date();
+		thisdate.setDate( thisdate.getDate() + 1 );
+		document.cookie = cook + "=" + escape("done") + "; path=/; expires=" + thisdate.toGMTString() + ";"
+	self.close();
+}
+
+</script>
+<title>생일 축하합니다!</title>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<bgsound src="http://www.bundangmarathon.com/image/생일축하노래.mp3" loop="5">
+        <form name=c>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr><td bgcolor="#08C864"><img src="image/birthdayflower.jpg" border=0></td></tr>
+      <tr><td align="center" valign="middle" bgcolor="#08C864"> 
+               <img src=image/music.gif>생일을 진심으로 축하드립니다!!!<img src=image/music.gif><br><br><font size="-1">- 분당마라톤클럽 회원 일동 -</font></td></tr>
+      <tr><td align="center" valign="middle" bgcolor="#08C864"><a href="javascript:PopClose('popup_hbd_cookie')"><br><font size="-1">창닫기</font></a>
+      <br><br> 
+            </td>
+          </tr>
+        </form>
+      </table>
+</body>
+</html>
+

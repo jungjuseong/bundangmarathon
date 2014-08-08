@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 클럽 활동분야 선택 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>클럽 활동분야 선택</H2>
+<hr color=red width="90%">
+<p> 신중히 선택하여 주시기 바라며,<br>
+    ("선택저장" 하신 후 변경이 필요하신 경우 미디어팀(서상철)으로 연락 주세요...)</p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='club_bongsa'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date("Y.m.d H:m:s")." 현재 $row[0] 명이 선택했습니다.</font>";
+?>
+<br><br> (선택 기간 : 5.21 ~ 계속) 
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/club_bongsa.php>
+<input type=hidden name="pollid" value="club_bongsa">
+
+<tr>
+<td> 
+<center>분당마라톤클럽<br>
+<center>활동분야</center> <td>
+<input type="radio" name="rule0" value="  기획 ">기획 <br>
+<input type="radio" name="rule0" value="  총무  ">총무 <br>
+<input type="radio" name="rule0" value="  훈련  ">훈련 <br>
+<input type="radio" name="rule0" value="  미디어  ">미디어 <br>
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center>
+<input type=submit value="선택 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("활동 분야를 선택하세요...");
+		return false;
+	}
+		
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

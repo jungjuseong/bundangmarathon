@@ -1,0 +1,172 @@
+<?
+   $_zb_url = "/bbs/"; // "제로보드가 설치된 url";
+   $_zb_path = "/home/hosting_users/coretek/www/bbs/";
+   include $_zb_path."outlogin.php";
+   if($tt == "pda"){
+   	setcookie("pda","yes");
+   }elseif($tt == "pc"){
+   	setcookie("pda","");
+   }elseif($_COOKIE['pda'] == "yes"){
+   	$tt = "pda";
+   }
+   if($tt == "pda")
+   	$bmcmenuwidth = "0";
+   else
+      	$bmcmenuwidth = "200";
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="keywords" content="분당마라톤클럽,분당마라톤,분당,bundang,달리기,마라톤,marathon,마라톤클럽,마라톤동호회,running">
+<meta name="description" content="★♡ 순수와 열정이 있는 분당마라톤클럽은 전통을 소중히 여기고 서로를 배려하는 마라톤(달리기) 클럽입니다.♡★">
+<meta name="generator" content="분당마라톤클럽">
+<meta name="classification" content="스포츠,동호회,마라톤,달리기">
+<meta http-equiv="Expire" CONTENT="-1" />
+<title>분당마라톤클럽 홈페이지</title>
+
+
+<style type="text/css">
+<!--
+font{ font-family:"나눔고딕"; font-size:9pt; line-height:17px; }
+td{ font-family:"나눔고딕"; font-size:9pt; line-height:17px; }
+a:link     	{color:#333333;text-decoration:none}
+a:visited  	{color:#666666;text-decoration:none}
+a:active 	{color:#666666;text-decoration:none}
+A:hover 	{color:#666666;text-decoration:none}
+a.bmc:link { color:#0000ff; text-decoration: none; }
+a.bmc:visited {color:#0000ff; text-decoration: none; }
+a.bmc:active { color:#0000ff; text-decoration: none; }
+a.bmc:hover { color:#00ff00; text-decoration: none; }
+-->
+#quickmenu3 {font-family:나눔고딕;font:#222222 10pt;font-weight:bold;text-align:center;}
+</style>
+
+<link rel="Shortcut Icon" href="/image/bmc.ico">
+<!-- slide show -->
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+    <link href="css/quake.slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/quake.slider-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.quake-slider').quake({ effects: ['swirlFadeIn', 'swirlFadeOut', 'swirlFadeIn', 'linearPealReverse', 'slideIn', 'swirlFadeIn', 'explodeFancy'],
+                thumbnails: false,
+                hasNextPrev: true,
+                captionOpacity: '0.3'             
+            });                      
+        });
+    </script>
+<!-- end of slide -->
+
+<!-- dynamic -menu -->
+	<link rel="stylesheet" href="css/simple-dropdown.css" type="text/css" media="screen, projection"/>
+	<script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
+<!-- dynamic menu end -->
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" topmargin=0 leftmargin=0>
+
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="950">
+	<tr>
+<?
+	if($tt!="pda"){
+?>
+	<td width="1024" height="100"  valign="bottom">
+		
+		<div style="position:absolute; top:0; left:500; width:125; background-color:white">
+		<?
+		//	print_outlogin("login","1","10");
+		?>
+		</div>
+<?
+	}else{
+?>
+	<td valign="bottom" bgcolor="white">
+<?
+	}
+?>
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+	 <tr>
+        <td >
+<!-- top banner -->
+    <div class="wrapper"> 
+        <div class="quake-slider"> 
+            <div class="quake-slider-images"> 
+                 <img src="slider-images/001.jpg" alt="1" />
+                 <img src="slider-images/002.jpg" alt="2" />
+                 <img src="slider-images/003.jpg" alt="3" />
+                 <img src="slider-images/004.jpg" alt="4" />
+                 <img src="slider-images/005.jpg" alt="5" />
+                 <img src="slider-images/006.jpg" alt="6" />
+                 <img src="slider-images/007.jpg" alt="7" />
+                 <img src="slider-images/008.jpg" alt="8" />
+                 <img src="slider-images/009.jpg" alt="9" />
+                 <img src="slider-images/010.jpg" alt="10" />
+            </div>
+
+            <div class="quake-slider-captions"> 
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+                <div class="quake-slider-caption"> BUNDANG MARATHON <br/> 2013 Spring Club Race</div>
+            </div> 
+        </div> 
+    </div>
+
+<!-- begin menu -->
+<div id="page-wrap">
+    <ul class="dropdown">
+       	<li><a href="http://www.bundangmarathon.com/intro1.htm">About</a>
+       		<ul class="sub_menu">
+       			 <li><a href="#">Rules of our club</a></li>
+       			 <li><a href="http://www.bundangmarathon.com/intro1.htm"/>History</a></li>
+       			 <li><a href="http://www.bundangmarathon.com/intro1_04.htm">Activities</li>
+       			 <li><a href="#">Regular Meeting</a></li>
+       			 <li><a href="http://www.bundangmarathon.com/member/prog/mempub1.php?mode=mempub-photo">Members</a></li>
+       			 <li><a href="http://www.bundangmarathon.com/intro1_04_a.htm">Bank accounts</a></li>
+       		</ul>
+       	</li>
+       	<li><a href="#">Talk boards</a>
+       		<ul class="sub_menu">
+       			<li><a
+href="http://www.bundangmarathon.com/bbs/zboard.php?id=noticeboard&page=1&page_num=13&category=&sn=off&ss=on&sc=on&keyword=&prev_no=49&sn1=&divpage=1&select_arrange=headnum&desc=asc">Notices</a></li>
+       			<li><a
+href="http://www.bundangmarathon.com/bbs/zboard.php?id=pubboard&page=1&page_num=13&category=&sn=off&ss=on&sc=on&keyword=&prev_no=5909&sn1=&divpage=1&select_arrange=headnum&desc=asc">Open talk</a></li>
+       			<li><a href="#">Photo Gallery</a></li>
+       			<li><a href="#">Run Diary</a></li>
+       			<li><a href="#">Only Members talk</a></li>
+       		</ul>
+       	</li>
+       	<li><a href="http://www.bundangmarathon.com/bbs/zboard.php?id=training_plan">Training Schedule</a></li>
+       	<li><a href="http://www.bundangmarathon.com/bbs/zboard.php?id=photo">Photo Gallery</a></li>
+       	<li><a href="http://www.bundangmarathon.com/intro1_07.htm">Member only Info.</a></li>
+       </ul>
+</div>
+
+<!-- end menu -->
+
+<!-- end of banner -->
+		</td>
+    </tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<map name="top2">
+<area shape="rect" coords="2, 1, 159, 47" href="http://www.bundangmarathon.com/intro1.htm">
+<area shape="rect" coords="164, 1, 324, 46" href="http://www.bundangmarathon.com/bbs/zboard.php?cafe_style=&id=noticeboard&select_arrange=headnum&desc=asc&category=&sn=off&ss=on&sc=on&keyword=&sn1=&divpage=1&page=1">
+<area shape="rect" coords="329, 3, 483, 45" href="http://www.bundangmarathon.com/intro3_02.htm">
+<area shape="rect" coords="493, 3, 648, 46" href="http://www.bundangmarathon.com/bbs/zboard.php?id=databoard">
+<area shape="rect" coords="654, 2, 799, 46" href="http://www.bundangmarathon.com/intro1_07.htm">
+<area shape="rect" coords="804, 1, 946, 46" href="http://www.bundangmarathon.com/intro1_07.htm">
+</map>

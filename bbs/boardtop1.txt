@@ -1,0 +1,26 @@
+<!-- bbs/boardtop1.txt begin -->
+<?
+   include "../index_head_PHP.txt";
+?>
+
+<?
+	include "../main_top.txt";
+?>
+<div class="wrap">
+<div class="first_column">
+    <div algin="left"><img src="/img/login_005555.gif"></div>
+	<? print_outlogin("login","1","10");?>
+    <img src="/img/under_line.gif"><br/>
+    <img src="/img/left_clubmadang.gif" border="0" usemap="#m4">
+</div>
+
+<map name="m4">
+   <area shape="rect" coords="5, 72, 148, 99" href="/bbs/zboard.php?id=noticeboard&page=1&page_num=13&category=&sn=off&ss=on&sc=on&keyword=&prev_no=49&sn1=&divpage=1&select_arrange=headnum&desc=asc">
+   <area shape="rect" coords="6, 102, 149, 128" href="/bbs/zboard.php?id=pubboard&page=1&page_num=13&category=&sn=off&ss=on&sc=on&keyword=&prev_no=5909&sn1=&divpage=1&select_arrange=headnum&desc=asc">
+   <area shape="rect" coords="7, 132, 148, 160" href="/bbs/zboard.php?id=photo">
+   <area shape="rect" coords="5, 164, 148, 191" href="http://www.rundiary.co.kr/content.asp?menu=400&clubid=380&cname=ºÐ´ç¸¶¶óÅæÅ¬·´" target="_blank">
+   <area shape="rect" coords="5, 192, 147, 217" href="/bbs/zboard.php?id=memboard&page=1&page_num=13&category=&sn=off&ss=on&sc=on&keyword=&prev_no=5909&sn1=&divpage=1&select_arrange=headnum&desc=asc">
+</map>
+                       
+<div class="second_wide_column">
+<!-- bbs/boardtop1.txt end -->

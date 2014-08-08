@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<meta http-equiv=Content-Type content=text/html; charset=EUC-KR>
+<TITLE> 2006.6 회칙 개정</TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>2006.6 회칙 개정</H2>
+<hr color=red width="90%">
+<P>
+투표는 한번만 가능하므로 신중히 하시기 바랍니다.
+<br>
+투표는 6월 5일(월요일)부터 6월 9일(금요일)까지 가능합니다.
+<br>
+회칙 개정은 재적 정회원 2/3 이상의 찬성이 있어야 가능합니다.
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=200606revise.php>
+<input type=hidden name="pollid" value="200606revise">
+<tr>
+<td>
+
+1. 부회장 1인 추가<br>
+○ 제안사유 : 회장단 참석이 필요한 클럽의 대내외적 행사에 회장, 부회장 모두 불참할 경우 모양새가 좋지 못할 뿐 아니라 회원들의 사기 저하를 초래하고 있어 복수 필요성이 제기되어 왔음
+<td width=70>
+<input type="radio" name="rule0" value="부회장 추가안 찬성">찬성
+<br><input type="radio" name="rule0" value="부회장 추가안 반대">반대
+<tr>
+<td>
+2. 자문단 신설<br>
+○ 제안사유 : 클럽의 운영, 훈련 등 클럽 활동 활성화에 필요한 경험과 노하우를 가진 분들로 자문단을 구성하여 클럽 운영의 원활을 기하고자 함.
+(통과시 세부 사항 차기 운영위원회에서 정함) 
+
+<td>
+<input type="radio" name="rule1" value="자문단 신설안 찬성">찬성
+<br><input type="radio" name="rule1" value="자문단 신설안 반대">반대
+<tr>
+<td>
+3. 상조 범위 확대 (배우자 부모 사망 추가, 회원->정회원 변경)<br>
+○ 제안사유 : 우리나라 정서상 배우자 부모 상사를 소홀히 할 수 없다는데 다수 공감.  
+<br>
+    "회원의 애. 경사시 클럽명의 화환 1점을 가장 빠른 방법으로 제공한다. 지출범위는 회원의 부모사망, 본인 및 배우자 사망, 본인 또는 자녀 결혼에 한한다"를
+<br>
+--> 
+<br>
+    "회원의 애. 경사시 클럽명의 화환 1점을 가장 빠른 방법으로 제공한다. 지출범위는 정회원의 부모사망, 배우자의 부모 사망, 본인 및 배우자 사망, 본인 또는 자녀 결혼에 한한다"로 개정코자 함
+
+<td>
+<input type="radio" name="rule2" value="상조범위 확대안 찬성">찬성
+<br><input type="radio" name="rule2" value="상조범위 확대안 반대">반대
+</tr>
+<? 
+	include("bmauth.php"); 
+	if($logid==""){
+	}else{
+		$dbquery = "select name from member where userid='$logid' and membertype='정회원'";
+		$result = mysql_query($dbquery) or die("mysql_query error");
+		if(mysql_num_rows($result) > 0 && date("Ymd") >= "20060605" && date("Ymd") <= "20060609"){
+			echo "<tr>
+<td colspan=2 align=center><br>
+<input type=submit value=\"투표 저장\" onClick=\"javascript:return(chk_data(this.form))\">";
+		}
+	}
+?>
+<tr>
+<td colspan=2 align=center><br>
+투표 결과<br><br>
+
+안건 1번 : <br>
+  - 부회장 추가안 찬성 : 54건<br>
+  - 부회장 추가안 반대 : 2건 <br>
+<br>
+<br>
+안건 2번 : <br>
+  - 자문단 신설안 찬성 : 47건<br>
+  - 자문단 신설안 반대 : 9건 <br>
+<br>
+<br>
+안건 3번 : <br>
+  - 상조범위 확대안 찬성 : 54건<br>
+  - 상조범위 확대안 반대 : 2건<br>
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+	if (chk_checked(form.rule0) == false) {
+		alert("안건 1을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("안건 2를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("안건 3을 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

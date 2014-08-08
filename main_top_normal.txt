@@ -1,0 +1,100 @@
+<?
+   $_zb_url = "/bbs/"; // "제로보드가 설치된 url";
+   $_zb_path = "/home/hosting_users/coretek/www/bbs/";
+   include $_zb_path."outlogin.php";
+   if($tt == "pda"){
+   	setcookie("pda","yes");
+   }elseif($tt == "pc"){
+   	setcookie("pda","");
+   }elseif($_COOKIE['pda'] == "yes"){
+   	$tt = "pda";
+   }
+   if($tt == "pda")
+   	$bmcmenuwidth = "0";
+   else
+      	$bmcmenuwidth = "200";
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta name="keywords" content="분당마라톤클럽,분당마라톤,분당,bundang,달리기,마라톤,marathon,마라톤클럽,마라톤동호회,running">
+<meta name="description" content="★♡ 순수와 열정이 있는 분당마라톤클럽은 전통을 소중히 여기고 서로를 배려하는 마라톤(달리기) 클럽입니다.♡★">
+<meta name="generator" content="분당마라톤클럽">
+<meta name="classification" content="스포츠,동호회,마라톤,달리기">
+<meta http-equiv="Expire" CONTENT="-1" />
+<title>분당마라톤클럽 홈페이지</title>
+
+<style type="text/css">
+<!--
+font{ font-family:"나눔고딕"; font-size:9pt; line-height:17px; }
+td{ font-family:"나눔고딕"; font-size:9pt; line-height:17px; }
+a:link     	{color:#333333;text-decoration:none}
+a:visited  	{color:#666666;text-decoration:none}
+a:active 	{color:#666666;text-decoration:none}
+A:hover 	{color:#666666;text-decoration:none}
+a.bmc:link { color:#0000ff; text-decoration: none; }
+a.bmc:visited {color:#0000ff; text-decoration: none; }
+a.bmc:active { color:#0000ff; text-decoration: none; }
+a.bmc:hover { color:#00ff00; text-decoration: none; }
+-->
+
+#C1 { position:absolute; width:210px; top:200px; left:2px; z-index:2; padding: 2 2 2 2; margin: 2 2 2 2;background-color:#f8f8f8; border:solid darkgray 0px;}
+#HOTNEWS { position:absolute; width:640; top:200px; left:216; z-index:2;padding:2 2 2 2;margin:2 2 2 2: ;border: solid darkgray 0px;}
+#C2 { position:absolute; width:320; top:450px; left:216px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#C3 { position:absolute; width:316; top:450px; left:540px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#C4 { position:absolute; width:160; top:200px; left:860px; margin:2 2 2 2; padding:2 2 2 2;z-index:2;border:solid darkgray 1px;}
+#copyright { position:absolute; width:1024; top:1190; left:2px; z-index:1;border:solid darkgray 0px;}
+#quickmenu3 {font-family:나눔고딕;font:#222222 10pt;font-weight:bold;text-align:center;}
+</style>
+
+<link rel="Shortcut Icon" href="/image/bmc.ico">
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" topmargin=0 leftmargin=0>
+<div align="left">
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+<?
+	if($tt!="pda"){
+?>
+<!--
+	<td width="500" background="/bbs/clubphoto/clubphoto040919.jpg" height="200" valign="bottom" bgcolor="#08C864">
+-->
+<td background='/bbs/clubphoto/10th-start.jpg' width='500' height='200' vspace=0 hspace=0 valign='bottom' bgcolor='#08C864' onClick='document.href=/;' onMouseOver="javascript:window.status='" + msg + "';" onMouseOut="javascript:window.status='';">
+
+	<td width="382" background="/img/bundang-marathon-logo-white.jpg" height="200" valign="bottom" bgcolor="#08C864" onClick="location.href='/';" ><!-- org bgcolor=31AA52 -->
+<?
+	}else{
+?>
+	<td valign="bottom" bgcolor="#08C864" ><!-- org bgcolor=31AA52 -->
+<?
+	}
+?>
+		<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+        	<tr>
+			<td width="380" height="50" valign="middle" bgcolor="#08C864">
+			    <div style="font-family:"나눔고딕";font-weight:bold; font-size:8pt black">
+				<a href="/intro1.htm">*클럽소개</a> &nbsp;|
+				<a href="/intro1_01.htm">가입안내</a> &nbsp;|
+				<a href="/intro1_02.htm">정기모임</a> &nbsp;|
+				<a href="/intro1_04.htm">활동</a> &nbsp;|
+				<a href="/member/prog/mempub1.php?mode=mempub-photo">회원안내</a> </div>
+			<div>
+				<a href="http://www.rundiary.co.kr/eventdiary.asp" target=nfx>*마라톤대회</a> &nbsp;|
+				<a href="/intro3_04.htm">관련사이트</a> &nbsp;|
+				<a href="/bbs/zboard.php?id=databoard">전문가코너</a> &nbsp;|
+				<a href="/intro3_02.htm">기록계산</a> &nbsp;|
+				<a href="/intro3_03.htm">훈련강도계산</a> 
+                            </div>
+			</td>
+			</tr>
+		</table>
+	</td>
+	<td width="120" height="200" bgcolor="#08C864">
+		<p><?print_outlogin("login","1","10");?></p>
+	</td>
+	</tr>
+</table>
+</div>

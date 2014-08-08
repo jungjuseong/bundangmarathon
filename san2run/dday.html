@@ -1,0 +1,78 @@
+<html>
+<head>
+
+	<script language="JavaScript">
+function CalcDays(race,raceday)
+{
+//	var raceday = new Date("July 11, 2004 00:00:00")
+	var now = new Date();
+
+	if(raceday == "messageonly")
+		return race;
+	var difference = parseInt(((raceday.getTime() - now.getTime()) / 1000) + 0.999);
+	var days = parseInt(difference / (60 * 60 * 24) + 1);
+	if(days<0){
+		return "";
+	}
+
+	var weeks = parseInt(days/7);
+	var remaindays = days - weeks * 7;
+	//alert	("days="+days+" weeks="+weeks);
+	if(weeks <= 0)
+		return race + ": D-" + days+" [ "+remaindays+"일전 ]<br>";
+	else
+		return race + ": D-" + days+"["+weeks+"주"+remaindays+"일전]<br>";
+}
+function CountDays(dayname,raceday)
+{
+//	raceday "July 11, 2004 00:00:00", 시작일
+	var now = new Date();
+
+	if(raceday == "messageonly")
+		return race;
+	var difference = parseInt(((now.getTime() - raceday.getTime()) / 1000) + 0.999);
+	var days = parseInt(difference / (60 * 60 * 24));
+	if(days<0){
+		return "";
+	}
+
+	return dayname + ": " + days+"일경과<br>";
+}
+function CountJustDays(dayname,raceday)
+{
+//	raceday "July 11, 2004 00:00:00", 시작일
+	var now = new Date();
+
+	if(raceday == "messageonly")
+		return race;
+	var difference = parseInt(((now.getTime() - raceday.getTime()) / 1000) + 0.999);
+	var days = parseInt(difference / (60 * 60 * 24) + 1);
+	if(days<0){
+		return "";
+	}
+
+	return dayname + ": " + days+"일째<br>";
+}
+</script>
+</head>
+<body>
+<div style="margin:4 2 2 4;font-size:12px;border:solid darkgray 1px">
+<script language="JavaScript">
+	document.writeln(CountDays("인터넷분야무고장", new Date("February 24, 2008 00:00:00")));
+	document.writeln(CountDays("서울남부NSC무고장", new Date("November 22, 2008 00:00:00")));
+	document.writeln(CountJustDays("KT근무", new Date("March 25, 1983 00:00:00")));
+	document.writeln(CountJustDays("서울남부NSC근무", new Date("January 28, 2009 00:00:00")));
+	document.writeln(CountJustDays("클럽탄생???", new Date("June 13, 1999 00:00:00")));
+	document.writeln(CountJustDays("탄생", new Date(1958,8-1,7)));
+	document.writeln(CountJustDays("마눌탄생", new Date("November 18, 1960 00:00:00")));
+	document.writeln(CountJustDays("아들탄생", new Date("March 17, 1988 00:00:00")));
+	document.writeln(CountJustDays("딸탄생", new Date("May 13, 1992 00:00:00")));
+	document.writeln(CalcDays("<a class=bmc href='http://marathon.chosun.com/' target=race>춘천(10.21)</a>", new Date("October 25, 2009 00:00:00")));
+	document.writeln(CalcDays("<a class=bmc href='http://marathon.joins.com/' target=race>동아(3.21)</a>", new Date(2010, 3-1, 21)));
+//	document.writeln('<br>');
+//	document.writeln(CalcDays("<img src='/bbs/upload/congraturation.jpg'>", "messageonly"));
+</script>
+<!-- -->
+</div>
+</body>
+</html>

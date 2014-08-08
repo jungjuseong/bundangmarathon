@@ -1,0 +1,11 @@
+BODY,TD,P,BR,SELECT,input,DIV,form,TEXTAREA,center,option,pre,blockquote {font-family:±¼¸²;font-size:9pt;color:#666666;}
+SELECT {border:solid 1; font-family:±¼¸²;font-size:9pt;color:#666666;}
+A:link    {color:757575;text-decoration:none}
+A:visited {color:757575;text-decoration:none}
+A:active  {color:757575;text-decoration:none}
+A:hover  {color:757575;text-decoration:none}
+.head {border:#666666 solid 1 black;font-family:±¼¸²;font-size:9pt;color:#666666;height:19px}
+.textarea {border:#FF4D00 solid 1; font-family:±¼¸²;font-size:9pt;color:#666666;overflow:auto;}
+.input{border:#FF4D00 solid 1;font-family:±¼¸²;font-size:9pt;color:#666666;height:19px}
+.submit {border:#666666 solid 1;font-family:±¼¸²;font-size:9pt;color:#666666;height:19px}
+.search{border:#FF4D00 solid 1;font-family:±¼¸²;font-size:9pt;color:#666666;height:17px;width:71px}

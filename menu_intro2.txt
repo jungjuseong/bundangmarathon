@@ -1,0 +1,38 @@
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="190">
+			      <tr>
+			    <td ><div algin="left"><img src="/img/login_005555.gif"></div>
+			    </td>
+			    </tr>
+			    <tr>
+			    
+			    
+					<td>
+						<?print_outlogin("login","1","10");?>
+					</td>
+				</td>
+			    <tr>
+			    <td>
+			    <img src="/img/under_line.gif">
+
+			    </td>
+			    </tr>
+                                <tr>
+                                    <td width="190" height="20" valign="top">
+<img src="/img/intro_me_n_02.gif" usemap="#m2" border="0">
+                                    </td>
+                                </tr>
+                            </table>
+			    <map name="m2">
+<area shape="rect" coords="6, 73, 145, 102" href="http://www.bundangmarathon.com/bbs/bmnew.php?keykind=new#start">
+<area shape="rect" coords="3, 104, 142, 129" href="http://www.bundangmarathon.com/bbs/zboard.php?id=training_plan">
+<area shape="rect" coords="9, 133, 135, 162" href="http://www.bundangmarathon.com/bbs/zboard.php?id=memboard">
+<area shape="rect" coords="8, 164, 136, 187" href="http://www.bundangmarathon.com/bbs/zboard.php?id=pubboard&page=1&page_num=13&category=&sn=off&ss=on&sc=on&keyword=&prev_no=5909&sn1=&divpage=1&select_arrange=headnum&desc=asc">
+<area shape="rect" coords="6, 194, 132, 217" href="http://www.bundangmarathon.com/bbs/zboard.php?id=photo">
+<area shape="rect" coords="2, 224, 139, 251" href="http://www.bundangmarathon.com/bbs/zboard.php?id=raceboard">
+<area shape="rect" coords="7, 253, 140, 278" href="http://www.bundangmarathon.com/bbs/zboard.php?id=articleboard">
+<area shape="rect" coords="4, 284, 139, 307" href="http://www.bundangmarathon.com/bbs/zboard.php?id=hotnews">
+<area shape="rect" coords="5, 314, 146, 340" href="http://www.bundangmarathon.com/bbs/zboard.php?id=noticeboard">
+<area shape="rect" coords="5, 343, 147, 367" href="http://">
+</map>
+                           

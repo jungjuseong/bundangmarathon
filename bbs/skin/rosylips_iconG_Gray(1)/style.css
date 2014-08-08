@@ -1,0 +1,29 @@
+@font-face {font-family:웹정;src:url(웹정체주소);}
+BODY,TD,SELECT,input,DIV,form,textarea,center,option,pre,blockquote {font-size:9pt; font-family:웹정; color:#666666;line-height:160%}
+
+BODY { scrollbar-3dlight-color:#FFFFFF;
+scrollbar-arrow-color:#EBEAEA;
+scrollbar-track-color:#FFFFFF;
+scrollbar-darkshadow-color:#FFFFFF;
+scrollbar-face-color:#FFFFFF;
+scrollbar-highlight-color:#EBEAEA;
+scrollbar-shadow-color:#EBEAEA}
+
+A:link    {color:#666666; text-decoration:none}
+A:visited {color:#666666; text-decoration:none}
+A:active  {color:#666666; text-decoration:none}
+A:hover   {color:#00BFF3; text-decoration:none}
+
+
+.head {border:solid 1 black;font-family:verdana;font-size:9pt;color:black;background-color:white;height:19px}
+.textarea {border:solid 1; background-color:white;padding:5}
+.submit {border:solid 1;font-family:verdana;font-size:9pt;color:white;background-color:black;height:19px}
+
+.rReplyWidth{ width=100% }
+.rReplyImgWidth{ width=110 }
+.rReplyImgWidthHeight{ width=100; height=100 }
+.rTextarea{border:solid 0;border-color:EBEAEA;border-width:1px;width:100%;line-height:150%;padding:5}
+.rinput {border:solid 0;border-color:EBEAEA;border-width:1px;height:17px}
+.input {border:solid 0;border-color:EBEAEA;border-width:1px;height:17px}
+.rfootline {background-color:#EBEAEA; height=3}
+.rsearch {border:solid 0;border-color:EBEAEA;border-width:1px;height:17px;width:80px;}

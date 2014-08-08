@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>분당마라톤클럽 매스컴 소개 내용</title>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=euc-kr">
+</head>
+<body bgcolor="#E0FFE0">
+<center>
+<p align="center"><font size="5">매스컴 소개</font></p>
+<hr noshade color=red width="80%">
+<p>
+분당마라톤 클럽이나 회원들의 매스컴 소개 내용에 대한 자료를 모았습니다.
+<br>
+추가할 내용이 있으면 <a href="mailto:san2run@hanmir.com">메일</a> 주시기 바랍니다.
+<p>
+<hr noshade color=red width="80%">
+<font size="+2">2000년도</font>
+<!--
+<p>
+<img src="../new.gif"><a href="http://news.hanmir.com/news.php?d=001222&f=yh00c946">연합뉴스(00.12.22) : 성인업소 집중화, 업계.시민단체 팽팽히 맞서 - 류중석
+</a>
+<p>
+<a href="http://kmib.stoo.com/html/kmview/2000/1217/091793426311111100.html">국민일보(00.12.17) : 보디빌더 마라토너 “상식을 깨고 즐겨봐” - 창용찬
+</a>
+<p>
+<a href="http://www.hankooki.com/whan/200011/w200011151937256151114.htm">주간한국(00.11.23) : [마니아의 세계] 달리면서 찾는 '나만의 행복'
+</a>
+-->
+<p>
+<a href="http://search.hankooki.com/view.php?terms=%B4%DE%B8%AE%B8%E9%BC%AD&path=hankooki1%2Fwhan%2F200011%2Fw200011151941016151115.htm">주간한국(00.11.23) : [마니아의 세계] "40km 지나자 '이젠 살았구나' 생각"
+</a>
+<!--
+<p>
+<a href="http://www.chosun.com/w21data/html/news/200011/200011100440.html">조선일보(00.11.10) : 서울여자마라톤 12일 여의도서 열려</a>
+<p>
+<a href="http://www.chosun.com/w21data/html/news/200010/200010120434.html">조선일보(00.10.12) : [춘천마라톤] 130여 동호회 자존심 건 레이스</a>
+<p>
+<a href="http://www.chosun.com/w21data/html/news/200010/200010110382.html">조선일보(00.10.11) : [서울여자마라톤] 내달12일 여의도서 열려 </a>
+<p>
+<a href="http://search.joins.com/asp/snews_content.asp?id=20001008175105&keyword=%B0%CB%C7%AA&tablename=NEWS2000&srccode=&who=js">중앙일보(00.10.09) : [중앙일보 마라톤] '탄천 검푸'가 뛴다</a>
+-->
+<p>
+<a href="http://www.chosun.com/w21data/html/news/200004/200004040304.html">조선일보(00.04.04) : [아마추어 마라톤] "봄엔 달리세요"…이달들어 급증 </a>
+
+<p>
+<hr noshade color=red width="80%">
+<font size="+2">1999년도& 이전</font>
+<!--
+<p>
+<a href="http://www.chosun.com/w21data/html/news/199910/199910130411.html">조선일보(99.10.13) : [NET21] 춘천마라톤 홈페이지 ‘인기 폭발’ </a>
+
+-->
+<p>
+<a href="http://211.233.4.11/search_view.html?gisaid=1999032220007101">문화일보(99.03.22) : <스포츠피플>고등기술연구원 선임연구원 문환구씨</a>
+
+<p>
+<a href="http://www.chosun.com/w21data/html/news/199710/199710010438.html">조선일보(97.10.01) : [춘천마라톤] 김도연-김성균씨…"마라톤엔 아래위 없어요" </a>
+
+<hr noshade color=red width="80%">
+Copyright ⓒ by 분당마라톤클럽. All rights reserved.
+</center>
+</body>
+</html>

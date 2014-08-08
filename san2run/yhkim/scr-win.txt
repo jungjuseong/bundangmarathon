@@ -1,0 +1,9 @@
+open g01.asadal.net
+gumpu
+qnsekddkwk
+cd tmp
+lcd ..
+bin
+get t yhkim\t.txt
+quit
+#ftp -i -s:scr-win.txt

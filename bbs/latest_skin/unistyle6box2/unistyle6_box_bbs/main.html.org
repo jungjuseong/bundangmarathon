@@ -1,0 +1,47 @@
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<IMG SRC="[dir]uni_line_01.gif" WIDTH=28 HEIGHT=26></TD>
+		<TD background="[dir]uni_line_02.gif">
+			</TD>
+		<TD>
+			<IMG SRC="[dir]uni_line_03.gif" WIDTH=29 HEIGHT=26></TD>
+	</TR>
+	<TR>
+		<TD background="[dir]uni_line_04.gif">
+			</TD>
+		<TD align="center" valign="middle" background="[dir]uni_line_05.gif" width=100%>
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+                    <td>
+                &nbsp;<img src=[dir]uni.gif border=0 align=absmiddle>&nbsp;[title]
+                    </td>
+                </tr>
+                <tr>
+                    <td HEIGHT=3>
+
+                    </td>
+                </tr>
+</table>
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+[loop]
+                <tr>
+                    <td HEIGHT=22 onMouseOver="this.style.cursor='hand'; this.style.backgroundColor='#eeeeee';" onMouseOut="this.style.backgroundColor='';">
+                 &nbsp;<img src=[dir]a.gif border=0 align=absmiddle>&nbsp;[[date]]&nbsp;[subject]&nbsp;[comment]
+                    </td>
+                </tr>
+[/loop]
+</table>
+</TD>
+		<TD background="[dir]uni_line_06.gif">
+			</TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="[dir]uni_line_07.gif" WIDTH=28 HEIGHT=26></TD>
+		<TD background="[dir]uni_line_08.gif">
+			</TD>
+		<TD>
+			<IMG SRC="[dir]uni_line_09.gif" WIDTH=29 HEIGHT=26></TD>
+	</TR>
+</TABLE>

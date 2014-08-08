@@ -1,0 +1,16 @@
+Connected to g01.asadal.net.
+220 PorFTPd Account Server ready .. 
+500 AUTH not understood.
+500 AUTH not understood.
+331 Password required for gumpu.
+230 User gumpu logged in.
+200 Type set to A.
+Interactive mode on.
+250 CWD command successful.
+Local directory now /home/hosting_users/coretek
+local: test/t remote: t
+227 Entering Passive Mode (211,115,110,61,213,177).
+150 Opening ASCII mode data connection for t (197 bytes).
+226 Transfer complete.
+201 bytes received in 0.0003 seconds (6.5e+02 Kbytes/s)
+221 Goodbye.

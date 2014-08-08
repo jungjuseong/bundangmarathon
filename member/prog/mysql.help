@@ -1,0 +1,21 @@
+%mysqldump -u gumpu -h cgihost -p gumpu reg > reg_20010311.backup
+%mysqldump -u gumpu -h cgihost -p -w "juminno=moneyok" gumpu reg > tmp.txt
+
+> LOAD DATA LOCAL INFILE "20010302.txt" INTO TABLE tbltmp2;
+
+SET AUTOCOMMIT=0
+COMMIT or ROLLBACK;
+
+select * into outfile reg_20010311.txt fields terminated by '\t' from reg
+
+select substring(postaddr,1,locate(' ',postaddr,locate(' ',postaddr,1)+1)) from reg where regno<200 
+
+select juminno, name, regno, postaddr from reg where substring(juminno,9,1)>'9'
+
+select substring(postaddr,1,locate(' ',postaddr,locate(' ',postaddr,1)+1)) pa, count(*) ca from reg group by pa
+
+DB 백업 
+  /usr/local/mysql/bin/mysqldump -u root  -p   myuser > back.sql  
+
+DB 입력 
+/usr/local/mysql/bin/mysql -u root -p   mysuer < /home/aaaa/back.sql 

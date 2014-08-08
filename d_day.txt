@@ -1,0 +1,35 @@
+	<script language="JavaScript">
+function CalcDays(race,raceday)
+{
+//	var raceday = new Date("July 11, 2004 00:00:00")
+	var now = new Date();
+
+	if(raceday == "messageonly")
+		return race;
+	var difference = parseInt(((raceday.getTime() - now.getTime()) / 1000) + 0.999);
+	var days = parseInt(difference / (60 * 60 * 24) + 1);
+	if(days<0){
+		return "";
+	}
+
+	var weeks = parseInt(days/7);
+	var remaindays = days - weeks * 7;
+	//alert	("days="+days+" weeks="+weeks);
+	if(weeks <= 0)
+		return race + ": D-" + days+" [ "+remaindays+"일전 ]<br>";
+	else
+		return race + ": D-" + days+"["+weeks+"주"+remaindays+"일전]<br>";
+}
+</script>
+
+<div style="width:180;padding:2 2 2 2;margin:4 2 2 4;font-size:12px;border:solid darkgray 1px">
+<script language="JavaScript">
+	document.writeln(CalcDays("<a class=bmc href='http://marathon.chosun.com/' target=race>춘천(10.25)</a>", new Date("October 25, 2009 00:00:00")));
+	document.writeln(CalcDays("<a href='http://marathon.donga.com/international.html' target=race><font color=blue>동아(3.15)</font></a>", new Date("March 15, 2009 00:00:00")));
+	document.writeln(CalcDays("<a class=bmc href='http://goseongmarathon.com/' target=race>고성(1.11)</a>", new Date("January 11, 2009 00:00:00")));
+	document.writeln(CalcDays("<a class=bmc href='http://marathon.joins.com/' target=race>중앙(11.04)</a>", new Date("November 1, 2009 00:00:00")));
+//	document.writeln('<br>');
+//	document.writeln(CalcDays("<img src='/bbs/upload/congraturation.jpg'>", "messageonly"));
+</script>
+<!-- -->
+</div>

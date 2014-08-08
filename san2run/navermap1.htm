@@ -1,0 +1,12 @@
+// 등록한 키를 이용하여 네이버 지도 API 를 사용하기 위한 준비를 합니다.
+<SCRIPT LANGUAGE="JavaScript" src="http://maps.naver.com/js/naverMap.naver?key=2046b34148336663260c4394733acbed"></SCRIPT>
+<div id='mapContainer' style='width:600px;height:500px'></div>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// 새로운 네이버 지도 객체를 생성하여, 컨테이너 상에 지도를 표시합니다.
+	var mapObj = new NMap(document.getElementById('mapContainer'),600,500);
+// 지도 객체의 중심점과 축척 레벨을 설정합니다.
+	mapObj.setCenterAndZoom(new NPoint(321198,529730),3);
+
+//-->
+</SCRIPT>

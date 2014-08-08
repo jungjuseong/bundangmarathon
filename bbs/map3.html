@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euckr">
+  <title>OpenAPI 2.0 - 지도 생성</title>
+  <!-- prevent IE6 flickering -->
+  <script type="text/javascript">
+     try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+  </script>
+
+<script type="text/javascript" src="http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key='67cb01273e081de63583945c2a026a62'"></script>
+</head>
+
+<body>
+<div id = "testMap" style="border:1px solid #000; width:500px; height:400px; margin:20px;"></div>
+  <script type="text/javascript">
+   var oPoint = new nhn.api.map.LatLng(37.5010226, 127.0396037);
+   nhn.api.map.setDefaultPoint('LatLng');
+   oMap = new nhn.api.map.Map('testMap' ,{
+        point : oPoint,
+        zoom : 10,
+        enableWheelZoom : true,
+        enableDragPan : true,
+        enableDblClickZoom : false,
+        mapMode : 0,
+        activateTrafficMap : false,
+        activateBicycleMap : false,
+        minMaxLevel : [ 1, 14 ],
+        size : new nhn.api.map.Size(500, 400)
+   });
+ </script>
+</body>
+</html>

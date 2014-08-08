@@ -1,0 +1,41 @@
+// 등록한 키를 이용하여 네이버 지도 API 를 사용하기 위한 준비를 합니다.
+<SCRIPT LANGUAGE="JavaScript" src="http://maps.naver.com/js/naverMap.naver?key=2046b34148336663260c4394733acbed"></SCRIPT>
+// 지도 상의 클릭 이벤트 리스너를 등록
+<button onclick=addClick()>click event등록</button>
+// 지도 상의 클릭 이벤트 리스너를 제거
+<button onclick=removeClick()>click event제거</button>
+<div id='mapContainer' style='width:300px;height:300px'></div>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	var mapObj = new NMap(document.getElementById('mapContainer'),300,300);
+	mapObj.setCenterAndZoom(new NPoint(321198,529730),3);
+
+// 지도 객체에 클릭 이벤트 리스너가 등록상태를 확인하는 플래그
+	var regFlag = false;
+
+// 지도 객체에 클릭 이벤트를 등록합니다
+	function addClick()
+	{
+		if (!regFlag)
+		{
+			NEvent.addListener(mapObj,"click",clicked);
+			regFlag  = true;
+		}
+	}
+
+// 지도 객체에 클릭 이벤트를 제거합니다.
+	function removeClick()
+	{
+		NEvent.removeListener(mapObj,"click",clicked);
+		regFlag  = false;
+	}
+
+// 클릭 이벤트 발생 시 호출되는 바인딩 함수
+	function clicked(pos)
+	{
+		alert("("+pos.x+","+pos.y+") clicked");
+	}
+
+//-->
+</SCRIPT>
+

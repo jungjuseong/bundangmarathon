@@ -1,0 +1,51 @@
+<div class="quake-slider-wrapper"> 
+        <div class="quake-slider"> 
+            <div class="quake-slider-images"> 
+                 <img src="/slider-images/2013-BMC-Birth/2014_1Q_01.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2014_3Q_02.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2014_1Q_03.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2014_1Q_04.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2014_1Q_05.jpg">
+		 <img src="/slider-images/2013-BMC-Birth/2013_3Q_01.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_3Q_02.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_3Q_03.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_3Q_04.jpg">
+		 <img src="/slider-images/2013-BMC-Birth/2013_2Q_10.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_11.jpg">
+		 <img src="/slider-images/2013-BMC-Birth/2013_2Q_00.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_01.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_02.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_03.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_04.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_05.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_06.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_07.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_08.jpg">
+                 <img src="/slider-images/2013-BMC-Birth/2013_2Q_09.jpg">
+            </div>
+
+            <div class="quake-slider-captions"> 
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+		<div class="quake-slider-caption"> 2013 BMC Birth</div>
+		<div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+		<div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+                <div class="quake-slider-caption"> 2013 BMC Birth</div>
+            </div> 
+        </div> 
+</div>

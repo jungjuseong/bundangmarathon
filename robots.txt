@@ -1,0 +1,11 @@
+User-Agent: *
+Disallow: /member
+
+User-Agent: *
+Disallow: /bbs/upload
+
+User-Agent: *
+Disallow: /bbs/bmnew.php?keykind=new#start
+
+User-Agent: *
+Disallow: /bbs/zboard.php

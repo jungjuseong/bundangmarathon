@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<TITLE>PollNow : 검푸결성1주년 기념일 점심식사에 대한 여론조사</TITLE>
+<SCRIPT LANGUAGE=JavaScript>
+<!-- Hide script from old browser
+
+// coded by simonyi
+// script for pollnow.com
+var Str;
+var str437 = "Invalid Priority Value(Numbers only)\nCheck, Please";
+var str949 = "우선순위가 잘못지정되었습니다.";
+
+// setup lang
+function SetupLang(cp)
+{
+    if(cp==949)
+		Str = str949;
+	else
+	    Str = str437;
+}
+
+function ValidValue(myform,Max)
+{
+	var Obj;var v;
+	for( var i = 2; i <= Max*2; i+=2 ) {
+		Obj = myform.elements[i];
+		if(Obj.value!="") {
+			var v = parseInt(Obj.value,10);
+			if( isNaN(v) ) return false;
+			if( v <= 0 || v > Max ) return false;
+		}
+	}
+	return true;
+}
+
+function CheckForm(cp,myform,ID,Max)
+{
+	SetupLang(cp);
+	if(!ValidValue(myform,Max)){
+		alert(Str);
+		return false;
+	}
+	myform.submit();
+	return true;
+}
+
+var cur = 1;
+function PriorityButton(btn)
+{
+	if(btn.value=="") {
+		btn.focus();
+		btn.value=cur;
+		if(btn.value==cur) cur++;
+	}
+}
+
+function PriorityReset()
+{
+	cur = 1;
+	return true;
+}
+
+// end of hide -->
+</SCRIPT>
+
+<CENTER>
+<TABLE CELLPADDING=0 BORDER=0 CELLSPACING=0>
+<TR><TD colspan=3>
+<FONT SIZE=+1><B>&nbsp;검푸결성1주년 기념일 점심식사에 대한 여론조사</B></FONT><P>
+<UL><FORM METHOD=POST ACTION=http://www.pollnow.com/Qus/QusExec.cgi?QusID=110972>
+<INPUT TYPE=HIDDEN NAME="NS3's BUG">
+<LI><FONT SIZE=-1> 우선순위가 높은 순서대로 버튼을 눌러주십시요.<BR>잘못지정되면 다시하기 버튼을 누르고 다시 시도하십시요.<BR>모두 지정할 필요는 없습니다.<BR></FONT><BR>
+<INPUT TYPE=BUTTON NAME=B0 VALUE="   " OnClick=PriorityButton(this.form.T0)> <INPUT TYPE=TEXT SIZE=2 MAXLENGTH=2 NAME=T0>&nbsp;<FONT SIZE=-1>도시락을 준비하고 고기를 구워 먹는다(준비물 일체 구매).</FONT><BR>
+<INPUT TYPE=BUTTON NAME=B1 VALUE="   " OnClick=PriorityButton(this.form.T1)> <INPUT TYPE=TEXT SIZE=2 MAXLENGTH=2 NAME=T1>&nbsp;<FONT SIZE=-1>도시락 없이 음식을 간단히 만들고 고기를 구워 먹는다(준비물 일체 구매).</FONT><BR>
+<INPUT TYPE=BUTTON NAME=B2 VALUE="   " OnClick=PriorityButton(this.form.T2)> <INPUT TYPE=TEXT SIZE=2 MAXLENGTH=2 NAME=T2>&nbsp;<FONT SIZE=-1>준비하기 불편하니 주변 식당에 가서 먹는다.(운동장에서 시간을 보내고 점심후 해산해야 가능)</FONT><BR>
+<HR><INPUT TYPE=RADIO VALUE=ETC NAME=0 CHECKED><FONT SIZE=-1 color=red>개인의견(꼭 입력바랍니다.)</FONT><BR>
+<UL><TABLE CELLSPACING=2>
+<TR><TD WIDTH=40><FONT SIZE=-1>이름</FONT></TD><TD>*</TD> <TD><INPUT TYPE=TEXT SIZE=10 MAXLENGTH=30 NAME=NAME><BR>
+<TR><TD><FONT SIZE=-1>E-Mail</FONT></TD><TD></TD><TD><INPUT TYPE=TEXT SIZE=20 MAXLENGTH=60 NAME=EMAIL><BR>
+<TR><TD><FONT SIZE=-1>제목</FONT></TD><TD>*</TD><TD><INPUT TYPE=TEXT SIZE=30 MAXLENGTH=60 NAME=SUBJECT><BR>
+<TR><TD VALIGN=TOP><FONT SIZE=-1>의견</FONT></TD><TD VALIGN=TOP>*</TD><TD><TEXTAREA COLS=80 ROWS=8 NAME=COMMENT>-참가자수(어른,아이)
+-소속팀(분당남부, 분당북부, 수지/수원/안양, 서울/성남)
+-준비가능물품
+-기타 의견
+</TEXTAREA>
+<TR><TD></TD><TD></TD><TD> * <FONT SIZE=-1> - 반드시 입력하십시요.  </FONT>
+</TABLE></UL>
+<HR><INPUT TYPE=BUTTON VALUE="투표 하기" OnClick=CheckForm(949,this.form,110972,3) > <INPUT TYPE=RESET VALUE="다시 하기" OnClick=PriorityReset()>
+<BR><A HREF=http://www.pollnow.com/Qus/QusExec.cgi?QusID=110972>결과보기</A>
+</FORM></UL></CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="/elthe/css/style.css" type=text/css rel=stylesheet>
+<script language="javascript">
+function PopClose(cook, frm)
+{
+	if (frm.windows.checked) {
+		var thisdate = new Date();
+		thisdate.setDate( thisdate.getDate() + 1 );
+		document.cookie = cook + "=" + escape("done") + "; path=/; expires=" + thisdate.toGMTString() + ";"
+	}
+	self.close();
+}
+
+</script>
+<title>새해 복 많이 받으세요</title>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+        <form name=c>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr><td colspan=2 bgcolor="#08C864">
+<img src="img/happynewyear.jpg" border=0>
+          <tr>
+            <td align="center" valign="middle" bgcolor="#08C864"> <font size="-1">
+              <input type="checkbox" name="windows">
+               하루동안 창 열지 않기</font></td>
+            <td align="center" valign="middle" bgcolor="#08C864"><a href="javascript:PopClose('popup_hny_cookie',document.c)"><font size="-1">창닫기</font></a>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </td>
+  </tr>
+</table>
+</font>
+</body>
+</html>
+

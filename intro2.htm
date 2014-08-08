@@ -1,0 +1,72 @@
+<?
+	include "main_top.txt";
+?>
+<table border="0" cellpadding="0" cellspacing="0" width="504">
+    <tr>
+        <td width="504" valign="top">
+            <div align="left">
+                <table border="0" cellpadding="0" cellspacing="0" width="990">
+                    <tr>
+                        <td width="200" bgcolor="white" background="img/side_bg.gif" valign="top" height="137">
+<?
+	include "menu_intro2.txt";
+?>
+                        </td>
+                        <td width="700" height="137" valign="top" background="img/main_bg.gif">
+                            <table border="0" cellpadding="0" width="660" align="center">
+                                <tr>
+                                    <td width="656" height="33" colspan="2">
+                                        <p style="line-height:150%; margin-top:0; margin-bottom:0;" align="right">
+                                        현재위치 : <a href="index.htm"><font color=blue>HOME</font></a> --&gt;
+                                        게시판</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="656" colspan="2">
+                                        <p align="center"><img src="img/intro2_01.gif" width="600" height="100" border="0"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="330" height="120"><p><? print_bbs("unistyle6box2/unistyle6_box_bbs", "회원게시판", "memboard", 5, 40)?></p>
+                                    </td>
+                                    <td width="330" height="120" align=center><? print_gallery("unistyle6box2/unistyle6_box_gallery", "<img src='/image/camera.jpg' border=0><img src='/image/BMCPhotoGallery.jpg' border=0><img src='/image/camera.jpg' border=0>", "photo", 2, 9, 100)?></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="330" height="120"><p><? print_bbs("unistyle6box2/unistyle6_box_bbs", "함께하는 이야기", "pubboard", 5, 40)?></p>
+                                    </td>
+                                    <td width="330" height="118"><p><? print_bbs("unistyle6box2/unistyle6_box_bbs", "마라톤 대회", "raceboard", 5, 40)?></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="330" height="120"><p><? print_bbs("unistyle6box2/unistyle6_box_bbs", "BMC Cafe <img src=/image/collection/music.gif border=0>", "music", 5, 40)?></p>
+                                    </td>
+                                    <td width="330" height="118"><p><? print_bbs("unistyle6box2/unistyle6_box_bbs", "마라톤 용품", "articleboard", 5, 40)?></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div align="right">
+                                <p>&nbsp;</p>
+                            </div>
+                        </td>
+                        <td width="101" height="137" align="left" valign="top">
+<?
+	include "quickmenu2.txt";
+?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="990" colspan="3" bgcolor="#E7E3E7">
+<?
+	include "copyright.txt";
+?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>

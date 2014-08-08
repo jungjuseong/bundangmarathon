@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html;" charset="EUC-KR">
+<TITLE> 5기 회장단 선출 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>5기 회장단 선출</H2>
+<hr color=red width="90%">
+<P>
+<?
+$startday = "2008/07/02";
+$endday = "2008/07/04";
+$pollid = "2008election";
+echo "투표는 $startday~$endday 동안 진행되었습니다.";
+?>
+<p>
+<TABLE border=1>
+<form name=pollform method=post action=2008election.php>
+<input type=hidden name="pollid" value="<?=$pollid?>">
+<input type=hidden name="startday" value="<?=$startday?>">
+<input type=hidden name="endday" value="<?=$endday?>">
+<tr>
+<td>
+1. 회장 선출
+<td>
+<input type="radio" name="rule0" value="이종창님 찬성">이종창님 찬성
+<br><input type="radio" name="rule0" value="이종창님 반대">이종창님 반대
+<tr>
+<td>
+2. 부회장 선출
+<td><br>
+<select name='rule1' size='1'  style='background-color: white; color: blue; font:10pt'>
+<option value=''>선택하십시오</option>
+<option value='강민헌'>강민헌</option>
+<option value='강선영'>강선영</option>
+<option value='강호'>강호</option>
+<option value='고재대'>고재대</option>
+<option value='권석우'>권석우</option>
+<option value='권영주'>권영주</option>
+<option value='김경아'>김경아</option>
+<option value='김도연'>김도연</option>
+<option value='김동욱'>김동욱</option>
+<option value='김매자'>김매자</option>
+<option value='김병기'>김병기</option>
+<option value='김성현'>김성현</option>
+<option value='김연달'>김연달</option>
+<option value='김영근'>김영근</option>
+<option value='김영백'>김영백</option>
+<option value='김영진'>김영진</option>
+<option value='김영철'>김영철</option>
+<option value='김영헌A'>김영헌A</option>
+<option value='김영헌B'>김영헌B</option>
+<option value='김용철'>김용철</option>
+<option value='김인숙'>김인숙</option>
+<option value='김정중'>김정중</option>
+<option value='김종철'>김종철</option>
+<option value='김진수'>김진수</option>
+<option value='김철영'>김철영</option>
+<option value='김호년'>김호년</option>
+<option value='나광섭'>나광섭</option>
+<option value='나기남'>나기남</option>
+<option value='류완기'>류완기</option>
+<option value='문환구'>문환구</option>
+<option value='박경희'>박경희</option>
+<option value='박균철'>박균철</option>
+<option value='박용식'>박용식</option>
+<option value='박일홍'>박일홍</option>
+<option value='박정훈'>박정훈</option>
+<option value='박하명'>박하명</option>
+<option value='박홍균'>박홍균</option>
+<option value='박희선'>박희선</option>
+<option value='배종문'>배종문</option>
+<option value='백영숙'>백영숙</option>
+<option value='서상철'>서상철</option>
+<option value='손연자'>손연자</option>
+<option value='송재혁'>송재혁</option>
+<option value='신남철'>신남철</option>
+<option value='신의성'>신의성</option>
+<option value='심영종'>심영종</option>
+<option value='안경근'>안경근</option>
+<option value='안현민'>안현민</option>
+<option value='양희왕'>양희왕</option>
+<option value='오재현'>오재현</option>
+<option value='우승명'>우승명</option>
+<option value='유덕형'>유덕형</option>
+<option value='유성복'>유성복</option>
+<option value='윤금노'>윤금노</option>
+<option value='윤재경'>윤재경</option>
+<option value='이경규'>이경규</option>
+<option value='이경태'>이경태</option>
+<option value='이만영'>이만영</option>
+<option value='이병우'>이병우</option>
+<option value='이영수'>이영수</option>
+<option value='이점우'>이점우</option>
+<option value='이종창'>이종창</option>
+<option value='이해근'>이해근</option>
+<option value='이홍석'>이홍석</option>
+<option value='이희원'>이희원</option>
+<option value='임광성'>임광성</option>
+<option value='장찬호'>장찬호</option>
+<option value='전제원'>전제원</option>
+<option value='정관택'>정관택</option>
+<option value='정재욱'>정재욱</option>
+<option value='정주성'>정주성</option>
+<option value='정희진'>정희진</option>
+<option value='조래선'>조래선</option>
+<option value='조상국'>조상국</option>
+<option value='주승균'>주승균</option>
+<option value='최남균'>최남균</option>
+<option value='최영대'>최영대</option>
+<option value='최정아'>최정아</option>
+<option value='최종범'>최종범</option>
+<option value='최홍배'>최홍배</option>
+<option value='허무룡'>허무룡</option>
+<option value='홍순철'>홍순철</option>
+<option value='황규철'>황규철</option>
+<option value='황기성'>황기성</option>
+</select>
+<br>  * 최다득표순으로 2분이 선출됩니다.
+</td>
+</tr>
+<tr>
+<td>
+
+<tr>
+<td colspan=2 align=center>
+<?
+if(date("Y/m/d") < $startday){
+	echo "투표 시기가 아직 아닙니다.";
+}else{
+	if(date("Y/m/d") >= $startday && date("Y/m/d") <= $endday){
+		echo "<br><input type=submit value=\"투표 저장\" onClick=\"javascript:return(chk_data(this.form))\">";
+	}else if(date("Y/m/d") > $endday){
+		echo "투표 결과<br><br>
+투표 1 : 회장 선출<br>
+- 이종창님 찬성 : 56건<br>
+
+- 이종창님 반대 : 14건<br>
+<br>
+
+<br>
+투표 2 : 부회장 선출<br>
+- 정관택님 : 19건<br>
+
+- 송재혁님 : 11건<br>
+
+- 3위님(비공개) : 10건
+";
+	}
+}
+?>
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+	if (chk_checked(form.rule0) == false) {
+		alert("'회장 선출'을 정하십시오.");
+		return false;
+	}
+
+	if (form.rule1.options[0].selected == true) {
+		alert("'부회장 선출'을 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

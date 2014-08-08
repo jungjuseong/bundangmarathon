@@ -1,0 +1,3 @@
+vi hangeul help
+
+:set termcoding=utf-8,euc-kr

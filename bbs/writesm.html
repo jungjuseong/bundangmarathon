@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Smart Editor</title>
+<script type="text/javascript" src="se/js/HuskyEZCreator.js" charset="utf-8"></script>
+</head>
+<body>
+<p>Smart Editor</p>
+<form>
+<textarea name="ir1" id="ir1" style="width:725px; height:300px">
+</textarea>
+</form>
+<script lnaguage="JavaScript">
+var oEditors = [];
+nhn.husky.EZCreator.createInIFrame({
+	oAppRef: oEditors,
+	elPlaceHolder: "ir1",
+	sSkinURI: "se/SEditor2Skin.html",
+	fCreator: "createSEditorInIFrame"
+});
+</script>
+</body>
+</html>

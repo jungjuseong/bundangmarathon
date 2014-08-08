@@ -1,0 +1,5 @@
+<?php
+$lang_name   = "Korean";
+$lang_maker  = "µå¸²Äù½ºÆ®";
+$lang_date   = "2004-07-05";
+?>

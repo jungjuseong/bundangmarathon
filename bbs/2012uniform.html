@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<TITLE> 클럽 유니폼 제작 의견 수렴 </TITLE>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H2>클럽 유니폼 제작 의견 수렴</H2>
+<hr color=red width="90%">
+<p> 본 설문은 클럽 러닝용 유니폼 관련 회원님들의 의견을 수렴하여 향후 분당마라톤클럽<br> 유니폼 제작시 중요한 자료로 활용 하고자 하니 신중한 답변 부탁드립니다. </p>
+<?php 
+	require("bmauth.php");
+	require("bmconfig.php");
+	require("bmfunction.php");
+
+	$dbquery="select count(*) from poll where pollid='2012uniform'";
+	$result = mysql_query($dbquery);
+	$row=mysql_fetch_array($result);
+	echo "<font color=blue>".date("Y.m.d H:m:s")." 현재 $row[0] 명이 투표했습니다.</font>";
+?>
+
+<TABLE border=1>
+<form name=pollform method=post action=/bbs/2012uniform.php>
+<input type=hidden name="pollid" value="2012uniform">
+
+<tr>
+<td> 1번:새로운 유니폼 제작이 필요하다고 생각하는가? <td>
+<input type="radio" name="rule0" value="예1  ">예
+<input type="radio" name="rule0" value="아니오1  ">아니오
+</td> </td> </tr>
+<tr>
+<td> 2번:새로운 유니폼 구매 의사가 있는가? <td>
+<input type="radio" name="rule1" value="예2  ">예
+<input type="radio" name="rule1" value="아니오2  ">아니오
+</td> </td> </tr>
+<tr>
+<td> 3번:유니폼 제작시 가장 중요한 요소는? <td>
+<input type="radio" name="rule2" value="디자인  ">디자인
+<input type="radio" name="rule2" value="가격  ">가격
+<input type="radio" name="rule2" value="브랜드  ">브랜드
+<input type="radio" name="rule2" value="기능성  ">기능성
+</td> </td> </tr>
+<tr>
+<td> 4번:유니폼이 제작 된다면 디자인은? <td>
+<input type="radio" name="rule3" value="현재디자인  ">현재 디자인 유지
+<input type="radio" name="rule3" value="새로운  ">새로운 디자인 제작
+<input type="radio" name="rule3" value="약간변화  ">약간의 변화
+</td> </td> </tr>
+<tr>
+<td> 5번:유니폼이 제작 된다면 구성품은? <td>
+<input type="radio" name="rule4" value="상의  ">상의만
+<input type="radio" name="rule4" value="상하의  ">상하의 모두
+</td> </td> </tr>
+<tr>
+<td> 6번:유니폼이 제작 된다면 적정 가격대는?<br>(상하의 포함 경우) <td>
+<input type="radio" name="rule5" value="5만  ">~ 5만
+<input type="radio" name="rule5" value="6만  ">~ 6만
+<input type="radio" name="rule5" value="7만  ">~ 7만
+<input type="radio" name="rule5" value="8만  ">~ 8만
+<input type="radio" name="rule5" value="9만  ">~ 9만
+</td> </td> </tr>
+<tr>
+<td> 7번:유니폼이 제작 된다면 사이즈는?(본인 사이즈) <td>
+<input type="radio" name="rule6" value="85  ">85
+<input type="radio" name="rule6" value="90  ">90
+<input type="radio" name="rule6" value="95  ">95
+<input type="radio" name="rule6" value="100  ">100
+<input type="radio" name="rule6" value="105  ">105
+<input type="radio" name="rule6" value="110  ">110
+<input type="radio" name="rule6" value="115  ">115
+</td> </td> </tr>
+
+<br><br>
+<td colspan=2 align=center>
+<input type=submit value="설문 저장" onClick="javascript:return(chk_data(this.form))">
+
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule0) == false) {
+		alert("설문 1번을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule1) == false) {
+		alert("설문 2번을 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("설문 3번을 정하십시오.");
+		return false;
+	}
+            if (chk_checked(form.rule3) == false) {
+		alert("설문 4번을 정하십시오.");
+		return false;
+	}
+            if (chk_checked(form.rule4) == false) {
+		alert("설문 4번을 정하십시오.");
+		return false;
+	}
+            if (chk_checked(form.rule5) == false) {
+		alert("설문 6번을 정하십시오.");
+		return false;
+	}
+            if (chk_checked(form.rule6) == false) {
+		alert("설문 7번을 정하십시오.");
+		return false;
+	}
+	
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>

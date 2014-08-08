@@ -1,0 +1,19 @@
+CREATE TABLE buynsell (
+  boardid varchar(12) NOT NULL,
+  boardno int(20) NOT NULL,
+  commentno int(11) NOT NULL,
+  ismember int(5) NOT NULL,
+  buyer varchar(12) NOT NULL,
+  wanttopayday char(10) NOT NULL,
+  payday char(10) NOT NULL,
+  price varchar(8) NOT NULL,
+  etc varchar(50),
+  PRIMARY KEY (boardid, boardno, ismember, commentno)
+);
+
+게시물 등록시 사구팔구를 체크한다. 등록 후 이 옵션은 수정 불가하다. ; skin/robin_gray/write.php
+등록 처리시 등록자 레코드를 insert한다(commentno=0) ; write_ok.php
+등록자가 게시물을 볼 때는 코멘트 난에 거래 입력 폼을 띄운다.
+거래 입력 폼에 입금완료요청일을 입력한다. 입금이 확인되면 입금완료일을 입력한다.
+거래코멘트는 코멘트 등록자가 삭제 못하게 처리한다.
+매일 매일 입금완료요청일이 지나도 입금이 되지 않은 건은 알림 서비스를 한다.

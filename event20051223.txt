@@ -1,0 +1,78 @@
+<script language="JavaScript">
+function news(){
+	var today = new Date();
+	var todaystr, newdaystr, finaldaystr;
+	var msg=new Array();
+	var i = 0, idx, idx2, str;
+
+msg[i++]="2005.09.18;2005.12.18;<img src='/bbs/latest_skin/unistyle6box2/unistyle6_box_bbs/images/a.gif'>송년회 : 12.18(일) 18:00,<br>&nbsp;&nbsp;코리아디자인센터 (8층)<br><img src='/bbs/upload/05oldyear.jpg'>";
+msg[i++]="2005.11.01;2005.11.20;<img src='/bbs/latest_skin/unistyle6box2/unistyle6_box_bbs/images/a.gif'>오포 돈(豚)파티 : 11.20(일)";
+msg[i++]="2005.07.23;2005.10.23;춘천대회 단체참가(10.23)";
+msg[i++]="2005.07.23;2005.08.07;삼척대회 단체참가(8.7)";
+msg[i++]="2005.06.24;2005.09.10;이천대회 단체참가(9.10)";
+msg[i++]="2005.04.24;2005.06.12;6.12 창립기념 행사(토지공사)";
+msg[i++]="2005.05.11;2005.06.11;6.11 삼성디스턴스챌린지 참가";
+msg[i++]="2005.04.24;2005.06.04;6.04 희망의 마라톤 자원봉사";
+msg[i++]="2005.04.24;2005.05.15;5.15 달리는의사들 대회 참가";
+msg[i++]="2005.04.17;2005.04.17;주승균주치의 출판기념회 : 4.17(일)";
+msg[i++]="2005.03.13;2005.03.27;오포 돈(豚)잔치 : 3.27(일)";
+msg[i++]="2004.12.16;2005.01.16;05 Workshop : 2005.1.15~16<br>&nbsp;&nbsp;&nbsp;새마을연수원";
+msg[i++]="2004.11.12;2004.11.28;오포행사(돈파티) : 11.28(일)";
+msg[i++]="2004.11.05;2004.12.12;2004 송년회 : 12.12(일) 18:00,<br>&nbsp;&nbsp;디자인센타 (8층) VIP 룸";
+msg[i++]="2004.08.13;2004.09.19;9.19 이천대회 단체참가";
+msg[i++]="2004.01.13;2004.08.01;8.1 삼척대회 단체참가";
+msg[i++]="2001.01.13;2001.01.21;<a href=\"activity/gukjongdal/2000/20001224.html\">국토종단 이어달리기(평택-잠실) 결과</a>";
+msg[i++]="2000.12.10;2002.12.31;<a href=\"att-1.xls\">정기모임 참석현황(매주)</a>";
+msg[i++]="1999.06.19;1999.06.20;<a href='....'><b>new표시기일;표시기일;설명</b></a>";
+
+	todaystr = makeDateString(today);
+//
+//
+	document.writeln("<font size='-1'><table><tr><td>");
+	for(i = 0; i < msg.length; i++){
+		str = msg[i];
+		idx = str.indexOf(';', 0);
+		if(idx > 0){
+			idx2 = str.indexOf(';', idx+1);
+			if(idx > 0){
+				newdaystr = str.substring(0, idx);
+				finaldaystr = str.substring(idx+1, idx2);
+				if(finaldaystr < newdaystr)
+					continue;
+				if(finaldaystr >= todaystr){
+					if(newdaystr >= todaystr){
+						document.writeln("<img src=/image/collection/new.gif border=0>");
+					}
+					document.writeln(str.substring(idx2+1));
+					document.writeln("<br>");
+				}
+			}
+		}
+	}
+	document.writeln("</td></tr></table></font>");
+	return;
+}
+
+function makeDateString(cdate){
+  yyyy = 1900 + cdate.getYear()
+  if(yyyy >= 3900) yyyy = yyyy - 1900;
+  val = yyyy + "."
+  mm = 1 + cdate.getMonth()
+  if (mm < 10)
+	mm = "0" + mm
+  val = val + mm + "."
+  dd = cdate.getDate()
+  if (dd < 10)
+	dd = "0" + dd
+  val = val + dd
+  return val
+}
+</script>
+<p align="center">
+<font face="돋움" size="2">
+<B>&lt;행사일&gt;</B>
+<script language="JavaScript">
+    news();
+</script>
+</font>
+<br>

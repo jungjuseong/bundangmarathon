@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<title>2009 중앙서울/조선춘천마라톤 빅매치</title>
+<style>
+input, td {font-family:나눔고딕;font-size:9pt;}
+</style>
+<script language=JavaScript>
+
+function fight(match)
+{
+	var howmany = match[1];
+
+	if (howmany < 1 || howmany > 4)
+		return;
+
+	var statement = "<TR style='font-weight:bold;'><TD colspan=" + howmany + ">제 " + match[0] + " 경기 - ";
+	statement += match[2][0];
+	for (i = 1; i < howmany; i++) {
+		statement += " vs. " + match[2][i<<1];
+	}
+	document.write(statement + "</TD></TR><TR>");
+	for (i = 0; i < howmany; i++) {
+		document.write("<TD><img width=100 src=/member/photo/" + match[2][i*2+1] +"></TD>");
+	}
+	document.write("</TR>");
+
+	for (i = 0; i < howmany; i++) {
+		document.write("<TD><input type=radio name=rule" + match[0] + " value=\"" + match[2][i<<1] + "\">" + match[2][i<<1] + "</TD>");
+	}
+	document.write("</TR>");
+}
+
+</script>
+</HEAD>
+<body bgcolor="#E0FFE0" text="black" link="blue" vlink="purple" alink="red">
+<br>
+<center>
+
+<H4>2009 중앙서울/조선춘천마라톤 빅매치</H4>
+<hr color=red width="90%">
+<P>
+제1,제2 경기는 조선춘천대회이고 나머지는 중앙서울대회입니다<br>
+제1경기 선수 중 이해근님은 부상으로 인해 포기하였습니다<br>
+베팅은 한번만 가능하므로 신중히 하시기 바랍니다<br>
+(10월24일오후11시에 모두 마감합니다)
+<p>
+
+<TABLE border=0>
+<form name=pollform method=post action=/bbs/2009jcmatch.php>
+<input type=hidden name="pollid" value="2009jcmatch">
+<script>
+//fight( new Array(1,3,['이해근','leehg.jpg','윤재경','yoonjg2.jpg','정주성','jeongjs2.jpg']));
+fight( new Array(1,2,['윤재경','yoonjg2.jpg','정주성','jeongjs2.jpg']));
+fight( new Array(2,2,['김경아','nayoukka.jpg','최정아','ah717171.jpg']));
+fight( new Array(3,2,['송재혁','s590329.jpg','정관택','jeonggt.jpg']));
+fight( new Array(4,2,['김성현','gas372.jpg','임광성','iks7777.jpg']));
+fight( new Array(5,2,['이점우','hyundai9.jpg','박정준','waryong.jpg']));
+fight( new Array(6,2,['나기남','nknam.jpg','이병우','lubyung.jpg']));
+</script>
+<tr>
+<td colspan=2 align=center>
+<input type=submit value="베팅 저장" onClick="javascript:return(chk_data(this.form))">
+</form>
+</TABLE>
+<SCRIPT LANGUAGE="javascript">
+
+function chk_data(form) {
+
+	if (chk_checked(form.rule1) == false) {
+		alert("제1경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule2) == false) {
+		alert("제2경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule3) == false) {
+		alert("제3경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule4) == false) {
+		alert("제4경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule5) == false) {
+		alert("제5경기를 정하십시오.");
+		return false;
+	}
+	if (chk_checked(form.rule6) == false) {
+		alert("제6경기를 정하십시오.");
+		return false;
+	}
+
+    return true;
+}
+function chk_checked(rn) {
+	for(var i = 0; i < rn.length; i++){
+		if(rn[i].checked)
+			return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+
+</center>
+<br>
+<table align=center width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="11" background="../../images/main_caption.gif"></td>
+    </tr>
+    <tr>
+        <td height="5"></td>
+    </tr>
+    <tr>
+        <td align="center"><p>Copyright ⓒ by 분당마라톤클럽. All rights reserved. </td>
+    </tr>
+</table>
+</body>
+</html>
