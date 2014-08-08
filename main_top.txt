@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/css/bmc.css" type="text/css"/>
+<link rel="Shortcut Icon" href="/image/bmc.ico"/>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- slide show -->
+<link href="/css/quake.slider.css" rel="stylesheet" type="text/css" />
+<script src="/js/quake.slider-min.js" type="text/javascript"></script>
+
+<!-- dynamic -menu -->
+<link rel="stylesheet" href="/css/simple-dropdown.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery.dropdownPlain.js"></script>
+<!-- dynamic menu end -->
+
+<!-- JS & CSS for imgLiquid JQuery plugin -->
+<link  href="/css/imgLiquid.js.css" type="text/css" rel="stylesheet" />
+<script src ="/js/imgLiquid-min.js" type="text/javascript"></script>
+
+<style type="text/css">
+.boxSep { background-color:#f7f7f7; border:1px solid #ddd; margin:2px; float:left; }
+</style>
+
+</head>
+
+<body>
+<div class="club_logo"><img src="/img/top_0001.png" border="0" usemap="#bmc_home"></div>
+
+<map name="bmc_home">
+  <area shape="rect" coords="7, 1, 283, 63" href="/index.htm">
+  <area shape="rect" coords="818, 41, 883, 66" href="/index.htm">
+  <area shape="rect" coords="900, 41, 965, 66" href="http://news.google.co.kr/news?hl=ko&newwindow=1&lr=&ie=UTF-8&oe=UTF-8&um=1&tab=wn&q=%EB%A7%88%EB%9D%BC%ED%86%A4&btnG=%EB%89%B4%EC%8A%A4+%EA%B2%80%EC%83%89">
+</map>
+
+<!-- top banner -->
+<?
+ //include "slider-images/2014-3Q/meta.txt";
+ include "slider-images/2014-3Q/meta.txt";
+?>
+
+<!-- begin menu -->
+<div id="page-wrap">
+    <ul class="dropdown">
+       	<li><a href="/intro1.htm">&nbsp; 클럽소개 &nbsp;</a>
+       		<ul class="sub_menu">
+       			 <li><a href="#">클럽회칙</a></li>
+       			 <li><a href="/intro1.htm"/>클럽연혁</a></li>
+       			 <li><a href="/intro1_04.htm">클럽활동</a></li>
+       			 <li><a href="/intro1_02.htm">정기모임</a></li>
+       			 <li><a href="/member/prog/mempub1.php?mode=mempub-photo">회원안내</a></li>
+       			 <li><a href="/intro1_04_a.htm">클럽계좌</a></li>
+       		</ul>
+       	</li>
+       	<li><a href="/bbs/zboard.php?id=pubboard">&nbsp; 클럽마당&nbsp;</a>
+       		<ul class="sub_menu">
+       			<li><a href="/bbs/zboard.php?id=noticeboard">공지사항</a></li>
+       			<li><a href="/bbs/zboard.php?id=pubboard">함께하는이야기</a></li>
+       			<li><a href="/bbs/zboard.php?id=photo">포토갤러리</a></li>
+       			<li><a href="http://www.rundiary.co.kr/">런다이어리</a></li>
+       			<li><a href="/bbs/zboard.php?id=memboard">회원게시판</a></li>
+       		</ul>
+       	</li>
+       	<li><a href="/bbs/zboard.php?id=training_plan"> &nbsp; 훈련스케줄 &nbsp;</a></li>
+       	<li><a href="/bbs/zboard.php?id=photo">&nbsp;포토갤러리 &nbsp;</a></li>
+<? if($member[no]) { ?>
+       	<li><a href="/intro1_07.htm">&nbsp; 회원광장 &nbsp; </a></li>
+
+<? } ?>
+       </ul>
+</div>
+
+<script language="JavaScript">
+    $(document).ready(function () {
+        $('.quake-slider').quake({ effects: ['swirlFadeIn', 'swirlFadeOut', 'swirlFadeIn', 'linearPealReverse', 'slideIn', 'swirlFadeIn', 'explodeFancy'], thumbnails: false, hasNextPrev: true, captionOpacity: '0.3'});                      
+		$(".imgLiquidFill").imgLiquid({fill:true, fadeInTime:500});
+		$(".imgLiquidNoFill").imgLiquid({fill:false});
+    });
+</script>
